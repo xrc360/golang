@@ -3,7 +3,7 @@ package gutil
 import (
 	"strings"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Comparator is a function that compare a and b, and returns the result as int.

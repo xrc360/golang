@@ -9,7 +9,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // Print prints help info to stdout for current command.

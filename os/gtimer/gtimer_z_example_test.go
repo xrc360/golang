@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 func ExampleAdd() {

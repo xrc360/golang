@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 // IGroupGeneric manages generic redis operations.

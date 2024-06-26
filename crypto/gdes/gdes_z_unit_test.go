@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/xrc360/golang/crypto/gdes"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/crypto/gdes"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (

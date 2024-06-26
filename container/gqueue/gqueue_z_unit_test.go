@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/gqueue"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gqueue"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestQueue_Len(t *testing.T) {

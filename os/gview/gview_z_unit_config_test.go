@@ -4,21 +4,21 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Config(t *testing.T) {
 	// show error print
-	command.Init("-gf.gview.errorprint=true")
+	command.Init("-cg.gview.errorprint=true")
 	gtest.C(t, func(t *gtest.T) {
 		config := gview.Config{
 			Paths: []string{gtest.DataPath("config")},
 			Data: g.Map{
-				"name": "gf",
+				"name": "cg",
 			},
 			DefaultFile: "test.html",
 			Delimiters:  []string{"${", "}"},
@@ -34,11 +34,11 @@ func Test_Config(t *testing.T) {
 		view.Assigns(g.Map{"version": "1.7.0"})
 		result, err := view.ParseContent(context.TODO(), str, nil)
 		t.AssertNil(err)
-		t.Assert(result, "hello gf,version:1.7.0")
+		t.Assert(result, "hello cg,version:1.7.0")
 
 		result, err = view.ParseDefault(context.TODO())
 		t.AssertNil(err)
-		t.Assert(result, "name:gf")
+		t.Assert(result, "name:cg")
 
 		t.Assert(view.GetDefaultFile(), "test.html")
 	})
@@ -47,7 +47,7 @@ func Test_Config(t *testing.T) {
 		config := gview.Config{
 			Paths: []string{"notexist", gtest.DataPath("config/test.html")},
 			Data: g.Map{
-				"name": "gf",
+				"name": "cg",
 			},
 			DefaultFile: "test.html",
 			Delimiters:  []string{"${", "}"},
@@ -62,7 +62,7 @@ func Test_Config(t *testing.T) {
 		config := gview.Config{
 			Paths: []string{gtest.DataPath("config/test.html")},
 			Data: g.Map{
-				"name": "gf",
+				"name": "cg",
 			},
 			DefaultFile: "test.html",
 			Delimiters:  []string{"${", "}"},
@@ -82,7 +82,7 @@ func Test_ConfigWithMap(t *testing.T) {
 			"DefaultFile": "test.html",
 			"Delimiters":  []string{"${", "}"},
 			"Data": g.Map{
-				"name": "gf",
+				"name": "cg",
 			},
 		})
 		t.AssertNil(err)
@@ -91,11 +91,11 @@ func Test_ConfigWithMap(t *testing.T) {
 		view.Assigns(g.Map{"version": "1.7.0"})
 		result, err := view.ParseContent(context.TODO(), str, nil)
 		t.AssertNil(err)
-		t.Assert(result, "hello gf,version:1.7.0")
+		t.Assert(result, "hello cg,version:1.7.0")
 
 		result, err = view.ParseDefault(context.TODO())
 		t.AssertNil(err)
-		t.Assert(result, "name:gf")
+		t.Assert(result, "name:cg")
 	})
 	// path as paths
 	gtest.C(t, func(t *gtest.T) {
@@ -105,7 +105,7 @@ func Test_ConfigWithMap(t *testing.T) {
 			"DefaultFile": "test.html",
 			"Delimiters":  []string{"${", "}"},
 			"Data": g.Map{
-				"name": "gf",
+				"name": "cg",
 			},
 		})
 		t.AssertNil(err)
@@ -114,11 +114,11 @@ func Test_ConfigWithMap(t *testing.T) {
 		view.Assigns(g.Map{"version": "1.7.0"})
 		result, err := view.ParseContent(context.TODO(), str, nil)
 		t.AssertNil(err)
-		t.Assert(result, "hello gf,version:1.7.0")
+		t.Assert(result, "hello cg,version:1.7.0")
 
 		result, err = view.ParseDefault(context.TODO())
 		t.AssertNil(err)
-		t.Assert(result, "name:gf")
+		t.Assert(result, "name:cg")
 	})
 	// path as paths
 	gtest.C(t, func(t *gtest.T) {
@@ -128,7 +128,7 @@ func Test_ConfigWithMap(t *testing.T) {
 			"DefaultFile": "test.html",
 			"Delimiters":  []string{"${", "}"},
 			"Data": g.Map{
-				"name": "gf",
+				"name": "cg",
 			},
 		})
 		t.AssertNil(err)
@@ -137,11 +137,11 @@ func Test_ConfigWithMap(t *testing.T) {
 		view.Assigns(g.Map{"version": "1.7.0"})
 		result, err := view.ParseContent(context.TODO(), str, nil)
 		t.AssertNil(err)
-		t.Assert(result, "hello gf,version:1.7.0")
+		t.Assert(result, "hello cg,version:1.7.0")
 
 		result, err = view.ParseDefault(context.TODO())
 		t.AssertNil(err)
-		t.Assert(result, "name:gf")
+		t.Assert(result, "name:cg")
 	})
 	// map is nil
 	gtest.C(t, func(t *gtest.T) {

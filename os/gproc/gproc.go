@@ -6,15 +6,15 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/xrc360/golang/os/genv"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/os/genv"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (
 	envKeyPPid            = "GPROC_PPID"
-	tracingInstrumentName = "github.com/xrc360/golang/os/gproc.Process"
+	tracingInstrumentName = "github.com/xrcn/cg/os/gproc.Process"
 )
 
 var (

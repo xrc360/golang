@@ -3,7 +3,7 @@ package gclient
 import (
 	"time"
 
-	"github.com/xrc360/golang/net/gsvc"
+	"github.com/xrcn/cg/net/gsvc"
 )
 
 // Prefix is a chaining function,

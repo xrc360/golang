@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // RuleBetween implements `between` rule:

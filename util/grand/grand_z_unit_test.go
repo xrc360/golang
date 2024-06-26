@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/grand"
 )
 
 func Test_Intn(t *testing.T) {
@@ -142,7 +142,7 @@ func Test_Str(t *testing.T) {
 }
 
 func Test_RandStr(t *testing.T) {
-	str := "我爱GoFrame"
+	str := "我爱GoXrc"
 	gtest.C(t, func(t *gtest.T) {
 		for i := 0; i < 10; i++ {
 			s := grand.Str(str, 100000)

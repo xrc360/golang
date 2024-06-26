@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gurl"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gurl"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (

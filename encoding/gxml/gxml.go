@@ -3,9 +3,9 @@ package gxml
 
 import (
 	"github.com/clbanning/mxj/v2"
-	"github.com/xrc360/golang/encoding/gcharset"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/encoding/gcharset"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/text/gregex"
 	"strings"
 )
 

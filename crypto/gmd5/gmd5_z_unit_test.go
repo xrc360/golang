@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/xrc360/golang/crypto/gmd5"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/crypto/gmd5"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (

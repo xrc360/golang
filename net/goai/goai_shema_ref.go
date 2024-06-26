@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 type SchemaRefs []SchemaRef

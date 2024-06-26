@@ -1,7 +1,7 @@
 package gvar
 
 import (
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Scan automatically checks the type of `pointer` and converts `params` to `pointer`. It supports `pointer`

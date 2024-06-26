@@ -4,19 +4,19 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/xrc360/golang/internal/empty"
+	"github.com/xrcn/cg/internal/empty"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func ExampleStrArray_Walk() {
 	var array garray.StrArray
 	tables := g.SliceStr{"user", "user_detail"}
-	prefix := "gf_"
+	prefix := "cg_"
 	array.Append(tables...)
 	// Add prefix for given table names.
 	array.Walk(func(value string) string {
@@ -25,52 +25,52 @@ func ExampleStrArray_Walk() {
 	fmt.Println(array.Slice())
 
 	// Output:
-	// [gf_user gf_user_detail]
+	// [cg_user cg_user_detail]
 }
 
 func ExampleNewStrArray() {
 	s := garray.NewStrArray()
 	s.Append("We")
 	s.Append("are")
-	s.Append("GF")
+	s.Append("CG")
 	s.Append("fans")
 	fmt.Println(s.Slice())
 
 	// Output:
-	// [We are GF fans]
+	// [We are CG fans]
 }
 
 func ExampleNewStrArraySize() {
 	s := garray.NewStrArraySize(3, 5)
 	s.Set(0, "We")
 	s.Set(1, "are")
-	s.Set(2, "GF")
+	s.Set(2, "CG")
 	s.Set(3, "fans")
 	fmt.Println(s.Slice(), s.Len(), cap(s.Slice()))
 
 	// Output:
-	// [We are GF] 3 5
+	// [We are CG] 3 5
 }
 
 func ExampleNewStrArrayFrom() {
-	s := garray.NewStrArrayFrom(g.SliceStr{"We", "are", "GF", "fans", "!"})
+	s := garray.NewStrArrayFrom(g.SliceStr{"We", "are", "CG", "fans", "!"})
 	fmt.Println(s.Slice(), s.Len(), cap(s.Slice()))
 
 	// Output:
-	// [We are GF fans !] 5 5
+	// [We are CG fans !] 5 5
 }
 
 func ExampleStrArray_At() {
-	s := garray.NewStrArrayFrom(g.SliceStr{"We", "are", "GF", "fans", "!"})
+	s := garray.NewStrArrayFrom(g.SliceStr{"We", "are", "CG", "fans", "!"})
 	sAt := s.At(2)
 	fmt.Println(sAt)
 
 	// Output:
-	// GF
+	// CG
 }
 
 func ExampleStrArray_Get() {
-	s := garray.NewStrArrayFrom(g.SliceStr{"We", "are", "GF", "fans", "!"})
+	s := garray.NewStrArrayFrom(g.SliceStr{"We", "are", "CG", "fans", "!"})
 	sGet, sBool := s.Get(3)
 	fmt.Println(sGet, sBool)
 
@@ -82,33 +82,33 @@ func ExampleStrArray_Set() {
 	s := garray.NewStrArraySize(3, 5)
 	s.Set(0, "We")
 	s.Set(1, "are")
-	s.Set(2, "GF")
+	s.Set(2, "CG")
 	s.Set(3, "fans")
 	fmt.Println(s.Slice())
 
 	// Output:
-	// [We are GF]
+	// [We are CG]
 }
 
 func ExampleStrArray_SetArray() {
 	s := garray.NewStrArray()
-	s.SetArray(g.SliceStr{"We", "are", "GF", "fans", "!"})
+	s.SetArray(g.SliceStr{"We", "are", "CG", "fans", "!"})
 	fmt.Println(s.Slice())
 
 	// Output:
-	// [We are GF fans !]
+	// [We are CG fans !]
 }
 
 func ExampleStrArray_Replace() {
 	s := garray.NewStrArray()
-	s.SetArray(g.SliceStr{"We", "are", "GF", "fans", "!"})
+	s.SetArray(g.SliceStr{"We", "are", "CG", "fans", "!"})
 	fmt.Println(s.Slice())
 	s.Replace(g.SliceStr{"Happy", "coding"})
 	fmt.Println(s.Slice())
 
 	// Output:
-	// [We are GF fans !]
-	// [Happy coding GF fans !]
+	// [We are CG fans !]
+	// [Happy coding CG fans !]
 }
 
 func ExampleStrArray_Sum() {
@@ -192,21 +192,21 @@ func ExampleStrArray_RemoveValue() {
 func ExampleStrArray_PushLeft() {
 	s := garray.NewStrArray()
 	s.SetArray(g.SliceStr{"a", "b", "c", "d"})
-	s.PushLeft("We", "are", "GF", "fans")
+	s.PushLeft("We", "are", "CG", "fans")
 	fmt.Println(s.Slice())
 
 	// Output:
-	// [We are GF fans a b c d]
+	// [We are CG fans a b c d]
 }
 
 func ExampleStrArray_PushRight() {
 	s := garray.NewStrArray()
 	s.SetArray(g.SliceStr{"a", "b", "c", "d"})
-	s.PushRight("We", "are", "GF", "fans")
+	s.PushRight("We", "are", "CG", "fans")
 	fmt.Println(s.Slice())
 
 	// Output:
-	// [a b c d We are GF fans]
+	// [a b c d We are CG fans]
 }
 
 func ExampleStrArray_PopLeft() {
@@ -295,12 +295,12 @@ func ExampleStrArray_SubSlice() {
 
 func ExampleStrArray_Append() {
 	s := garray.NewStrArray()
-	s.SetArray(g.SliceStr{"We", "are", "GF", "fans"})
+	s.SetArray(g.SliceStr{"We", "are", "CG", "fans"})
 	s.Append("a", "b", "c")
 	fmt.Println(s)
 
 	// Output:
-	// ["We","are","GF","fans","a","b","c"]
+	// ["We","are","CG","fans","a","b","c"]
 }
 
 func ExampleStrArray_Len() {
@@ -401,12 +401,12 @@ func ExampleStrArray_Unique() {
 func ExampleStrArray_LockFunc() {
 	s := garray.NewStrArrayFrom(g.SliceStr{"a", "b", "c"})
 	s.LockFunc(func(array []string) {
-		array[len(array)-1] = "GF fans"
+		array[len(array)-1] = "CG fans"
 	})
 	fmt.Println(s)
 
 	// Output:
-	// ["a","b","GF fans"]
+	// ["a","b","CG fans"]
 }
 
 func ExampleStrArray_RLockFunc() {

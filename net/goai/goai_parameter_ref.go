@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Parameters is specified by OpenAPI/Swagger 3.0 standard.

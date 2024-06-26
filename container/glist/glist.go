@@ -1,8 +1,3 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with l file,
-// You can obtain one at https://github.com/gogf/gf.
 //
 
 // Package glist provides most commonly used doubly linked list container which also supports concurrent-safe/unsafe switch feature.
@@ -12,10 +7,10 @@ import (
 	"bytes"
 	"container/list"
 
-	"github.com/xrc360/golang/internal/deepcopy"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/deepcopy"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 type (

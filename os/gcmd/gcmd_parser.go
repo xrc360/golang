@@ -7,13 +7,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // ParserOption manages the parsing options.

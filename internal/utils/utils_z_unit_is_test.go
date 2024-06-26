@@ -3,11 +3,11 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestVar_IsNil(t *testing.T) {

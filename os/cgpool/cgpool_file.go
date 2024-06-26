@@ -1,11 +1,11 @@
-package gfpool
+package cgpool
 
 import (
 	"fmt"
 	"os"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Open creates and returns a file item with given file path, flag and opening permission.

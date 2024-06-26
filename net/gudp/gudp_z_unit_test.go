@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/net/gudp"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/net/gudp"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 var (
@@ -206,10 +206,10 @@ func Test_Server(t *testing.T) {
 				break
 			}
 		}
-	}, "GoFrameUDPServer")
+	}, "GoXrcUDPServer")
 
 	gtest.C(t, func(t *gtest.T) {
-		server := gudp.GetServer("GoFrameUDPServer")
+		server := gudp.GetServer("GoXrcUDPServer")
 		t.AssertNE(server, nil)
 		server = gudp.GetServer("TestUDPServer")
 		t.AssertNE(server, nil)

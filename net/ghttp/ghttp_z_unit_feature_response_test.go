@@ -2,18 +2,18 @@ package ghttp_test
 
 import (
 	"fmt"
-	"github.com/xrc360/golang/encoding/gxml"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gview"
+	"github.com/xrcn/cg/encoding/gxml"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gview"
 	"net/http"
 	"strings"
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_Response_ServeFile(t *testing.T) {

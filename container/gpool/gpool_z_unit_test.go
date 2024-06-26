@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/gpool"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gpool"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var nf gpool.NewFunc = func() (i interface{}, e error) {

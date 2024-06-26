@@ -4,15 +4,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
-// https://github.com/gogf/gf/issues/1227
+// 1227
 func Test_Issue1227(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type StructFromIssue1227 struct {
@@ -182,7 +182,7 @@ func Test_Issue1946(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2381
+// 2381
 func Test_Issue2381(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type Inherit struct {
@@ -219,7 +219,7 @@ func Test_Issue2381(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2391
+// 2391
 func Test_Issue2391(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type Inherit struct {
@@ -259,7 +259,7 @@ func Test_Issue2391(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2395
+// 2395
 func Test_Issue2395(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type Test struct {
@@ -271,7 +271,7 @@ func Test_Issue2395(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2371
+// 2371
 func Test_Issue2371(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		var (

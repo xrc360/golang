@@ -6,8 +6,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 const (

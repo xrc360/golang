@@ -5,8 +5,8 @@ package gtype_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/internal/json"
 )
 
 var (

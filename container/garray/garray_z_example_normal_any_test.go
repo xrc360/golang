@@ -3,10 +3,10 @@ package garray_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/internal/empty"
+	"github.com/xrcn/cg/internal/empty"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
 )
 
 func ExampleNew() {

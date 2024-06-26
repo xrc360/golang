@@ -1,9 +1,3 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with gm file,
-// You can obtain one at https://github.com/gogf/gf.
-
 // go test *.go -bench=".*" -benchmem
 
 package gmap_test
@@ -11,8 +5,8 @@ package gmap_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 var hashMap = gmap.New(true)

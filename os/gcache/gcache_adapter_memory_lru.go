@@ -3,10 +3,10 @@ package gcache
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 // LRU cache object.

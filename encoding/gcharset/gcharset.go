@@ -22,9 +22,9 @@ import (
 	"golang.org/x/text/encoding/ianaindex"
 	"golang.org/x/text/transform"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 var (

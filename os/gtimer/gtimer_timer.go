@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
+	"github.com/xrcn/cg/container/gtype"
 )
 
 // New creates and returns a Timer.

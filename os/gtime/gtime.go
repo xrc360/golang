@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 const (

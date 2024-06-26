@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleMkdir() {
@@ -39,7 +39,7 @@ func ExampleCreate() {
 	defer fileHandle.Close()
 
 	// Write some content to file
-	n, _ := fileHandle.WriteString("hello goframe")
+	n, _ := fileHandle.WriteString("hello goxrc")
 
 	// Check whether the file exists
 	isFile = gfile.IsFile(path)
@@ -54,7 +54,7 @@ func ExampleCreate() {
 	// Output:
 	// false
 	// true
-	// hello goframe
+	// hello goxrc
 }
 
 func ExampleOpen() {
@@ -73,7 +73,7 @@ func ExampleOpen() {
 	fmt.Println(string(dataByte[:n]))
 
 	// Output:
-	// hello goframe
+	// hello goxrc
 }
 
 func ExampleOpenFile() {
@@ -88,7 +88,7 @@ func ExampleOpenFile() {
 	defer openFile.Close()
 
 	// Write some content to file
-	writeLength, _ := openFile.WriteString("hello goframe test open file")
+	writeLength, _ := openFile.WriteString("hello goxrc test open file")
 
 	fmt.Println(writeLength)
 
@@ -99,7 +99,7 @@ func ExampleOpenFile() {
 
 	// Output:
 	// 28
-	// hello goframe test open file
+	// hello goxrc test open file
 }
 
 func ExampleOpenWithFlag() {
@@ -115,7 +115,7 @@ func ExampleOpenWithFlag() {
 	defer openFile.Close()
 
 	// Write some content to file
-	writeLength, _ := openFile.WriteString("hello goframe test open file with flag")
+	writeLength, _ := openFile.WriteString("hello goxrc test open file with flag")
 
 	fmt.Println(writeLength)
 
@@ -126,7 +126,7 @@ func ExampleOpenWithFlag() {
 
 	// Output:
 	// 38
-	// hello goframe test open file with flag
+	// hello goxrc test open file with flag
 }
 
 func ExampleJoin() {
@@ -179,7 +179,7 @@ func ExamplePwd() {
 	fmt.Println(gfile.Pwd())
 
 	// May Output:
-	// xxx/gf/os/gfile
+	// xxx/cg/os/gfile
 }
 
 func ExampleChdir() {
@@ -197,7 +197,7 @@ func ExampleChdir() {
 	fmt.Println(gfile.Pwd())
 
 	// May Output:
-	// xxx/gf/os/gfile
+	// xxx/cg/os/gfile
 	// /tmp/gfile_example_basic_dir/file1
 }
 

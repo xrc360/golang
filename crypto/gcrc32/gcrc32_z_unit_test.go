@@ -5,9 +5,9 @@ package gcrc32_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/crypto/gcrc32"
-	"github.com/xrc360/golang/crypto/gmd5"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/crypto/gcrc32"
+	"github.com/xrcn/cg/crypto/gmd5"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestEncrypt(t *testing.T) {

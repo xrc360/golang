@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/util/grand"
 )
 
 type selectorRandom struct {

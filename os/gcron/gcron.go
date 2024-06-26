@@ -5,8 +5,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 const (

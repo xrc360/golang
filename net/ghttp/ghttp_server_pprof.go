@@ -5,8 +5,8 @@ import (
 	runpprof "runtime/pprof"
 	"strings"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gview"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gview"
 )
 
 // utilPProf is the PProf interface implementer.
@@ -63,7 +63,7 @@ func (p *utilPProf) Index(r *Request) {
 		buffer, _ := gview.ParseContent(r.Context(), `
             <html>
             <head>
-                <title>GoFrame PProf</title>
+                <title>GoXrc PProf</title>
             </head>
             {{$uri := .uri}}
             <body>

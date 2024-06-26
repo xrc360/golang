@@ -5,7 +5,7 @@ package gipv4
 import (
 	"net"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // GetMac retrieves and returns the first mac address of current host.

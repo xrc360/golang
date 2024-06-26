@@ -5,8 +5,8 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
 	"math"
 )
 

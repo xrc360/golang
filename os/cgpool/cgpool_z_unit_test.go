@@ -1,4 +1,4 @@
-package gfpool_test
+package cgpool_test
 
 import (
 	"context"
@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gfpool"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/os/cgpool"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // TestOpen test open file cache
@@ -19,11 +19,11 @@ func TestOpen(t *testing.T) {
 	testFile := start("TestOpen.txt")
 
 	gtest.C(t, func(t *gtest.T) {
-		f, err := gfpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+		f, err := cgpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 		t.AssertEQ(err, nil)
 		f.Close()
 
-		f2, err1 := gfpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+		f2, err1 := cgpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 		t.AssertEQ(err1, nil)
 		t.AssertEQ(f, f2)
 		f2.Close()
@@ -36,12 +36,12 @@ func TestOpen(t *testing.T) {
 func TestOpenErr(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		testErrFile := "errorPath"
-		_, err := gfpool.Open(testErrFile, os.O_RDWR, 0666)
+		_, err := cgpool.Open(testErrFile, os.O_RDWR, 0666)
 		t.AssertNE(err, nil)
 
 		// delete file error
 		testFile := start("TestOpenDeleteErr.txt")
-		pool := gfpool.New(testFile, os.O_RDWR, 0666)
+		pool := cgpool.New(testFile, os.O_RDWR, 0666)
 		_, err1 := pool.File()
 		t.AssertEQ(err1, nil)
 		stop(testFile)
@@ -50,7 +50,7 @@ func TestOpenErr(t *testing.T) {
 
 		// append mode delete file error and create again
 		testFile = start("TestOpenCreateErr.txt")
-		pool = gfpool.New(testFile, os.O_CREATE, 0666)
+		pool = cgpool.New(testFile, os.O_CREATE, 0666)
 		_, err1 = pool.File()
 		t.AssertEQ(err1, nil)
 		stop(testFile)
@@ -59,7 +59,7 @@ func TestOpenErr(t *testing.T) {
 
 		// append mode delete file error
 		testFile = start("TestOpenAppendErr.txt")
-		pool = gfpool.New(testFile, os.O_APPEND, 0666)
+		pool = cgpool.New(testFile, os.O_APPEND, 0666)
 		_, err1 = pool.File()
 		t.AssertEQ(err1, nil)
 		stop(testFile)
@@ -68,7 +68,7 @@ func TestOpenErr(t *testing.T) {
 
 		// trunc mode delete file error
 		testFile = start("TestOpenTruncErr.txt")
-		pool = gfpool.New(testFile, os.O_TRUNC, 0666)
+		pool = cgpool.New(testFile, os.O_TRUNC, 0666)
 		_, err1 = pool.File()
 		t.AssertEQ(err1, nil)
 		stop(testFile)
@@ -82,12 +82,12 @@ func TestOpenExpire(t *testing.T) {
 	testFile := start("TestOpenExpire.txt")
 
 	gtest.C(t, func(t *gtest.T) {
-		f, err := gfpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666, 100*time.Millisecond)
+		f, err := cgpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666, 100*time.Millisecond)
 		t.AssertEQ(err, nil)
 		f.Close()
 
 		time.Sleep(150 * time.Millisecond)
-		f2, err1 := gfpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666, 100*time.Millisecond)
+		f2, err1 := cgpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666, 100*time.Millisecond)
 		t.AssertEQ(err1, nil)
 		//t.AssertNE(f, f2)
 		f2.Close()
@@ -96,16 +96,16 @@ func TestOpenExpire(t *testing.T) {
 	stop(testFile)
 }
 
-// TestNewPool test gfpool new function
+// TestNewPool test cgpool new function
 func TestNewPool(t *testing.T) {
 	testFile := start("TestNewPool.txt")
 
 	gtest.C(t, func(t *gtest.T) {
-		f, err := gfpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+		f, err := cgpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 		t.AssertEQ(err, nil)
 		f.Close()
 
-		pool := gfpool.New(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+		pool := cgpool.New(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 		f2, err1 := pool.File()
 		// pool not equal
 		t.AssertEQ(err1, nil)
@@ -257,15 +257,15 @@ func Test_ConcurrentOS(t *testing.T) {
 	// })
 }
 
-func Test_ConcurrentGFPool(t *testing.T) {
+func Test_ConcurrentCGPool(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		path := gfile.Temp(gtime.TimestampNanoStr())
 		defer gfile.Remove(path)
-		f1, err := gfpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+		f1, err := cgpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 		t.AssertNil(err)
 		defer f1.Close()
 
-		f2, err := gfpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+		f2, err := cgpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 		t.AssertNil(err)
 		defer f2.Close()
 
@@ -283,11 +283,11 @@ func Test_ConcurrentGFPool(t *testing.T) {
 	// gtest.C(t, func(t *gtest.T) {
 	//	path := gfile.Temp(gtime.TimestampNanoStr())
 	//	defer gfile.Remove(path)
-	//	f1, err := gfpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+	//	f1, err := cgpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 	//	t.AssertNil(err)
 	//	defer f1.Close()
 	//
-	//	f2, err := gfpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
+	//	f2, err := cgpool.Open(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666)
 	//	t.AssertNil(err)
 	//	defer f2.Close()
 	//

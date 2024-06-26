@@ -3,18 +3,18 @@ package gcfg
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gfsnotify"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/util/gmode"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gfsnotify"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/util/gmode"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // AdapterFile implements interface Adapter using file.
@@ -26,8 +26,8 @@ type AdapterFile struct {
 }
 
 const (
-	commandEnvKeyForFile = "gf.gcfg.file" // commandEnvKeyForFile is the configuration key for command argument or environment configuring file name.
-	commandEnvKeyForPath = "gf.gcfg.path" // commandEnvKeyForPath is the configuration key for command argument or environment configuring directory path.
+	commandEnvKeyForFile = "cg.gcfg.file" // commandEnvKeyForFile is the configuration key for command argument or environment configuring file name.
+	commandEnvKeyForPath = "cg.gcfg.path" // commandEnvKeyForPath is the configuration key for command argument or environment configuring directory path.
 )
 
 var (

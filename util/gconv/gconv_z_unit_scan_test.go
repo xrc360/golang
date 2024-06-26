@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func Test_Scan_WithMapParameter(t *testing.T) {

@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func Test_New(t *testing.T) {
@@ -29,7 +29,7 @@ func Test_New(t *testing.T) {
 		t.Assert(j.Get("2.c").String(), `3`)
 	})
 	// New with gvar.
-	// https://github.com/gogf/gf/issues/1571
+	// 1571
 	gtest.C(t, func(t *gtest.T) {
 		v := gvar.New(`[{"a":1},{"b":2},{"c":3}]`)
 		j := gjson.New(v)
@@ -47,7 +47,7 @@ func Test_New(t *testing.T) {
 		t.Assert(j.Get("k2"), "v2")
 		t.Assert(j.Get("k3"), nil)
 	})
-	// https://github.com/gogf/gf/issues/3253
+	// 3253
 	gtest.C(t, func(t *gtest.T) {
 		type TestStruct struct {
 			Result []map[string]string `json:"result"`
@@ -55,7 +55,7 @@ func Test_New(t *testing.T) {
 		ts := &TestStruct{
 			Result: []map[string]string{
 				{
-					"Name": "gf",
+					"Name": "cg",
 					"Role": "",
 				},
 			},
@@ -341,40 +341,40 @@ func TestJson_Default(t *testing.T) {
 
 func Test_Convert(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		j := gjson.New(`{"name":"gf"}`)
+		j := gjson.New(`{"name":"cg"}`)
 		arr, err := j.ToXml()
 		t.AssertNil(err)
-		t.Assert(string(arr), "<name>gf</name>")
+		t.Assert(string(arr), "<name>cg</name>")
 		arr, err = j.ToXmlIndent()
 		t.AssertNil(err)
-		t.Assert(string(arr), "<name>gf</name>")
+		t.Assert(string(arr), "<name>cg</name>")
 		str, err := j.ToXmlString()
 		t.AssertNil(err)
-		t.Assert(str, "<name>gf</name>")
+		t.Assert(str, "<name>cg</name>")
 		str, err = j.ToXmlIndentString()
 		t.AssertNil(err)
-		t.Assert(str, "<name>gf</name>")
+		t.Assert(str, "<name>cg</name>")
 
 		arr, err = j.ToJsonIndent()
 		t.AssertNil(err)
-		t.Assert(string(arr), "{\n\t\"name\": \"gf\"\n}")
+		t.Assert(string(arr), "{\n\t\"name\": \"cg\"\n}")
 		str, err = j.ToJsonIndentString()
 		t.AssertNil(err)
-		t.Assert(string(arr), "{\n\t\"name\": \"gf\"\n}")
+		t.Assert(string(arr), "{\n\t\"name\": \"cg\"\n}")
 
 		arr, err = j.ToYaml()
 		t.AssertNil(err)
-		t.Assert(string(arr), "name: gf\n")
+		t.Assert(string(arr), "name: cg\n")
 		str, err = j.ToYamlString()
 		t.AssertNil(err)
-		t.Assert(string(arr), "name: gf\n")
+		t.Assert(string(arr), "name: cg\n")
 
 		arr, err = j.ToToml()
 		t.AssertNil(err)
-		t.Assert(string(arr), "name = \"gf\"\n")
+		t.Assert(string(arr), "name = \"cg\"\n")
 		str, err = j.ToTomlString()
 		t.AssertNil(err)
-		t.Assert(string(arr), "name = \"gf\"\n")
+		t.Assert(string(arr), "name = \"cg\"\n")
 	})
 }
 
@@ -383,8 +383,8 @@ func Test_Convert2(t *testing.T) {
 		name := struct {
 			Name string
 		}{}
-		j := gjson.New(`{"name":"gf","time":"2019-06-12"}`)
-		t.Assert(j.Interface().(g.Map)["name"], "gf")
+		j := gjson.New(`{"name":"cg","time":"2019-06-12"}`)
+		t.Assert(j.Interface().(g.Map)["name"], "cg")
 		t.Assert(j.Get("name1").Map(), nil)
 		t.Assert(j.GetJson("name1"), nil)
 		t.Assert(j.GetJsons("name1"), nil)
@@ -399,16 +399,16 @@ func Test_Convert2(t *testing.T) {
 
 		err := j.Var().Scan(&name)
 		t.AssertNil(err)
-		t.Assert(name.Name, "gf")
+		t.Assert(name.Name, "cg")
 		// j.Dump()
 		t.AssertNil(err)
 
-		j = gjson.New(`{"person":{"name":"gf"}}`)
+		j = gjson.New(`{"person":{"name":"cg"}}`)
 		err = j.Get("person").Scan(&name)
 		t.AssertNil(err)
-		t.Assert(name.Name, "gf")
+		t.Assert(name.Name, "cg")
 
-		j = gjson.New(`{"name":"gf""}`)
+		j = gjson.New(`{"name":"cg""}`)
 		// j.Dump()
 		t.AssertNil(err)
 
@@ -419,13 +419,13 @@ func Test_Convert2(t *testing.T) {
 
 func Test_Basic(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		j := gjson.New(`{"name":"gf","time":"2019-06-12"}`)
+		j := gjson.New(`{"name":"cg","time":"2019-06-12"}`)
 		j.SetViolenceCheck(true)
 		t.Assert(j.Get(""), nil)
-		t.Assert(j.Get(".").Interface().(g.Map)["name"], "gf")
+		t.Assert(j.Get(".").Interface().(g.Map)["name"], "cg")
 		t.Assert(j.Get(".").Interface().(g.Map)["name1"], nil)
 		j.SetViolenceCheck(false)
-		t.Assert(j.Get(".").Interface().(g.Map)["name"], "gf")
+		t.Assert(j.Get(".").Interface().(g.Map)["name"], "cg")
 
 		err := j.Set("name", "gf1")
 		t.AssertNil(err)
@@ -472,9 +472,9 @@ func Test_Basic(t *testing.T) {
 
 		name := struct {
 			Name string
-		}{Name: "gf"}
+		}{Name: "cg"}
 		j = gjson.New(name)
-		t.Assert(j.Get("Name"), "gf")
+		t.Assert(j.Get("Name"), "cg")
 		err = j.Remove("Name")
 		t.AssertNil(err)
 		t.Assert(j.Get("Name"), nil)
@@ -489,7 +489,7 @@ func Test_Basic(t *testing.T) {
 		t.Assert(j.Get("Name"), nil)
 
 		j = gjson.New(name)
-		t.Assert(j.Get("Name"), "gf")
+		t.Assert(j.Get("Name"), "cg")
 		err = j.Set("Name1", g.Map{"Name": "gf1"})
 		t.AssertNil(err)
 		t.Assert(j.Get("Name1").Interface().(g.Map)["Name"], "gf1")
@@ -498,10 +498,10 @@ func Test_Basic(t *testing.T) {
 		t.Assert(j.Get("Name2").Interface().(g.Slice)[0], 1)
 		err = j.Set("Name3", name)
 		t.AssertNil(err)
-		t.Assert(j.Get("Name3").Interface().(g.Map)["Name"], "gf")
+		t.Assert(j.Get("Name3").Interface().(g.Map)["Name"], "cg")
 		err = j.Set("Name4", &name)
 		t.AssertNil(err)
-		t.Assert(j.Get("Name4").Interface().(g.Map)["Name"], "gf")
+		t.Assert(j.Get("Name4").Interface().(g.Map)["Name"], "cg")
 		arr := [3]int{1, 2, 3}
 		err = j.Set("Name5", arr)
 		t.AssertNil(err)
@@ -564,7 +564,7 @@ func TestJson_Options(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/1617
+// 1617
 func Test_Issue1617(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type MyJsonName struct {
@@ -588,7 +588,7 @@ func Test_Issue1617(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/1747
+// 1747
 func Test_Issue1747(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		var j *gjson.Json
@@ -598,7 +598,7 @@ func Test_Issue1747(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2520
+// 2520
 func Test_Issue2520(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type test struct {

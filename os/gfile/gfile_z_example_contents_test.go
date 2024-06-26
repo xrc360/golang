@@ -3,7 +3,7 @@ package gfile_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleGetContents() {
@@ -15,14 +15,14 @@ func ExampleGetContents() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// It reads and returns the file content as string.
 	// It returns empty string if it fails reading, for example, with permission or IO error.
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
+	// goxrc example content
 }
 
 func ExampleGetBytes() {
@@ -34,7 +34,7 @@ func ExampleGetBytes() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// It reads and returns the file content as []byte.
 	// It returns nil if it fails reading, for example, with permission or IO error.
@@ -54,13 +54,13 @@ func ExamplePutContents() {
 
 	// It creates and puts content string into specifies file path.
 	// It automatically creates directory recursively if it does not exist.
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
+	// goxrc example content
 }
 
 func ExamplePutBytes() {
@@ -72,13 +72,13 @@ func ExamplePutBytes() {
 	)
 
 	// write contents
-	gfile.PutBytes(tempFile, []byte("goframe example content"))
+	gfile.PutBytes(tempFile, []byte("goxrc example content"))
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
+	// goxrc example content
 }
 
 func ExamplePutContentsAppend() {
@@ -90,7 +90,7 @@ func ExamplePutContentsAppend() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
@@ -103,8 +103,8 @@ func ExamplePutContentsAppend() {
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
-	// goframe example content append content
+	// goxrc example content
+	// goxrc example content append content
 }
 
 func ExamplePutBytesAppend() {
@@ -116,7 +116,7 @@ func ExamplePutBytesAppend() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
@@ -128,8 +128,8 @@ func ExamplePutBytesAppend() {
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
-	// goframe example content append
+	// goxrc example content
+	// goxrc example content append
 }
 
 func ExampleGetNextCharOffsetByPath() {
@@ -141,7 +141,7 @@ func ExampleGetNextCharOffsetByPath() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	index := gfile.GetNextCharOffsetByPath(tempFile, 'f', 0)
@@ -160,7 +160,7 @@ func ExampleGetBytesTilCharByPath() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetBytesTilCharByPath(tempFile, 'f', 0))
@@ -178,7 +178,7 @@ func ExampleGetBytesByTwoOffsetsByPath() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetBytesByTwoOffsetsByPath(tempFile, 0, 7))
@@ -196,7 +196,7 @@ func ExampleReadLines() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "L1 goframe example content\nL2 goframe example content")
+	gfile.PutContents(tempFile, "L1 goxrc example content\nL2 goxrc example content")
 
 	// read contents
 	gfile.ReadLines(tempFile, func(text string) error {
@@ -206,8 +206,8 @@ func ExampleReadLines() {
 	})
 
 	// Output:
-	// L1 goframe example content
-	// L2 goframe example content
+	// L1 goxrc example content
+	// L2 goxrc example content
 }
 
 func ExampleReadLinesBytes() {
@@ -219,7 +219,7 @@ func ExampleReadLinesBytes() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "L1 goframe example content\nL2 goframe example content")
+	gfile.PutContents(tempFile, "L1 goxrc example content\nL2 goxrc example content")
 
 	// read contents
 	gfile.ReadLinesBytes(tempFile, func(bytes []byte) error {

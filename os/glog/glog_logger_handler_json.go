@@ -3,8 +3,8 @@ package glog
 import (
 	"context"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // HandlerOutputJson is the structure outputting logging content as single json.

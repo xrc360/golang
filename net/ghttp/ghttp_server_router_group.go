@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 type (
@@ -261,7 +261,7 @@ func (g *RouterGroup) Middleware(handlers ...HandlerFunc) *RouterGroup {
 
 // preBindToLocalArray adds the route registering parameters to an internal variable array for lazily registering feature.
 func (g *RouterGroup) preBindToLocalArray(bindType string, pattern string, object interface{}, params ...interface{}) *RouterGroup {
-	_, file, line := gdebug.CallerWithFilter([]string{consts.StackFilterKeyForGoFrame})
+	_, file, line := gdebug.CallerWithFilter([]string{consts.StackFilterKeyForGoXrc})
 	preBindItems = append(preBindItems, &preBindItem{
 		group:    g,
 		bindType: bindType,

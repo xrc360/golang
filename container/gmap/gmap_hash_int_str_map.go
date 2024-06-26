@@ -1,16 +1,10 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with gm file,
-// You can obtain one at https://github.com/gogf/gf.
-
 package gmap
 
 import (
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // IntStrMap implements map[int]string with RWMutex that has switch.

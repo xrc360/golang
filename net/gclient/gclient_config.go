@@ -12,12 +12,12 @@ import (
 
 	"golang.org/x/net/proxy"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/gsel"
-	"github.com/xrc360/golang/net/gsvc"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/gsel"
+	"github.com/xrcn/cg/net/gsvc"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // SetBrowserMode enables browser mode of the client.

@@ -3,7 +3,7 @@ package gredis
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 // Adapter is an interface for universal redis operations.

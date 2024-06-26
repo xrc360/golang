@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcron"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcron"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (

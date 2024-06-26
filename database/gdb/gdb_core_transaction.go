@@ -5,12 +5,12 @@ import (
 	"database/sql"
 	"reflect"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // TXCore is the struct for transaction management.

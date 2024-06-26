@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // GetVar sends a GET request, retrieves and converts the result content to *gvar.Var.

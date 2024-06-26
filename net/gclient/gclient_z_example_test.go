@@ -8,13 +8,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/gclient"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/gclient"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/util/guid"
 )
 
 var (
@@ -695,7 +695,7 @@ func ExampleClient_SetHeader() {
 		url = "http://127.0.0.1:8999"
 	)
 	client := g.Client()
-	client.SetHeader("Server", "GoFrameServer")
+	client.SetHeader("Server", "GoXrcServer")
 	client.SetHeader("Client", "g.Client()")
 
 	fmt.Println(string(client.GetBytes(ctx, url, g.Map{

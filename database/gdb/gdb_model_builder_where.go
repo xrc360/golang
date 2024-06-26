@@ -3,7 +3,7 @@ package gdb
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // doWhereType sets the condition statement for the model. The parameter `where` can be type of

@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/internal/errors"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/internal/errors"
 )
 
 // stackInfo manages stack info of certain error.
@@ -135,8 +135,8 @@ func loopLinesOfStackInfo(st stack, info *stackInfo, isStackModeBrief bool) {
 		if fn := runtime.FuncForPC(p - 1); fn != nil {
 			file, line := fn.FileLine(p - 1)
 			if isStackModeBrief {
-				// filter whole GoFrame packages stack paths.
-				if strings.Contains(file, consts.StackFilterKeyForGoFrame) {
+				// filter whole GoXrc packages stack paths.
+				if strings.Contains(file, consts.StackFilterKeyForGoXrc) {
 					continue
 				}
 			} else {

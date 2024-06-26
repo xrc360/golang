@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/gtcp"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/gtcp"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // MsgRequest is the request structure for process communication.

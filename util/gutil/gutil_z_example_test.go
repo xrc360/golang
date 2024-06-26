@@ -2,8 +2,8 @@ package gutil_test
 
 import (
 	"fmt"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func ExampleSliceInsertBefore() {

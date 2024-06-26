@@ -5,9 +5,9 @@ package gaes_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/crypto/gaes"
-	"github.com/xrc360/golang/encoding/gbase64"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/crypto/gaes"
+	"github.com/xrcn/cg/encoding/gbase64"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (
@@ -18,7 +18,7 @@ var (
 	content_16_iv, _ = gbase64.DecodeString("DqQUXiHgW/XFb6Qs98+hrA==")
 	content_32_iv, _ = gbase64.DecodeString("ZuLgAOii+lrD5KJoQ7yQ8Q==")
 	// iv 长度必须等于blockSize，只能为16
-	iv         = []byte("Hello My GoFrame")
+	iv         = []byte("Hello My GoXrc")
 	key_16     = []byte("1234567891234567")
 	key_17     = []byte("12345678912345670")
 	key_24     = []byte("123456789123456789123456")

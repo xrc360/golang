@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func Test_New(t *testing.T) {

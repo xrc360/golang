@@ -11,11 +11,11 @@ import (
 	sdkTrace "go.opentelemetry.io/otel/sdk/trace"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/tracing"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/tracing"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
 )
 
 type CustomProvider struct {

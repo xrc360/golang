@@ -3,7 +3,7 @@ package gutil
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // ListItemValues retrieves and returns the elements of all item struct/map with key `key`.

@@ -3,9 +3,9 @@ package gstructs
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 // Tag returns the value associated with key in the tag string. If there is no

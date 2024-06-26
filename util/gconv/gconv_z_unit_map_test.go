@@ -5,10 +5,10 @@ import (
 	"gopkg.in/yaml.v3"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func Test_Map_Basic(t *testing.T) {
@@ -31,16 +31,16 @@ func Test_Map_Basic(t *testing.T) {
 		t.Assert(gconv.Map(m3), g.Map{
 			"1.22": "3.1",
 		})
-		t.Assert(gconv.Map(`{"name":"goframe"}`), g.Map{
-			"name": "goframe",
+		t.Assert(gconv.Map(`{"name":"goxrc"}`), g.Map{
+			"name": "goxrc",
 		})
-		t.Assert(gconv.Map(`{"name":"goframe"`), nil)
-		t.Assert(gconv.Map(`{goframe}`), nil)
-		t.Assert(gconv.Map([]byte(`{"name":"goframe"}`)), g.Map{
-			"name": "goframe",
+		t.Assert(gconv.Map(`{"name":"goxrc"`), nil)
+		t.Assert(gconv.Map(`{goxrc}`), nil)
+		t.Assert(gconv.Map([]byte(`{"name":"goxrc"}`)), g.Map{
+			"name": "goxrc",
 		})
-		t.Assert(gconv.Map([]byte(`{"name":"goframe"`)), nil)
-		t.Assert(gconv.Map([]byte(`{goframe}`)), nil)
+		t.Assert(gconv.Map([]byte(`{"name":"goxrc"`)), nil)
+		t.Assert(gconv.Map([]byte(`{goxrc}`)), nil)
 	})
 }
 
@@ -147,7 +147,7 @@ func Test_Map_StructWithGConvTag(t *testing.T) {
 		user1 := User{
 			Uid:     100,
 			Name:    "john",
-			SiteUrl: "https://goframe.org",
+			SiteUrl: "https://goxrc.org",
 			Pass1:   "123",
 			Pass2:   "456",
 		}
@@ -185,7 +185,7 @@ func Test_Map_StructWithJsonTag(t *testing.T) {
 		user1 := User{
 			Uid:     100,
 			Name:    "john",
-			SiteUrl: "https://goframe.org",
+			SiteUrl: "https://goxrc.org",
 			Pass1:   "123",
 			Pass2:   "456",
 		}
@@ -223,7 +223,7 @@ func Test_Map_StructWithCTag(t *testing.T) {
 		user1 := User{
 			Uid:     100,
 			Name:    "john",
-			SiteUrl: "https://goframe.org",
+			SiteUrl: "https://goxrc.org",
 			Pass1:   "123",
 			Pass2:   "456",
 		}

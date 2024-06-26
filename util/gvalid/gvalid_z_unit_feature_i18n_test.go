@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 func TestValidator_I18n(t *testing.T) {

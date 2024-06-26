@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // Session struct for storing single session data, which is bound to a single request.

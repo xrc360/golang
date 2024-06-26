@@ -3,8 +3,8 @@ package instance_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_SetGet(t *testing.T) {

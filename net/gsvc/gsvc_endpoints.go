@@ -2,7 +2,7 @@
 package gsvc
 
 import (
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // NewEndpoints creates and returns Endpoints from multiple addresses like:

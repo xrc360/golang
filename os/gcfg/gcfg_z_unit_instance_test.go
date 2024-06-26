@@ -6,10 +6,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/os/genv"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/os/genv"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (
@@ -48,7 +48,7 @@ v4 = "1.234"
 
 func Test_Instance_AutoLocateConfigFile(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		t.Assert(Instance("gf") != nil, true)
+		t.Assert(Instance("cg") != nil, true)
 	})
 	// Automatically locate the configuration file with supported file extensions.
 	gtest.C(t, func(t *gtest.T) {
@@ -75,16 +75,16 @@ func Test_Instance_AutoLocateConfigFile(t *testing.T) {
 		t.Assert(Instance().MustGet(ctx, "my-config"), 1)
 
 		localInstances.Clear()
-		t.AssertNil(genv.Set("GF_GCFG_FILE", "config.json"))
-		defer genv.Set("GF_GCFG_FILE", "")
+		t.AssertNil(genv.Set("CG_GCFG_FILE", "config.json"))
+		defer genv.Set("CG_GCFG_FILE", "")
 		t.Assert(Instance().MustGet(ctx, "my-config"), 2)
 	})
 }
 
 func Test_Instance_EnvPath(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		genv.Set("GF_GCFG_PATH", gtest.DataPath("envpath"))
-		defer genv.Set("GF_GCFG_PATH", "")
+		genv.Set("CG_GCFG_PATH", gtest.DataPath("envpath"))
+		defer genv.Set("CG_GCFG_PATH", "")
 		t.Assert(Instance("c3") != nil, true)
 		t.Assert(Instance("c3").MustGet(ctx, "my-config"), "3")
 		t.Assert(Instance("c4").MustGet(ctx, "my-config"), "4")
@@ -94,10 +94,10 @@ func Test_Instance_EnvPath(t *testing.T) {
 
 func Test_Instance_EnvFile(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		genv.Set("GF_GCFG_PATH", gtest.DataPath("envfile"))
-		defer genv.Set("GF_GCFG_PATH", "")
-		genv.Set("GF_GCFG_FILE", "c6.json")
-		defer genv.Set("GF_GCFG_FILE", "")
+		genv.Set("CG_GCFG_PATH", gtest.DataPath("envfile"))
+		defer genv.Set("CG_GCFG_PATH", "")
+		genv.Set("CG_GCFG_FILE", "c6.json")
+		defer genv.Set("CG_GCFG_FILE", "")
 		t.Assert(Instance().MustGet(ctx, "my-config"), "6")
 		localInstances = gmap.NewStrAnyMap(true)
 	})

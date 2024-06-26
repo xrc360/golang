@@ -1,18 +1,12 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with gm file,
-// You can obtain one at https://github.com/gogf/gf.
-
 package gtree_test
 
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gtree"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gtree"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func ExampleAVLTree_Clone() {

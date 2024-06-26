@@ -5,5 +5,5 @@
 // https://www.jsdelivr.com/package/npm/redoc
 //
 // Pack command:
-// gf pack redoc.standalone.js swaggerui-redoc.go -n=swaggerui -p=/goframe/swaggerui
+// cg pack redoc.standalone.js swaggerui-redoc.go -n=swaggerui -p=/goxrc/swaggerui
 package swaggerui

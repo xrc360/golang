@@ -3,7 +3,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/xrc360/golang/net/gipv4"
+	"github.com/xrcn/cg/net/gipv4"
 )
 
 // RuleIpv4 implements `ipv4` rule:

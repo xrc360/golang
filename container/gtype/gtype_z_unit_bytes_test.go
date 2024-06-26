@@ -3,10 +3,10 @@ package gtype_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func Test_Bytes(t *testing.T) {
@@ -34,7 +34,7 @@ func Test_Bytes(t *testing.T) {
 
 func Test_Bytes_JSON(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		b := []byte("i love gf")
+		b := []byte("i love cg")
 		i := gtype.NewBytes(b)
 		b1, err1 := json.Marshal(i)
 		b2, err2 := json.Marshal(i.Val())

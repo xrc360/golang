@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 type adapterMemoryData struct {

@@ -3,9 +3,9 @@ package gutil_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func Test_MapCopy(t *testing.T) {

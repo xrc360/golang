@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 // Func is the cache function that calculates and returns the value.

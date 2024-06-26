@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gproc"
-	"github.com/xrc360/golang/os/gtimer"
-	"github.com/xrc360/golang/os/gview"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gproc"
+	"github.com/xrcn/cg/os/gtimer"
+	"github.com/xrcn/cg/os/gview"
 )
 
 // utilAdmin is the controller for administration.
@@ -25,7 +25,7 @@ func (p *utilAdmin) Index(r *Request) {
 	buffer, _ := gview.ParseContent(r.Context(), `
             <html>
             <head>
-                <title>GoFrame Web Server Admin</title>
+                <title>GoXrc Web Server Admin</title>
             </head>
             <body>
                 <p>Pid: {{.pid}}</p>

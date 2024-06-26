@@ -4,12 +4,12 @@ Powerful database drivers for package gdb.
 # Installation
 Let's take `mysql` for example.
 ```
-go get -u github.com/gogf/gf/contrib/drivers/mysql/v2
+go get -u github.com/xrcn/cg/contrib/drivers/mysql/v2
 ```
 
 Choose and import the driver to your project:
 ```
-import _ "github.com/gogf/gf/contrib/drivers/mysql/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/mysql/v2"
 ```
 
 Commonly imported at top of `main.go`:
@@ -17,7 +17,7 @@ Commonly imported at top of `main.go`:
 package main
 
 import (
-	_ "github.com/gogf/gf/contrib/drivers/mysql/v2"
+	_ "github.com/xrcn/cg/contrib/drivers/mysql/v2"
 
 	// Other imported packages.
 )
@@ -32,19 +32,19 @@ func main() {
 ## MySQL/MariaDB/TiDB
 
 ```
-import _ "github.com/gogf/gf/contrib/drivers/mysql/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/mysql/v2"
 ```
 
 ## SQLite
 ```
-import _ "github.com/gogf/gf/contrib/drivers/sqlite/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/sqlite/v2"
 ```
 Note:
 - It does not support `Save` features.
 
 ## PostgreSQL
 ```
-import _ "github.com/gogf/gf/contrib/drivers/pgsql/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/pgsql/v2"
 ```
 Note:
 - It does not support `Save/Replace` features.
@@ -52,7 +52,7 @@ Note:
 
 ## SQL Server
 ```
-import _ "github.com/gogf/gf/contrib/drivers/mssql/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/mssql/v2"
 ```
 Note:
 - It does not support `Save/Replace` features.
@@ -62,7 +62,7 @@ Note:
 
 ## Oracle
 ```
-import _ "github.com/gogf/gf/contrib/drivers/oracle/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/oracle/v2"
 ```
 Note:
 - It does not support `Save/Replace` features.
@@ -70,7 +70,7 @@ Note:
 
 ## ClickHouse
 ```
-import _ "github.com/gogf/gf/contrib/drivers/clickhouse/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/clickhouse/v2"
 ```
 Note:
 - It does not support `InsertIgnore/InsertGetId` features.
@@ -80,7 +80,7 @@ Note:
 
 ## DM
 ```
-import _ "github.com/gogf/gf/contrib/drivers/dm/v2"
+import _ "github.com/xrcn/cg/contrib/drivers/dm/v2"
 ```
 Note:
 - It does not support `Replace` features.

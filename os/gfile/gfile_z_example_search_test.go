@@ -3,7 +3,7 @@ package gfile_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleSearch() {
@@ -15,7 +15,7 @@ func ExampleSearch() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// search file
 	realPath, _ := gfile.Search(fileName, tempDir)

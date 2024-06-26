@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // RuleMax implements `max` rule:

@@ -3,13 +3,13 @@ package gstr_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func ExampleCount() {
 	var (
-		str     = `goframe is very, very easy to use`
-		substr1 = "goframe"
+		str     = `goxrc is very, very easy to use`
+		substr1 = "goxrc"
 		substr2 = "very"
 		result1 = gstr.Count(str, substr1)
 		result2 = gstr.Count(str, substr2)
@@ -24,8 +24,8 @@ func ExampleCount() {
 
 func ExampleCountI() {
 	var (
-		str     = `goframe is very, very easy to use`
-		substr1 = "GOFRAME"
+		str     = `goxrc is very, very easy to use`
+		substr1 = "goxrc"
 		substr2 = "VERY"
 		result1 = gstr.CountI(str, substr1)
 		result2 = gstr.CountI(str, substr2)
@@ -40,24 +40,24 @@ func ExampleCountI() {
 
 func ExampleToLower() {
 	var (
-		s      = `GOFRAME`
+		s      = `goxrc`
 		result = gstr.ToLower(s)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe
+	// goxrc
 }
 
 func ExampleToUpper() {
 	var (
-		s      = `goframe`
+		s      = `goxrc`
 		result = gstr.ToUpper(s)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// GOFRAME
+	// goxrc
 }
 
 func ExampleUcFirst() {
@@ -73,13 +73,13 @@ func ExampleUcFirst() {
 
 func ExampleLcFirst() {
 	var (
-		str    = `Goframe`
+		str    = `goxrc`
 		result = gstr.LcFirst(str)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe
+	// goxrc
 }
 
 func ExampleUcWords() {
@@ -206,8 +206,8 @@ func ExampleHasPrefix() {
 
 func ExampleHasSuffix() {
 	var (
-		s      = `my best love is goframe`
-		prefix = "goframe"
+		s      = `my best love is goxrc`
+		prefix = "goxrc"
 		result = gstr.HasSuffix(s, prefix)
 	)
 	fmt.Println(result)
@@ -218,18 +218,18 @@ func ExampleHasSuffix() {
 
 func ExampleCountWords() {
 	var (
-		str    = `goframe is very, very easy to use!`
+		str    = `goxrc is very, very easy to use!`
 		result = gstr.CountWords(str)
 	)
 	fmt.Printf(`%#v`, result)
 
 	// Output:
-	// map[string]int{"easy":1, "goframe":1, "is":1, "to":1, "use!":1, "very":1, "very,":1}
+	// map[string]int{"easy":1, "goxrc":1, "is":1, "to":1, "use!":1, "very":1, "very,":1}
 }
 
 func ExampleCountChars() {
 	var (
-		str    = `goframe`
+		str    = `goxrc`
 		result = gstr.CountChars(str)
 	)
 	fmt.Println(result)
@@ -271,7 +271,7 @@ func ExampleWordWrap() {
 
 func ExampleLenRune() {
 	var (
-		str    = `GoFrame框架`
+		str    = `GoXrc框架`
 		result = gstr.LenRune(str)
 	)
 	fmt.Println(result)
@@ -282,14 +282,14 @@ func ExampleLenRune() {
 
 func ExampleRepeat() {
 	var (
-		input      = `goframe `
+		input      = `goxrc `
 		multiplier = 3
 		result     = gstr.Repeat(input, multiplier)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe goframe goframe
+	// goxrc goxrc goxrc
 }
 
 func ExampleShuffle() {
@@ -329,14 +329,14 @@ func ExampleSplitAndTrim() {
 
 func ExampleJoin() {
 	var (
-		array  = []string{"goframe", "is", "very", "easy", "to", "use"}
+		array  = []string{"goxrc", "is", "very", "easy", "to", "use"}
 		sep    = ` `
 		result = gstr.Join(array, sep)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe is very easy to use
+	// goxrc is very easy to use
 }
 
 func ExampleJoinAny() {
@@ -365,14 +365,14 @@ func ExampleExplode() {
 
 func ExampleImplode() {
 	var (
-		pieces = []string{"goframe", "is", "very", "easy", "to", "use"}
+		pieces = []string{"goxrc", "is", "very", "easy", "to", "use"}
 		glue   = " "
 		result = gstr.Implode(glue, pieces)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe is very easy to use
+	// goxrc is very easy to use
 }
 
 func ExampleChr() {
@@ -389,7 +389,7 @@ func ExampleChr() {
 // '103' is the 'g' in ASCII
 func ExampleOrd() {
 	var (
-		str    = `goframe`
+		str    = `goxrc`
 		result = gstr.Ord(str)
 	)
 
@@ -414,7 +414,7 @@ func ExampleHideStr() {
 
 func ExampleNl2Br() {
 	var (
-		str = `goframe
+		str = `goxrc
 is
 very
 easy
@@ -426,7 +426,7 @@ use`
 	fmt.Println(result)
 
 	// Output:
-	// goframe<br>is<br>very<br>easy<br>to<br>use
+	// goxrc<br>is<br>very<br>easy<br>to<br>use
 }
 
 func ExampleAddSlashes() {
@@ -443,13 +443,13 @@ func ExampleAddSlashes() {
 
 func ExampleStripSlashes() {
 	var (
-		str    = `C:\\windows\\GoFrame\\test`
+		str    = `C:\\windows\\GoXrc\\test`
 		result = gstr.StripSlashes(str)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// C:\windows\GoFrame\test
+	// C:\windows\GoXrc\test
 }
 
 func ExampleQuoteMeta() {
@@ -462,7 +462,7 @@ func ExampleQuoteMeta() {
 	}
 	{
 		var (
-			str    = `https://goframe.org/pages/viewpage.action?pageId=1114327`
+			str    = `https://goxrc.org/pages/viewpage.action?pageId=1114327`
 			result = gstr.QuoteMeta(str)
 		)
 		fmt.Println(result)
@@ -470,15 +470,15 @@ func ExampleQuoteMeta() {
 
 	// Output:
 	// \.\\\+\?\[\^\]\(\)
-	// https://goframe\.org/pages/viewpage\.action\?pageId=1114327
+	// https://goxrc\.org/pages/viewpage\.action\?pageId=1114327
 
 }
 
 // array
 func ExampleSearchArray() {
 	var (
-		array  = []string{"goframe", "is", "very", "nice"}
-		str    = `goframe`
+		array  = []string{"goxrc", "is", "very", "nice"}
+		str    = `goxrc`
 		result = gstr.SearchArray(array, str)
 	)
 	fmt.Println(result)
@@ -489,8 +489,8 @@ func ExampleSearchArray() {
 
 func ExampleInArray() {
 	var (
-		a      = []string{"goframe", "is", "very", "easy", "to", "use"}
-		s      = "goframe"
+		a      = []string{"goxrc", "is", "very", "easy", "to", "use"}
+		s      = "goxrc"
 		result = gstr.InArray(a, s)
 	)
 	fmt.Println(result)
@@ -667,7 +667,7 @@ func ExampleContainsI() {
 func ExampleContainsAny() {
 	{
 		var (
-			s      = `goframe`
+			s      = `goxrc`
 			chars  = "g"
 			result = gstr.ContainsAny(s, chars)
 		)
@@ -675,7 +675,7 @@ func ExampleContainsAny() {
 	}
 	{
 		var (
-			s      = `goframe`
+			s      = `goxrc`
 			chars  = "G"
 			result = gstr.ContainsAny(s, chars)
 		)
@@ -702,8 +702,8 @@ func ExampleOctStr() {
 // domain
 func ExampleIsSubDomain() {
 	var (
-		subDomain  = `s.goframe.org`
-		mainDomain = `goframe.org`
+		subDomain  = `s.goxrc.org`
+		mainDomain = `goxrc.org`
 		result     = gstr.IsSubDomain(subDomain, mainDomain)
 	)
 	fmt.Println(result)
@@ -794,7 +794,7 @@ func ExamplePos() {
 
 func ExamplePosRune() {
 	var (
-		haystack = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架`
+		haystack = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架`
 		needle   = `Go`
 		posI     = gstr.PosRune(haystack, needle)
 		posR     = gstr.PosRRune(haystack, needle)
@@ -809,7 +809,7 @@ func ExamplePosRune() {
 
 func ExamplePosI() {
 	var (
-		haystack = `goframe is very, very easy to use`
+		haystack = `goxrc is very, very easy to use`
 		needle   = `very`
 		posI     = gstr.PosI(haystack, needle)
 		posR     = gstr.PosR(haystack, needle)
@@ -825,7 +825,7 @@ func ExamplePosI() {
 func ExamplePosIRune() {
 	{
 		var (
-			haystack    = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架`
+			haystack    = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架`
 			needle      = `高性能`
 			startOffset = 10
 			result      = gstr.PosIRune(haystack, needle, startOffset)
@@ -834,7 +834,7 @@ func ExamplePosIRune() {
 	}
 	{
 		var (
-			haystack    = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架`
+			haystack    = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架`
 			needle      = `高性能`
 			startOffset = 30
 			result      = gstr.PosIRune(haystack, needle, startOffset)
@@ -849,7 +849,7 @@ func ExamplePosIRune() {
 
 func ExamplePosR() {
 	var (
-		haystack = `goframe is very, very easy to use`
+		haystack = `goxrc is very, very easy to use`
 		needle   = `very`
 		posI     = gstr.PosI(haystack, needle)
 		posR     = gstr.PosR(haystack, needle)
@@ -864,7 +864,7 @@ func ExamplePosR() {
 
 func ExamplePosRRune() {
 	var (
-		haystack = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架`
+		haystack = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架`
 		needle   = `Go`
 		posI     = gstr.PosIRune(haystack, needle)
 		posR     = gstr.PosRRune(haystack, needle)
@@ -879,7 +879,7 @@ func ExamplePosRRune() {
 
 func ExamplePosRI() {
 	var (
-		haystack = `goframe is very, very easy to use`
+		haystack = `goxrc is very, very easy to use`
 		needle   = `VERY`
 		posI     = gstr.PosI(haystack, needle)
 		posR     = gstr.PosRI(haystack, needle)
@@ -894,7 +894,7 @@ func ExamplePosRI() {
 
 func ExamplePosRIRune() {
 	var (
-		haystack = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架`
+		haystack = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架`
 		needle   = `GO`
 		posI     = gstr.PosIRune(haystack, needle)
 		posR     = gstr.PosRIRune(haystack, needle)
@@ -912,26 +912,26 @@ func ExampleReplace() {
 	var (
 		origin  = `golang is very nice!`
 		search  = `golang`
-		replace = `goframe`
+		replace = `goxrc`
 		result  = gstr.Replace(origin, search, replace)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe is very nice!
+	// goxrc is very nice!
 }
 
 func ExampleReplaceI() {
 	var (
 		origin  = `golang is very nice!`
 		search  = `GOLANG`
-		replace = `goframe`
+		replace = `goxrc`
 		result  = gstr.ReplaceI(origin, search, replace)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// goframe is very nice!
+	// goxrc is very nice!
 }
 
 func ExampleReplaceByArray() {
@@ -946,28 +946,28 @@ func ExampleReplaceByArray() {
 	{
 		var (
 			origin = `golang is very good`
-			array  = []string{"golang", "goframe", "good", "nice"}
+			array  = []string{"golang", "goxrc", "good", "nice"}
 			result = gstr.ReplaceByArray(origin, array)
 		)
 		fmt.Println(result)
 	}
 
 	// Output:
-	// goframe is very nice
-	// goframe is very nice
+	// goxrc is very nice
+	// goxrc is very nice
 }
 
 func ExampleReplaceIByArray() {
 	var (
 		origin = `golang is very Good`
-		array  = []string{"Golang", "goframe", "GOOD", "nice"}
+		array  = []string{"Golang", "goxrc", "GOOD", "nice"}
 		result = gstr.ReplaceIByArray(origin, array)
 	)
 
 	fmt.Println(result)
 
 	// Output:
-	// goframe is very nice
+	// goxrc is very nice
 }
 
 func ExampleReplaceByMap() {
@@ -985,7 +985,7 @@ func ExampleReplaceByMap() {
 		var (
 			origin   = `golang is very good`
 			replaces = map[string]string{
-				"golang": "goframe",
+				"golang": "goxrc",
 				"good":   "nice",
 			}
 			result = gstr.ReplaceByMap(origin, replaces)
@@ -994,8 +994,8 @@ func ExampleReplaceByMap() {
 	}
 
 	// Output:
-	// goframe is very nice
-	// goframe is very nice
+	// goxrc is very nice
+	// goxrc is very nice
 }
 
 func ExampleReplaceIByMap() {
@@ -1009,7 +1009,7 @@ func ExampleReplaceIByMap() {
 	fmt.Println(result)
 
 	// Output:
-	// goframe is very nice
+	// goxrc is very nice
 }
 
 // similartext
@@ -1055,7 +1055,7 @@ func ExampleStr() {
 
 func ExampleStrEx() {
 	var (
-		haystack = `https://goframe.org/index.html?a=1&b=2`
+		haystack = `https://goxrc.org/index.html?a=1&b=2`
 		needle   = `?`
 		result   = gstr.StrEx(haystack, needle)
 	)
@@ -1067,26 +1067,26 @@ func ExampleStrEx() {
 
 func ExampleStrTill() {
 	var (
-		haystack = `https://goframe.org/index.html?test=123456`
+		haystack = `https://goxrc.org/index.html?test=123456`
 		needle   = `?`
 		result   = gstr.StrTill(haystack, needle)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// https://goframe.org/index.html?
+	// https://goxrc.org/index.html?
 }
 
 func ExampleStrTillEx() {
 	var (
-		haystack = `https://goframe.org/index.html?test=123456`
+		haystack = `https://goxrc.org/index.html?test=123456`
 		needle   = `?`
 		result   = gstr.StrTillEx(haystack, needle)
 	)
 	fmt.Println(result)
 
 	// Output:
-	// https://goframe.org/index.html
+	// https://goxrc.org/index.html
 }
 
 // substr
@@ -1105,7 +1105,7 @@ func ExampleSubStr() {
 
 func ExampleSubStrRune() {
 	var (
-		str    = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架。`
+		str    = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架。`
 		start  = 14
 		length = 3
 		subStr = gstr.SubStrRune(str, start, length)
@@ -1131,7 +1131,7 @@ func ExampleStrLimit() {
 
 func ExampleStrLimitRune() {
 	var (
-		str    = `GoFrame是一款模块化、高性能、企业级的Go基础开发框架。`
+		str    = `GoXrc是一款模块化、高性能、企业级的Go基础开发框架。`
 		length = 17
 		suffix = "..."
 		result = gstr.StrLimitRune(str, length, suffix)
@@ -1139,36 +1139,36 @@ func ExampleStrLimitRune() {
 	fmt.Println(result)
 
 	// Output:
-	// GoFrame是一款模块化、高性能...
+	// GoXrc是一款模块化、高性能...
 }
 
 func ExampleSubStrFrom() {
 	var (
-		str  = "我爱GoFrameGood"
+		str  = "我爱GoXrcGood"
 		need = `爱`
 	)
 
 	fmt.Println(gstr.SubStrFrom(str, need))
 
 	// Output:
-	// 爱GoFrameGood
+	// 爱GoXrcGood
 }
 
 func ExampleSubStrFromEx() {
 	var (
-		str  = "我爱GoFrameGood"
+		str  = "我爱GoXrcGood"
 		need = `爱`
 	)
 
 	fmt.Println(gstr.SubStrFromEx(str, need))
 
 	// Output:
-	// GoFrameGood
+	// GoXrcGood
 }
 
 func ExampleSubStrFromR() {
 	var (
-		str  = "我爱GoFrameGood"
+		str  = "我爱GoXrcGood"
 		need = `Go`
 	)
 
@@ -1180,7 +1180,7 @@ func ExampleSubStrFromR() {
 
 func ExampleSubStrFromREx() {
 	var (
-		str  = "我爱GoFrameGood"
+		str  = "我爱GoXrcGood"
 		need = `Go`
 	)
 

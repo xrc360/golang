@@ -1,7 +1,7 @@
 package gvar
 
 import (
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // ListItemValues retrieves and returns the elements of all item struct/map with key `key`.

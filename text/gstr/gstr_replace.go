@@ -3,7 +3,7 @@ package gstr
 import (
 	"strings"
 
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // Replace returns a copy of the string `origin`

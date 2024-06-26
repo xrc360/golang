@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 // CustomMsg is the custom error message type,
@@ -37,7 +37,7 @@ const (
 	internalObjectErrRuleName = "InvalidObject"       // rule name for internal invalid object validation error.
 	internalErrorMapKey       = "__InternalError__"   // error map key for internal errors.
 	internalDefaultRuleName   = "__default__"         // default rule name for i18n error message format if no i18n message found for specified error rule.
-	ruleMessagePrefixForI18n  = "gf.gvalid.rule."     // prefix string for each rule configuration in i18n content.
+	ruleMessagePrefixForI18n  = "cg.gvalid.rule."     // prefix string for each rule configuration in i18n content.
 	noValidationTagName       = gtag.NoValidation     // no validation tag name for struct attribute.
 	ruleNameRegex             = "regex"               // the name for rule "regex"
 	ruleNameNotRegex          = "not-regex"           // the name for rule "not-regex"

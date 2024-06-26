@@ -3,8 +3,8 @@ package gdb_test
 import (
 	"context"
 
-	"github.com/xrc360/golang/database/gdb"
-	"github.com/xrc360/golang/frame/g"
+	"github.com/xrcn/cg/database/gdb"
+	"github.com/xrcn/cg/frame/g"
 )
 
 func ExampleTransaction() {

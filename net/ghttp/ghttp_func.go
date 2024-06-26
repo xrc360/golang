@@ -1,10 +1,10 @@
 package ghttp
 
 import (
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/httputil"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/httputil"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // SupportedMethods returns all supported HTTP methods.

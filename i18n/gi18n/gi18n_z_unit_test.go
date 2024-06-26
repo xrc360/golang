@@ -3,20 +3,20 @@ package gi18n_test
 import (
 	"time"
 
-	"github.com/xrc360/golang/encoding/gbase64"
-	"github.com/xrc360/golang/os/gctx"
+	"github.com/xrcn/cg/encoding/gbase64"
+	"github.com/xrcn/cg/os/gctx"
 
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func Test_Basic(t *testing.T) {
@@ -238,11 +238,11 @@ func Test_PathInNormal(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		i18n.SetLanguage("en")
 		t.Assert(i18n.T(context.Background(), "{#hello}{#world}{#name}"), "HelloWorld{#name}")
-		err := gfile.PutContentsAppend(gfile.Join(gdebug.CallerDirectory(), "manifest/i18n/en.toml"), "\nname = \"GoFrame\"")
+		err := gfile.PutContentsAppend(gfile.Join(gdebug.CallerDirectory(), "manifest/i18n/en.toml"), "\nname = \"GoXrc\"")
 		t.Assert(err, nil)
 		// Wait for the file modification time to change.
 		time.Sleep(10 * time.Millisecond)
-		t.Assert(i18n.T(context.Background(), "{#hello}{#world}{#name}"), "HelloWorldGoFrame")
+		t.Assert(i18n.T(context.Background(), "{#hello}{#world}{#name}"), "HelloWorldGoXrc")
 	})
 
 	// Add new language

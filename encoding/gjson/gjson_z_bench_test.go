@@ -4,7 +4,7 @@ import (
 	json2 "encoding/json"
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gjson"
 )
 
 var (

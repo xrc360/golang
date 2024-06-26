@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/genv"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/genv"
 )
 
 func ExampleConfig_GetWithEnv() {
@@ -21,7 +21,7 @@ func ExampleConfig_GetWithEnv() {
 		panic(err)
 	}
 	fmt.Printf("env:%s\n", v)
-	if err = genv.Set(key, "gf"); err != nil {
+	if err = genv.Set(key, "cg"); err != nil {
 		panic(err)
 	}
 	v, err = g.Cfg().GetWithEnv(ctx, key)
@@ -32,7 +32,7 @@ func ExampleConfig_GetWithEnv() {
 
 	// Output:
 	// env:
-	// env:gf
+	// env:cg
 }
 
 func ExampleConfig_GetWithCmd() {

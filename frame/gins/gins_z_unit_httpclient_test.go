@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xrc360/golang/frame/gins"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/gins"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Client(t *testing.T) {

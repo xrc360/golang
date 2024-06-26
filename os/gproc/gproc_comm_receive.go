@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/xrc360/golang/container/gqueue"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/net/gtcp"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gqueue"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/net/gtcp"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 var (

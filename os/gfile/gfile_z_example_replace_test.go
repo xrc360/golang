@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleReplaceFile() {
@@ -16,7 +16,7 @@ func ExampleReplaceFile() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
@@ -27,8 +27,8 @@ func ExampleReplaceFile() {
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
-	// goframe example replace word
+	// goxrc example content
+	// goxrc example replace word
 }
 
 func ExampleReplaceFileFunc() {
@@ -40,7 +40,7 @@ func ExampleReplaceFileFunc() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example 123")
+	gfile.PutContents(tempFile, "goxrc example 123")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
@@ -55,8 +55,8 @@ func ExampleReplaceFileFunc() {
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example 123
-	// goframe example [num]
+	// goxrc example 123
+	// goxrc example [num]
 }
 
 func ExampleReplaceDir() {
@@ -68,7 +68,7 @@ func ExampleReplaceDir() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
@@ -80,8 +80,8 @@ func ExampleReplaceDir() {
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example content
-	// goframe example replace word
+	// goxrc example content
+	// goxrc example replace word
 }
 
 func ExampleReplaceDirFunc() {
@@ -93,7 +93,7 @@ func ExampleReplaceDirFunc() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example 123")
+	gfile.PutContents(tempFile, "goxrc example 123")
 
 	// read contents
 	fmt.Println(gfile.GetContents(tempFile))
@@ -108,7 +108,7 @@ func ExampleReplaceDirFunc() {
 	fmt.Println(gfile.GetContents(tempFile))
 
 	// Output:
-	// goframe example 123
-	// goframe example [num]
+	// goxrc example 123
+	// goxrc example [num]
 
 }

@@ -5,9 +5,9 @@ package gcfg_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestAdapterFile_Dump(t *testing.T) {
@@ -120,8 +120,8 @@ func TestAdapterFile_Content(t *testing.T) {
 		c, err := gcfg.NewAdapterFile()
 		t.AssertNil(err)
 
-		c.SetContent("gf", "config.yml")
-		t.Assert(c.GetContent("config.yml"), "gf")
+		c.SetContent("cg", "config.yml")
+		t.Assert(c.GetContent("config.yml"), "cg")
 		c.SetContent("gf1", "config.yml")
 		t.Assert(c.GetContent("config.yml"), "gf1")
 		c.RemoveContent("config.yml")

@@ -3,10 +3,10 @@ package ghttp
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // handleAccessLog handles the access logging for server.

@@ -3,9 +3,9 @@ package builtin
 import (
 	"errors"
 
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // RuleAfter implements `after` rule:

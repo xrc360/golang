@@ -6,22 +6,22 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	xrc_golang "github.com/xrc360/golang"
+	"github.com/xrcn/cg"
 	"os"
 
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/genv"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/genv"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Run calls custom function that bound to this command.
@@ -121,7 +121,7 @@ func (c *Command) doRun(ctx context.Context, parser *Parser) (value interface{},
 		span trace.Span
 		tr   = otel.GetTracerProvider().Tracer(
 			tracingInstrumentName,
-			trace.WithInstrumentationVersion(xrc_golang.VERSION),
+			trace.WithInstrumentationVersion(cg.VERSION),
 		)
 	)
 	ctx, span = tr.Start(

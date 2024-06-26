@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 var (
@@ -687,9 +687,9 @@ func Test_Domain(t *testing.T) {
 			"www.360.com":   true,
 			"www.360":       false,
 			"360":           false,
-			"my-gf":         false,
-			"my-gf.com":     true,
-			"my-gf.360.com": true,
+			"my-cg":         false,
+			"my-cg.com":     true,
+			"my-cg.360.com": true,
 		}
 		var err error
 		for k, v := range m {
@@ -1109,7 +1109,7 @@ func Test_Not_Regex(t *testing.T) {
 	})
 }
 
-// issue: https://github.com/gogf/gf/issues/1077
+// issue: 1077
 func Test_InternalError_String(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type a struct {
@@ -1566,7 +1566,7 @@ func Test_Enums(t *testing.T) {
 		t.AssertNil(err)
 		defer t.AssertNil(gtag.SetGlobalEnums(oldEnumsJson))
 
-		err = gtag.SetGlobalEnums(`{"github.com/xrc360/golang/util/gvalid_test.EnumsTest": ["a","b"]}`)
+		err = gtag.SetGlobalEnums(`{"github.com/xrcn/cg/util/gvalid_test.EnumsTest": ["a","b"]}`)
 		t.AssertNil(err)
 
 		err = g.Validator().Data(&Params{

@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/gins"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/gins"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Database(t *testing.T) {

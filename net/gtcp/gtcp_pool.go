@@ -3,8 +3,8 @@ package gtcp
 import (
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gpool"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gpool"
 )
 
 // PoolConn is a connection with pool feature for TCP.

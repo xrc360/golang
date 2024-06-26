@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // iString is used for type assert api for String().

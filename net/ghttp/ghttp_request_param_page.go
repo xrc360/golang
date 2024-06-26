@@ -3,9 +3,9 @@ package ghttp
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gpage"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gpage"
 )
 
 // GetPage creates and returns the pagination object for given `totalSize` and `pageSize`.

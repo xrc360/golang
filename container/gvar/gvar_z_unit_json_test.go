@@ -4,15 +4,15 @@ import (
 	"math"
 	"testing"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestVar_Json(t *testing.T) {
 	// Marshal
 	gtest.C(t, func(t *gtest.T) {
-		s := "i love gf"
+		s := "i love cg"
 		v := gvar.New(s)
 		b1, err1 := json.Marshal(v)
 		b2, err2 := json.Marshal(s)
@@ -31,7 +31,7 @@ func TestVar_Json(t *testing.T) {
 
 	// Unmarshal
 	gtest.C(t, func(t *gtest.T) {
-		s := "i love gf"
+		s := "i love cg"
 		v := gvar.New(nil)
 		b, err := json.Marshal(s)
 		t.AssertNil(err)
@@ -43,7 +43,7 @@ func TestVar_Json(t *testing.T) {
 
 	gtest.C(t, func(t *gtest.T) {
 		var v gvar.Var
-		s := "i love gf"
+		s := "i love cg"
 		b, err := json.Marshal(s)
 		t.AssertNil(err)
 

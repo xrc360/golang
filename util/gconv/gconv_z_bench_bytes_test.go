@@ -6,7 +6,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/xrc360/golang/encoding/gbinary"
+	"github.com/xrcn/cg/encoding/gbinary"
 )
 
 var valueBytes = gbinary.Encode(123456789)

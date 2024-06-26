@@ -4,8 +4,8 @@
 package instance
 
 import (
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/encoding/ghash"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/encoding/ghash"
 )
 
 const (

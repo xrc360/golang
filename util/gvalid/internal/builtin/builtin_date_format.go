@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 // RuleDateFormat implements `date-format` rule:

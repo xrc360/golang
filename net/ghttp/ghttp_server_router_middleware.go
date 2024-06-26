@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/xrc360/golang/debug/gdebug"
+	"github.com/xrcn/cg/debug/gdebug"
 )
 
 const (

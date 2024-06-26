@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 var (

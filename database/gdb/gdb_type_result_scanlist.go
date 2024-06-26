@@ -4,12 +4,12 @@ import (
 	"database/sql"
 	"reflect"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // ScanList converts `r` to struct slice which contains other complex struct attributes.

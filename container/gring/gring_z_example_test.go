@@ -3,7 +3,7 @@ package gring_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gring"
+	"github.com/xrcn/cg/container/gring"
 )
 
 func ExampleNew() {
@@ -21,12 +21,12 @@ func ExampleRing_Val() {
 	r.Set(1)
 	fmt.Println("Val:", r.Val())
 
-	r.Next().Set("GoFrame")
+	r.Next().Set("GoXrc")
 	fmt.Println("Val:", r.Val())
 
 	// Output:
 	// Val: 1
-	// Val: GoFrame
+	// Val: GoXrc
 }
 
 func ExampleRing_Len() {
@@ -70,12 +70,12 @@ func ExampleRing_Set() {
 	r.Set(1)
 	fmt.Println("Val:", r.Val())
 
-	r.Next().Set("GoFrame")
+	r.Next().Set("GoXrc")
 	fmt.Println("Val:", r.Val())
 
 	// Output:
 	// Val: 1
-	// Val: GoFrame
+	// Val: GoXrc
 }
 
 func ExampleRing_Put() {

@@ -3,16 +3,16 @@ package gview
 import (
 	"context"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gspath"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gspath"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Config is the configuration object for template engine.

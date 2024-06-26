@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 const (

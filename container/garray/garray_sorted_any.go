@@ -6,14 +6,14 @@ import (
 	"math"
 	"sort"
 
-	"github.com/xrc360/golang/internal/deepcopy"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/grand"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/internal/deepcopy"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/grand"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // SortedArray is a golang sorted array with rich features.

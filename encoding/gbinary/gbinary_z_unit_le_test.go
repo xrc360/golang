@@ -3,8 +3,8 @@ package gbinary_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gbinary"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gbinary"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_LeEncodeAndLeDecode(t *testing.T) {

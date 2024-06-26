@@ -3,7 +3,7 @@ package utils
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/empty"
+	"github.com/xrcn/cg/internal/empty"
 )
 
 // IsNil checks whether `value` is nil, especially for interface{} type value.

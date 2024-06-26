@@ -1,6 +1,6 @@
 package ghttp
 
-import "github.com/xrc360/golang/os/gview"
+import "github.com/xrcn/cg/os/gview"
 
 // SetView sets template view engine object for this request.
 func (r *Request) SetView(view *gview.View) {

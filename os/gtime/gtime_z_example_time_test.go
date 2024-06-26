@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 func ExampleNew_Basic() {
@@ -472,13 +472,13 @@ func ExampleTime_MarshalJSON() {
 		Birthday *gtime.Time `json:"birthday"`
 	}
 	p := new(Person)
-	p.Name = "goframe"
+	p.Name = "goxrc"
 	p.Birthday = gtime.New("2018-08-08 08:08:08")
 	j, _ := json.Marshal(p)
 	fmt.Println(string(j))
 
 	// Output:
-	// {"name":"goframe","birthday":"2018-08-08 08:08:08"}
+	// {"name":"goxrc","birthday":"2018-08-08 08:08:08"}
 }
 
 func ExampleTime_UnmarshalJSON() {
@@ -487,11 +487,11 @@ func ExampleTime_UnmarshalJSON() {
 		Birthday *gtime.Time `json:"birthday"`
 	}
 	p := new(Person)
-	src := `{"name":"goframe","birthday":"2018-08-08 08:08:08"}`
+	src := `{"name":"goxrc","birthday":"2018-08-08 08:08:08"}`
 	json.Unmarshal([]byte(src), p)
 
 	fmt.Println(p)
 
 	// Output
-	// &{goframe 2018-08-08 08:08:08}
+	// &{goxrc 2018-08-08 08:08:08}
 }

@@ -3,7 +3,7 @@ package grpool
 import (
 	"context"
 
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 // supervisor checks the job list and fork new worker goroutine to handle the job

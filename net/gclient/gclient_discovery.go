@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/gsel"
-	"github.com/xrc360/golang/net/gsvc"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/gsel"
+	"github.com/xrcn/cg/net/gsvc"
 )
 
 type discoveryNode struct {

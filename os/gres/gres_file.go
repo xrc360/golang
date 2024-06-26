@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/internal/json"
 )
 
 type File struct {

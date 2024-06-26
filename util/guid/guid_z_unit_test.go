@@ -5,9 +5,9 @@ package guid_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_S(t *testing.T) {

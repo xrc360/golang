@@ -6,9 +6,9 @@ import (
 	"gopkg.in/yaml.v3"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Encode encodes `value` to an YAML format content as bytes.

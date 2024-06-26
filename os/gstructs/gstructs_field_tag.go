@@ -3,7 +3,7 @@ package gstructs
 import (
 	"strings"
 
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 // TagJsonName returns the `json` tag name string of the field.

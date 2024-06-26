@@ -1,7 +1,7 @@
 package goai
 
 import (
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // XExtensions stores the `x-` custom extensions.

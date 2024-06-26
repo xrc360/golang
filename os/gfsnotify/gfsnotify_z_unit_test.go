@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gfsnotify"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gfsnotify"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func TestWatcher_AddOnce(t *testing.T) {

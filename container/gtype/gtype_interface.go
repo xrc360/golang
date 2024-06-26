@@ -3,9 +3,9 @@ package gtype
 import (
 	"sync/atomic"
 
-	"github.com/xrc360/golang/internal/deepcopy"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/deepcopy"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Interface is a struct for concurrent-safe operation for type interface{}.

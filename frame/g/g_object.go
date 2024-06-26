@@ -1,19 +1,19 @@
 package g
 
 import (
-	"github.com/xrc360/golang/database/gdb"
-	"github.com/xrc360/golang/database/gredis"
-	"github.com/xrc360/golang/frame/gins"
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/net/gclient"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/net/gtcp"
-	"github.com/xrc360/golang/net/gudp"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/database/gdb"
+	"github.com/xrcn/cg/database/gredis"
+	"github.com/xrcn/cg/frame/gins"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/net/gclient"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/net/gtcp"
+	"github.com/xrcn/cg/net/gudp"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 // Client is a convenience function, which creates and returns a new HTTP client.

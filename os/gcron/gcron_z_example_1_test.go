@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/os/gcron"
-	"github.com/xrc360/golang/os/glog"
+	"github.com/xrcn/cg/os/gcron"
+	"github.com/xrcn/cg/os/glog"
 )
 
 func ExampleCronAddSingleton() {

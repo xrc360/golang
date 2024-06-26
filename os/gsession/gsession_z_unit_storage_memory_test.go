@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gsession"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gsession"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_StorageMemory(t *testing.T) {

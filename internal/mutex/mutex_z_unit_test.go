@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/internal/mutex"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/internal/mutex"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestMutexIsSafe(t *testing.T) {

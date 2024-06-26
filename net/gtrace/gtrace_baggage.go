@@ -5,9 +5,9 @@ import (
 
 	"go.opentelemetry.io/otel/baggage"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Baggage holds the data through all tracing spans.

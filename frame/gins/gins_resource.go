@@ -1,7 +1,7 @@
 package gins
 
 import (
-	"github.com/xrc360/golang/os/gres"
+	"github.com/xrcn/cg/os/gres"
 )
 
 // Resource returns an instance of Resource.

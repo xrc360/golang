@@ -3,14 +3,14 @@ package gdebug_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func Test_CallerPackage(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		t.Assert(gdebug.CallerPackage(), "github.com/xrc360/golang/test/gtest")
+		t.Assert(gdebug.CallerPackage(), "github.com/xrcn/cg/test/gtest")
 	})
 }
 
@@ -46,7 +46,7 @@ func Test_CallerFileLineShort(t *testing.T) {
 
 func Test_FuncPath(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		t.Assert(gdebug.FuncPath(Test_FuncPath), "github.com/xrc360/golang/debug/gdebug_test.Test_FuncPath")
+		t.Assert(gdebug.FuncPath(Test_FuncPath), "github.com/xrcn/cg/debug/gdebug_test.Test_FuncPath")
 	})
 }
 

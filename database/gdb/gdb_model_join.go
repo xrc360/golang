@@ -3,7 +3,7 @@ package gdb
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // LeftJoin does "LEFT JOIN ... ON ..." statement on the model.
@@ -148,7 +148,7 @@ func (m *Model) InnerJoinOnFields(table, firstField, operator, secondField strin
 // Model("user", "u").InnerJoin("user_detail", "ud", "ud.uid>u.uid")
 // Model("user", "u").InnerJoin("SELECT xxx FROM xxx","a", "a.uid=u.uid")
 // Related issues:
-// https://github.com/gogf/gf/issues/1024
+// 1024
 func (m *Model) doJoin(operator joinOperator, tableOrSubQueryAndJoinConditions ...string) *Model {
 	var (
 		model   = m.getModel()

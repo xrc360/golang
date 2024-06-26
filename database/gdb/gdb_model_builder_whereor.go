@@ -3,7 +3,7 @@ package gdb
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // WhereOr adds "OR" condition to the where statement.

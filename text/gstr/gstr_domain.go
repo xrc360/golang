@@ -18,7 +18,7 @@ func IsSubDomain(subDomain string, mainDomain string) bool {
 		mainLength = len(mainArray)
 	)
 	// Eg:
-	// "goframe.org" is not sub-domain of "s.goframe.org".
+	// "goxrc.org" is not sub-domain of "s.goxrc.org".
 	if mainLength > subLength {
 		for i := range mainArray[0 : mainLength-subLength] {
 			if mainArray[i] != "*" {
@@ -28,9 +28,9 @@ func IsSubDomain(subDomain string, mainDomain string) bool {
 	}
 
 	// Eg:
-	// "s.s.goframe.org" is not sub-domain of "*.goframe.org"
+	// "s.s.goxrc.org" is not sub-domain of "*.goxrc.org"
 	// but
-	// "s.s.goframe.org" is sub-domain of "goframe.org"
+	// "s.s.goxrc.org" is sub-domain of "goxrc.org"
 	if mainLength > 2 && subLength > mainLength {
 		return false
 	}

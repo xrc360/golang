@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gspath"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gspath"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // SetPath sets the configuration `directory` path for file search.

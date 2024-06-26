@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gmutex"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gmutex"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_RWMutex_RUnlock(t *testing.T) {

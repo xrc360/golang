@@ -5,8 +5,8 @@ package gmode_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gmode"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gmode"
 )
 
 func Test_AutoCheckSourceCodes(t *testing.T) {

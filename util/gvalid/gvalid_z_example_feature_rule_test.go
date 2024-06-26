@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func ExampleRule_Required() {
@@ -182,10 +182,10 @@ func ExampleRule_Bail() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Account:   "gf",
+			Account:   "cg",
 			QQ:        "123456",
-			Password:  "goframe.org",
-			Password2: "goframe.org",
+			Password:  "goxrc.org",
+			Password2: "goxrc.org",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -193,7 +193,7 @@ func ExampleRule_Bail() {
 	}
 
 	// output:
-	// The Account value `gf` length must be between 6 and 16
+	// The Account value `cg` length must be between 6 and 16
 }
 
 func ExampleRule_CaseInsensitive() {
@@ -205,9 +205,9 @@ func ExampleRule_CaseInsensitive() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Account:   "gf",
-			Password:  "Goframe.org", // Diff from Password2, but because of "ci", rule check passed
-			Password2: "goframe.org",
+			Account:   "cg",
+			Password:  "goxrc.org", // Diff from Password2, but because of "ci", rule check passed
+			Password2: "goxrc.org",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -310,10 +310,10 @@ func ExampleRule_Email() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			MailAddr1: "gf@goframe.org",
-			MailAddr2: "gf@goframe", // error
-			MailAddr3: "gf@goframe.org.cn",
-			MailAddr4: "gf#goframe.org", // error
+			MailAddr1: "cg@goxrc.org",
+			MailAddr2: "cg@goxrc", // error
+			MailAddr3: "cg@goxrc.org.cn",
+			MailAddr4: "cg#goxrc.org", // error
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -321,8 +321,8 @@ func ExampleRule_Email() {
 	}
 
 	// Output:
-	// The MailAddr2 value `gf@goframe` is not a valid email address
-	// The MailAddr4 value `gf#goframe.org` is not a valid email address
+	// The MailAddr2 value `cg@goxrc` is not a valid email address
+	// The MailAddr4 value `cg#goxrc.org` is not a valid email address
 }
 
 func ExampleRule_Enums() {
@@ -443,10 +443,10 @@ func ExampleRule_Passport() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Passport1: "goframe",
-			Passport2: "1356666",  // error starting with letter
-			Passport3: "goframe#", // error containing only numbers or underscores
-			Passport4: "gf",       // error length between 6 and 18
+			Passport1: "goxrc",
+			Passport2: "1356666", // error starting with letter
+			Passport3: "goxrc#",  // error containing only numbers or underscores
+			Passport4: "cg",      // error length between 6 and 18
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -455,8 +455,8 @@ func ExampleRule_Passport() {
 
 	// Output:
 	// The Passport2 value `1356666` is not a valid passport format
-	// The Passport3 value `goframe#` is not a valid passport format
-	// The Passport4 value `gf` is not a valid passport format
+	// The Passport3 value `goxrc#` is not a valid passport format
+	// The Passport4 value `cg` is not a valid passport format
 }
 
 func ExampleRule_Password() {
@@ -468,7 +468,7 @@ func ExampleRule_Password() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Password1: "goframe",
+			Password1: "goxrc",
 			Password2: "gofra", // error length between 6 and 18
 		}
 	)
@@ -491,10 +491,10 @@ func ExampleRule_Password2() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Password1: "Goframe123",
-			Password2: "gofra",      // error length between 6 and 18
-			Password3: "Goframe",    // error must contain lower and upper letters and numbers.
-			Password4: "goframe123", // error must contain lower and upper letters and numbers.
+			Password1: "goxrc123",
+			Password2: "gofra",    // error length between 6 and 18
+			Password3: "goxrc",    // error must contain lower and upper letters and numbers.
+			Password4: "goxrc123", // error must contain lower and upper letters and numbers.
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -503,8 +503,8 @@ func ExampleRule_Password2() {
 
 	// Output:
 	// The Password2 value `gofra` is not a valid password2 format
-	// The Password3 value `Goframe` is not a valid password2 format
-	// The Password4 value `goframe123` is not a valid password2 format
+	// The Password3 value `goxrc` is not a valid password2 format
+	// The Password4 value `goxrc123` is not a valid password2 format
 }
 
 func ExampleRule_Password3() {
@@ -517,9 +517,9 @@ func ExampleRule_Password3() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Password1: "Goframe123#",
-			Password2: "gofra",      // error length between 6 and 18
-			Password3: "Goframe123", // error must contain lower and upper letters, numbers and special chars.
+			Password1: "goxrc123#",
+			Password2: "gofra",    // error length between 6 and 18
+			Password3: "goxrc123", // error must contain lower and upper letters, numbers and special chars.
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -528,7 +528,7 @@ func ExampleRule_Password3() {
 
 	// Output:
 	// The Password2 value `gofra` is not a valid password3 format
-	// The Password3 value `Goframe123` is not a valid password3 format
+	// The Password3 value `goxrc123` is not a valid password3 format
 }
 
 func ExampleRule_Postcode() {
@@ -716,9 +716,9 @@ func ExampleRule_Url() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			URL1: "http://goframe.org",
-			URL2: "ftp://goframe.org",
-			URL3: "ws://goframe.org",
+			URL1: "http://goxrc.org",
+			URL2: "ftp://goxrc.org",
+			URL3: "ws://goxrc.org",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -726,7 +726,7 @@ func ExampleRule_Url() {
 	}
 
 	// Output:
-	// The URL3 value `ws://goframe.org` is not a valid URL address
+	// The URL3 value `ws://goxrc.org` is not a valid URL address
 }
 
 func ExampleRule_Domain() {
@@ -740,9 +740,9 @@ func ExampleRule_Domain() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Domain1: "goframe.org",
+			Domain1: "goxrc.org",
 			Domain2: "a.b",
-			Domain3: "goframe#org",
+			Domain3: "goxrc#org",
 			Domain4: "1a.2b",
 		}
 	)
@@ -751,7 +751,7 @@ func ExampleRule_Domain() {
 	}
 
 	// Output:
-	// The Domain3 value `goframe#org` is not a valid domain format
+	// The Domain3 value `goxrc#org` is not a valid domain format
 	// The Domain4 value `1a.2b` is not a valid domain format
 }
 
@@ -764,8 +764,8 @@ func ExampleRule_Size() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Size1: "goframe欢迎你",
-			Size2: "goframe",
+			Size1: "goxrc欢迎你",
+			Size2: "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -773,7 +773,7 @@ func ExampleRule_Size() {
 	}
 
 	// Output:
-	// The Size2 value `goframe` length must be 5
+	// The Size2 value `goxrc` length must be 5
 }
 
 func ExampleRule_Length() {
@@ -785,8 +785,8 @@ func ExampleRule_Length() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Length1: "goframe欢迎你",
-			Length2: "goframe",
+			Length1: "goxrc欢迎你",
+			Length2: "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -794,7 +794,7 @@ func ExampleRule_Length() {
 	}
 
 	// Output:
-	// The Length2 value `goframe` length must be between 10 and 15
+	// The Length2 value `goxrc` length must be between 10 and 15
 }
 
 func ExampleRule_MinLength() {
@@ -806,8 +806,8 @@ func ExampleRule_MinLength() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			MinLength1: "goframe欢迎你",
-			MinLength2: "goframe",
+			MinLength1: "goxrc欢迎你",
+			MinLength2: "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -815,7 +815,7 @@ func ExampleRule_MinLength() {
 	}
 
 	// Output:
-	// The MinLength2 value `goframe` length must be equal or greater than 8
+	// The MinLength2 value `goxrc` length must be equal or greater than 8
 }
 
 func ExampleRule_MaxLength() {
@@ -827,8 +827,8 @@ func ExampleRule_MaxLength() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			MaxLength1: "goframe欢迎你",
-			MaxLength2: "goframe",
+			MaxLength1: "goxrc欢迎你",
+			MaxLength2: "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -836,7 +836,7 @@ func ExampleRule_MaxLength() {
 	}
 
 	// Output:
-	// The MaxLength2 value `goframe` length must be equal or lesser than 5
+	// The MaxLength2 value `goxrc` length must be equal or lesser than 5
 }
 
 func ExampleRule_Between() {
@@ -926,8 +926,8 @@ func ExampleRule_Json() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			JSON1: "{\"name\":\"goframe\",\"author\":\"郭强\"}",
-			JSON2: "{\"name\":\"goframe\",\"author\":\"郭强\",\"test\"}",
+			JSON1: "{\"name\":\"goxrc\",\"author\":\"郭强\"}",
+			JSON2: "{\"name\":\"goxrc\",\"author\":\"郭强\",\"test\"}",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -935,7 +935,7 @@ func ExampleRule_Json() {
 	}
 
 	// Output:
-	// The JSON2 value `{"name":"goframe","author":"郭强","test"}` is not a valid JSON string
+	// The JSON2 value `{"name":"goxrc","author":"郭强","test"}` is not a valid JSON string
 }
 
 func ExampleRule_Integer() {
@@ -950,7 +950,7 @@ func ExampleRule_Integer() {
 		req = BizReq{
 			Integer: "100",
 			Float:   "10.0",
-			Str:     "goframe",
+			Str:     "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -959,7 +959,7 @@ func ExampleRule_Integer() {
 
 	// Output:
 	// The Float value `10.0` is not an integer
-	// The Str value `goframe` is not an integer
+	// The Str value `goxrc` is not an integer
 }
 
 func ExampleRule_Float() {
@@ -974,7 +974,7 @@ func ExampleRule_Float() {
 		req = BizReq{
 			Integer: "100",
 			Float:   "10.0",
-			Str:     "goframe",
+			Str:     "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -982,7 +982,7 @@ func ExampleRule_Float() {
 	}
 
 	// Output:
-	// The Str value `goframe` is not of valid float type
+	// The Str value `goxrc` is not of valid float type
 }
 
 func ExampleRule_Boolean() {
@@ -1003,7 +1003,7 @@ func ExampleRule_Boolean() {
 			Float:   10.0,
 			Str1:    "on",
 			Str2:    "",
-			Str3:    "goframe",
+			Str3:    "goxrc",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -1012,7 +1012,7 @@ func ExampleRule_Boolean() {
 
 	// Output:
 	// The Float value `10` field must be true or false
-	// The Str3 value `goframe` field must be true or false
+	// The Str3 value `goxrc` field must be true or false
 }
 
 func ExampleRule_Same() {
@@ -1024,9 +1024,9 @@ func ExampleRule_Same() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Name:      "gf",
-			Password:  "goframe.org",
-			Password2: "goframe.net",
+			Name:      "cg",
+			Password:  "goxrc.org",
+			Password2: "goxrc.net",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -1034,7 +1034,7 @@ func ExampleRule_Same() {
 	}
 
 	// Output:
-	// The Password value `goframe.org` must be the same as field Password2 value `goframe.net`
+	// The Password value `goxrc.org` must be the same as field Password2 value `goxrc.net`
 }
 
 func ExampleRule_Different() {
@@ -1046,9 +1046,9 @@ func ExampleRule_Different() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Name:          "gf",
-			MailAddr:      "gf@goframe.org",
-			OtherMailAddr: "gf@goframe.org",
+			Name:          "cg",
+			MailAddr:      "cg@goxrc.org",
+			OtherMailAddr: "cg@goxrc.org",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -1056,7 +1056,7 @@ func ExampleRule_Different() {
 	}
 
 	// Output:
-	// The OtherMailAddr value `gf@goframe.org` must be different from field MailAddr value `gf@goframe.org`
+	// The OtherMailAddr value `cg@goxrc.org` must be different from field MailAddr value `cg@goxrc.org`
 }
 
 func ExampleRule_In() {
@@ -1267,9 +1267,9 @@ func ExampleRule_EQ() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Name:      "gf",
-			Password:  "goframe.org",
-			Password2: "goframe.net",
+			Name:      "cg",
+			Password:  "goxrc.org",
+			Password2: "goxrc.net",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -1277,7 +1277,7 @@ func ExampleRule_EQ() {
 	}
 
 	// Output:
-	// The Password value `goframe.org` must be equal to field Password2 value `goframe.net`
+	// The Password value `goxrc.org` must be equal to field Password2 value `goxrc.net`
 }
 
 func ExampleRule_NotEQ() {
@@ -1289,9 +1289,9 @@ func ExampleRule_NotEQ() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Name:          "gf",
-			MailAddr:      "gf@goframe.org",
-			OtherMailAddr: "gf@goframe.org",
+			Name:          "cg",
+			MailAddr:      "cg@goxrc.org",
+			OtherMailAddr: "cg@goxrc.org",
 		}
 	)
 	if err := g.Validator().Data(req).Run(ctx); err != nil {
@@ -1299,7 +1299,7 @@ func ExampleRule_NotEQ() {
 	}
 
 	// Output:
-	// The OtherMailAddr value `gf@goframe.org` must not be equal to field MailAddr value `gf@goframe.org`
+	// The OtherMailAddr value `cg@goxrc.org` must not be equal to field MailAddr value `cg@goxrc.org`
 }
 
 func ExampleRule_GT() {

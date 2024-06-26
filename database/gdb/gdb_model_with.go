@@ -4,12 +4,12 @@ import (
 	"database/sql"
 	"reflect"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // With creates and returns an ORM model based on metadata of given object.

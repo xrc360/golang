@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func TestCase(t *testing.T) {
@@ -261,7 +261,7 @@ func Test_Instance(t *testing.T) {
 	defaultLog := glog.DefaultLogger().Clone()
 	defer glog.SetDefaultLogger(defaultLog)
 	gtest.C(t, func(t *gtest.T) {
-		t.AssertNE(glog.Instance("gf"), nil)
+		t.AssertNE(glog.Instance("cg"), nil)
 	})
 }
 
@@ -276,7 +276,7 @@ func Test_GetConfig(t *testing.T) {
 func Test_Write(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		l := glog.New()
-		len, err := l.Write([]byte("GoFrame"))
+		len, err := l.Write([]byte("GoXrc"))
 		t.AssertNil(err)
 		t.Assert(len, 7)
 	})
@@ -311,7 +311,7 @@ func Test_Chaining_Path(t *testing.T) {
 func Test_Chaining_Cat(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		l := glog.New()
-		logCat := l.Cat(".gf")
+		logCat := l.Cat(".cg")
 		t.AssertNE(logCat, nil)
 	})
 }

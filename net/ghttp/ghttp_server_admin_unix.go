@@ -8,9 +8,9 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gproc"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gproc"
 )
 
 // handleProcessSignal handles all signals from system in blocking way.

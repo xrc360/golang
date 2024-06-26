@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/os/gcron"
+	"github.com/xrcn/cg/os/gcron"
 )
 
 func Benchmark_Add(b *testing.B) {

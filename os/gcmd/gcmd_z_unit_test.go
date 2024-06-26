@@ -9,18 +9,18 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/genv"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/genv"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Default(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		gcmd.Init([]string{"gf", "--force", "remove", "-fq", "-p=www", "path", "-n", "root"}...)
+		gcmd.Init([]string{"cg", "--force", "remove", "-fq", "-p=www", "path", "-n", "root"}...)
 		t.Assert(len(gcmd.GetArgAll()), 2)
 		t.Assert(gcmd.GetArg(1), "path")
 		t.Assert(gcmd.GetArg(100, "test"), "test")
@@ -32,7 +32,7 @@ func Test_Default(t *testing.T) {
 		t.Assert(gcmd.GetOpt("none", "value"), "value")
 	})
 	gtest.C(t, func(t *gtest.T) {
-		gcmd.Init([]string{"gf", "gen", "-h"}...)
+		gcmd.Init([]string{"cg", "gen", "-h"}...)
 		t.Assert(len(gcmd.GetArgAll()), 2)
 		t.Assert(gcmd.GetOpt("h"), "")
 		t.Assert(gcmd.GetOpt("h").IsNil(), false)
@@ -85,7 +85,7 @@ func Test_Command(t *testing.T) {
 			err error
 		)
 		commandRoot := &gcmd.Command{
-			Name: "gf",
+			Name: "cg",
 		}
 		// env
 		commandEnv := &gcmd.Command{
@@ -101,10 +101,10 @@ func Test_Command(t *testing.T) {
 			Brief:       "test brief",
 			Description: "test description current Golang environment variables",
 			Examples: `
-gf get github.com/gogf/gf
-gf get github.com/gogf/gf@latest
-gf get github.com/gogf/gf@master
-gf get golang.org/x/sys
+cg get github.com/xrcn/cg
+cg get github.com/xrcn/cg@latest
+cg get github.com/xrcn/cg@master
+cg get golang.org/x/sys
 `,
 			Arguments: []gcmd.Argument{
 				{
@@ -153,10 +153,10 @@ func Test_Command_Print(t *testing.T) {
 			err error
 		)
 		c := &gcmd.Command{
-			Name:        "gf",
-			Description: `GoFrame Command Line Interface, which is your helpmate for building GoFrame application with convenience.`,
+			Name:        "cg",
+			Description: `GoXrc Command Line Interface, which is your helpmate for building GoXrc application with convenience.`,
 			Additional: `
-Use 'gf help COMMAND' or 'gf COMMAND -h' for detail about a command, which has '...' in the tail of their comments.`,
+Use 'cg help COMMAND' or 'cg COMMAND -h' for detail about a command, which has '...' in the tail of their comments.`,
 		}
 		// env
 		commandEnv := &gcmd.Command{
@@ -173,14 +173,14 @@ Use 'gf help COMMAND' or 'gf COMMAND -h' for detail about a command, which has '
 		// get
 		commandGet := &gcmd.Command{
 			Name:        "get",
-			Brief:       "install or update GF to system in default...",
+			Brief:       "install or update CG to system in default...",
 			Description: "show current Golang environment variables",
 
 			Examples: `
-gf get github.com/gogf/gf
-gf get github.com/gogf/gf@latest
-gf get github.com/gogf/gf@master
-gf get golang.org/x/sys
+cg get github.com/xrcn/cg
+cg get github.com/xrcn/cg@latest
+cg get github.com/xrcn/cg@master
+cg get golang.org/x/sys
 `,
 			Func: func(ctx context.Context, parser *gcmd.Parser) error {
 				return nil
@@ -202,7 +202,7 @@ gf get golang.org/x/sys
 
 		commandBuild := gcmd.Command{
 			Name:  "build",
-			Usage: "gf build FILE [OPTION]",
+			Usage: "cg build FILE [OPTION]",
 			Brief: "cross-building go project for lots of platforms...",
 			Description: `
 The "build" command is most commonly used command, which is designed as a powerful wrapper for
@@ -213,14 +213,14 @@ It provides much more features for building binary:
 3. Build-In Variables.
 `,
 			Examples: `
-gf build main.go
-gf build main.go --swagger
-gf build main.go --pack public,template
-gf build main.go --cgo
-gf build main.go -m none 
-gf build main.go -n my-app -a all -s all
-gf build main.go -n my-app -a amd64,386 -s linux -p .
-gf build main.go -n my-app -v 1.0 -a amd64,386 -s linux,windows,darwin -p ./docker/bin
+cg build main.go
+cg build main.go --swagger
+cg build main.go --pack public,template
+cg build main.go --cgo
+cg build main.go -m none 
+cg build main.go -n my-app -a all -s all
+cg build main.go -n my-app -a amd64,386 -s linux -p .
+cg build main.go -n my-app -v 1.0 -a amd64,386 -s linux,windows,darwin -p ./docker/bin
 `,
 			Func: func(ctx context.Context, parser *gcmd.Parser) error {
 				return nil

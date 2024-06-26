@@ -3,7 +3,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 // RulePostcode implements `postcode` rule:

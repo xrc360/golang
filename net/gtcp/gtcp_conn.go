@@ -8,7 +8,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Conn is the TCP connection object.

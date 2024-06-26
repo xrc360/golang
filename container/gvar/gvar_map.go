@@ -1,6 +1,6 @@
 package gvar
 
-import "github.com/xrc360/golang/util/gconv"
+import "github.com/xrcn/cg/util/gconv"
 
 // MapOption specifies the option for map converting.
 type MapOption = gconv.MapOption

@@ -5,13 +5,13 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 func ExampleNew() {
@@ -115,10 +115,10 @@ func ExampleValidator_Bail() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Account:   "gf",
+			Account:   "cg",
 			QQ:        "123456",
-			Password:  "goframe.org",
-			Password2: "goframe.org",
+			Password:  "goxrc.org",
+			Password2: "goxrc.org",
 		}
 	)
 
@@ -131,8 +131,8 @@ func ExampleValidator_Bail() {
 	}
 
 	// output:
-	// Use Bail Error: The Account value `gf` length must be between 6 and 16
-	// Not Use Bail Error: The Account value `gf` length must be between 6 and 16; The Account value `gf` must be the same as field QQ value `123456`
+	// Use Bail Error: The Account value `cg` length must be between 6 and 16
+	// Not Use Bail Error: The Account value `cg` length must be between 6 and 16; The Account value `cg` must be the same as field QQ value `123456`
 }
 
 func ExampleValidator_Ci() {
@@ -144,9 +144,9 @@ func ExampleValidator_Ci() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Account:   "gf",
-			Password:  "Goframe.org", // Diff from Password2, but because of "ci", rule check passed
-			Password2: "goframe.org",
+			Account:   "cg",
+			Password:  "goxrc.org", // Diff from Password2, but because of "ci", rule check passed
+			Password2: "goxrc.org",
 		}
 	)
 
@@ -159,7 +159,7 @@ func ExampleValidator_Ci() {
 	}
 
 	// output:
-	// Not Use CI Error: The Password value `Goframe.org` must be the same as field Password2 value `goframe.org`
+	// Not Use CI Error: The Password value `goxrc.org` must be the same as field Password2 value `goxrc.org`
 	// Use CI Passed!
 }
 
@@ -172,7 +172,7 @@ func ExampleValidator_Data() {
 	var (
 		ctx = context.Background()
 		req = BizReq{
-			Password1: "goframe",
+			Password1: "goxrc",
 			Password2: "gofra", // error length between 6 and 18
 		}
 	)

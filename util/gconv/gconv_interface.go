@@ -1,6 +1,6 @@
 package gconv
 
-import "github.com/xrc360/golang/os/gtime"
+import "github.com/xrcn/cg/os/gtime"
 
 // iVal is used for type assert api for String().
 type iVal interface {

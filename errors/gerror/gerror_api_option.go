@@ -1,6 +1,6 @@
 package gerror
 
-import "github.com/xrc360/golang/errors/gcode"
+import "github.com/xrcn/cg/errors/gcode"
 
 // Option is option for creating error.
 type Option struct {

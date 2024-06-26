@@ -7,18 +7,18 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gcache"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/util/grand"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gcache"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/util/grand"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // DB defines the interfaces for ORM operations.
@@ -364,7 +364,7 @@ const (
 	ctxTimeoutTypePrepare                 = 2
 	cachePrefixTableFields                = `TableFields:`
 	cachePrefixSelectCache                = `SelectCache:`
-	commandEnvKeyForDryRun                = "gf.gdb.dryrun"
+	commandEnvKeyForDryRun                = "cg.gdb.dryrun"
 	modelForDaoSuffix                     = `ForDao`
 	dbRoleSlave                           = `slave`
 	ctxKeyForDB               gctx.StrKey = `CtxKeyForDB`
@@ -578,7 +578,7 @@ func newDBByConfigNode(node *ConfigNode, group string) (db DB, err error) {
 	}
 	errorMsg := `cannot find database driver for specified database type "%s"`
 	errorMsg += `, did you misspell type name "%s" or forget importing the database driver? `
-	errorMsg += `possible reference: https://github.com/gogf/gf/tree/master/contrib/drivers`
+	errorMsg += `possible reference: https://github.com/xrcn/cg/tree/master/contrib/drivers`
 	return nil, gerror.NewCodef(gcode.CodeInvalidConfiguration, errorMsg, node.Type, node.Type)
 }
 

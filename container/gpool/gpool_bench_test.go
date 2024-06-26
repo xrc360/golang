@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/gpool"
+	"github.com/xrcn/cg/container/gpool"
 )
 
 var pool = gpool.New(time.Hour, nil)

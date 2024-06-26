@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"reflect"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gstructs"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gstructs"
 )
 
 // Scan automatically checks the type of `pointer` and converts `params` to `pointer`. It supports `pointer`

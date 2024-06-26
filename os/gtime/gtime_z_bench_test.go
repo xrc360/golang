@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 func Benchmark_Timestamp(b *testing.B) {

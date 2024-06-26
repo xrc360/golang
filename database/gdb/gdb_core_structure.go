@@ -7,15 +7,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/encoding/gbinary"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/encoding/gbinary"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // GetFieldTypeStr retrieves and returns the field type string for certain field by name.

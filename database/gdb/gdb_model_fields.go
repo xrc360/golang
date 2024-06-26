@@ -3,9 +3,9 @@ package gdb
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Fields appends `fieldNamesOrMapStruct` to the operation fields of the model, multiple fields joined using char ','.

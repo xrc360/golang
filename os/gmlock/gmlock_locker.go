@@ -3,7 +3,7 @@ package gmlock
 import (
 	"sync"
 
-	"github.com/xrc360/golang/container/gmap"
+	"github.com/xrcn/cg/container/gmap"
 )
 
 // Locker is a memory based locker.

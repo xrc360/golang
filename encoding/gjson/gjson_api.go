@@ -3,10 +3,10 @@ package gjson
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Interface returns the json value.

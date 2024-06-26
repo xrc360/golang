@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_OriginValueAndKind(t *testing.T) {

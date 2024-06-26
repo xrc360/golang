@@ -7,20 +7,20 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gtag"
-	"github.com/xrc360/golang/util/gutil"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gtag"
+	"github.com/xrcn/cg/util/gutil"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 var (
@@ -273,13 +273,13 @@ func newCommandFromMethod(
 				if arg.Orphan {
 					if orphanValue := parser.GetOpt(arg.Name); orphanValue != nil {
 						if orphanValue.String() == "" {
-							// Eg: gf -f
+							// Eg: cg -f
 							data[arg.Name] = "true"
 						} else {
 							// Adapter with common user habits.
 							// Eg:
-							// `gf -f=0`: which parameter `f` is parsed as false
-							// `gf -f=1`: which parameter `f` is parsed as true
+							// `cg -f=0`: which parameter `f` is parsed as false
+							// `cg -f=1`: which parameter `f` is parsed as true
 							data[arg.Name] = orphanValue.Bool()
 						}
 					}

@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 type TestCmdObject struct {

@@ -3,8 +3,8 @@ package gproc
 import (
 	"os"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Manager is a process manager maintaining multiple processes.

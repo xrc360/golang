@@ -4,7 +4,7 @@ package gi18n
 import (
 	"context"
 
-	"github.com/xrc360/golang/os/gctx"
+	"github.com/xrcn/cg/os/gctx"
 )
 
 const (

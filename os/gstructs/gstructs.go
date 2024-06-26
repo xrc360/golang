@@ -4,7 +4,7 @@ package gstructs
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Type wraps reflect.Type for additional features.

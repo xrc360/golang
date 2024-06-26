@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 type iString interface {
@@ -881,7 +881,7 @@ func Test_Map_StructWithGconvTag_All(t *testing.T) {
 		user1 := User{
 			Uid:     100,
 			Name:    "john",
-			SiteUrl: "https://goframe.org",
+			SiteUrl: "https://goxrc.org",
 			Pass1:   "123",
 			Pass2:   "456",
 			Ss:      []string{"sss", "2222"},
@@ -921,7 +921,7 @@ func Test_Map_StructWithJsonTag_All(t *testing.T) {
 		user1 := User{
 			Uid:     100,
 			Name:    "john",
-			SiteUrl: "https://goframe.org",
+			SiteUrl: "https://goxrc.org",
 			Pass1:   "123",
 			Pass2:   "456",
 			Ss:      []string{"sss", "2222"},
@@ -932,7 +932,7 @@ func Test_Map_StructWithJsonTag_All(t *testing.T) {
 			Uid:      100,
 			Name:     "john",
 			NickName: "SSS",
-			SiteUrl:  "https://goframe.org",
+			SiteUrl:  "https://goxrc.org",
 			Pass1:    "123",
 			Pass2:    "456",
 			Ss:       []string{"sss", "2222"},
@@ -1034,7 +1034,7 @@ func Test_Struct_Basic1_All(t *testing.T) {
 		params1 := g.Map{
 			"uid":       1,
 			"Name":      "john",
-			"siteurl":   "https://goframe.org",
+			"siteurl":   "https://goxrc.org",
 			"nick_name": "johng",
 			"PASS1":     "123",
 			"PASS2":     "456",
@@ -1062,7 +1062,7 @@ func Test_Struct_Basic1_All(t *testing.T) {
 		params2 := g.Map{
 			"uid":       2,
 			"name":      "smith",
-			"site-url":  "https://goframe.org",
+			"site-url":  "https://goxrc.org",
 			"nick name": "johng",
 			"password1": "111",
 			"password2": "222",
@@ -1073,7 +1073,7 @@ func Test_Struct_Basic1_All(t *testing.T) {
 		t.Assert(user, &User{
 			Uid:      2,
 			Name:     "smith",
-			Site_Url: "https://goframe.org",
+			Site_Url: "https://goxrc.org",
 			NickName: "johng",
 			Pass1:    "111",
 			Pass2:    "222",
@@ -1095,7 +1095,7 @@ func Test_Struct_Basic2_All(t *testing.T) {
 		params := g.Map{
 			"uid":      1,
 			"Name":     "john",
-			"site_url": "https://goframe.org",
+			"site_url": "https://goxrc.org",
 			"PASS1":    "123",
 			"PASS2":    "456",
 		}
@@ -1105,7 +1105,7 @@ func Test_Struct_Basic2_All(t *testing.T) {
 		t.Assert(user, &User{
 			Uid:     1,
 			Name:    "john",
-			SiteUrl: "https://goframe.org",
+			SiteUrl: "https://goxrc.org",
 			Pass1:   "123",
 			Pass2:   "456",
 		})

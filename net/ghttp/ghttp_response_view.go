@@ -3,11 +3,11 @@
 package ghttp
 
 import (
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmode"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmode"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // WriteTpl parses and responses given template file.

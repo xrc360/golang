@@ -3,7 +3,7 @@ package gmlock_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/os/gmlock"
+	"github.com/xrcn/cg/os/gmlock"
 )
 
 var (

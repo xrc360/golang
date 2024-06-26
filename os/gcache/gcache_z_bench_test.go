@@ -6,7 +6,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/os/gcache"
+	"github.com/xrcn/cg/os/gcache"
 )
 
 var (

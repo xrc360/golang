@@ -1,6 +1,6 @@
 package gvar
 
-import "github.com/xrc360/golang/util/gconv"
+import "github.com/xrcn/cg/util/gconv"
 
 // Ints converts and returns `v` as []int.
 func (v *Var) Ints() []int {

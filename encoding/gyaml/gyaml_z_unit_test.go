@@ -3,16 +3,16 @@ package gyaml_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/encoding/gyaml"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gyaml"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var yamlStr string = `
 #即表示url属性值；
-url: https://goframe.org
+url: https://goxrc.org
 
 #数组，即表示server为[a,b,c]
 server:
@@ -71,7 +71,7 @@ func Test_Decode(t *testing.T) {
 		t.AssertNil(err)
 
 		t.Assert(result, map[string]interface{}{
-			"url":      "https://goframe.org",
+			"url":      "https://goxrc.org",
 			"server":   g.Slice{"120.168.117.21", "120.168.117.22"},
 			"pi":       3.14,
 			"hasChild": true,
@@ -86,7 +86,7 @@ func Test_DecodeTo(t *testing.T) {
 		err := gyaml.DecodeTo([]byte(yamlStr), &result)
 		t.AssertNil(err)
 		t.Assert(result, map[string]interface{}{
-			"url":      "https://goframe.org",
+			"url":      "https://goxrc.org",
 			"server":   g.Slice{"120.168.117.21", "120.168.117.22"},
 			"pi":       3.14,
 			"hasChild": true,

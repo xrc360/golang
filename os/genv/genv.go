@@ -6,10 +6,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // All returns a copy of strings representing the environment,
@@ -79,8 +79,8 @@ func Remove(key ...string) (err error) {
 // It returns the default value `def` if none of them exists.
 //
 // Fetching Rules:
-// 1. Environment arguments are in uppercase format, eg: GF_<package name>_<variable name>；
-// 2. Command line arguments are in lowercase format, eg: gf.<package name>.<variable name>;
+// 1. Environment arguments are in uppercase format, eg: CG_<package name>_<variable name>；
+// 2. Command line arguments are in lowercase format, eg: cg.<package name>.<variable name>;
 func GetWithCmd(key string, def ...interface{}) *gvar.Var {
 	envKey := utils.FormatEnvKey(key)
 	if v := os.Getenv(envKey); v != "" {

@@ -1,7 +1,7 @@
 package gerror
 
 import (
-	"github.com/xrc360/golang/errors/gcode"
+	"github.com/xrcn/cg/errors/gcode"
 )
 
 // Code returns the error code.

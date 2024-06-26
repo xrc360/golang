@@ -3,7 +3,7 @@ package gjson_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gjson"
 )
 
 func ExampleNew() {

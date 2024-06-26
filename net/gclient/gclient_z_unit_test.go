@@ -12,15 +12,15 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/gclient"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/gclient"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/guid"
 )
 
 var (

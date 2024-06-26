@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Encode escapes the string so it can be safely placed

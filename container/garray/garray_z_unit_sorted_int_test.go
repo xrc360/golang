@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/internal/empty"
+	"github.com/xrcn/cg/internal/empty"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func TestNewSortedIntArrayComparator(t *testing.T) {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Log returns an instance of glog.Logger.

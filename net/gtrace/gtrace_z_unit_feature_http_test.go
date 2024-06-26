@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Client_Server_Tracing(t *testing.T) {

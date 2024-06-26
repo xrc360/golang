@@ -5,7 +5,7 @@ package gqueue_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gqueue"
+	"github.com/xrcn/cg/container/gqueue"
 )
 
 var bn = 20000000

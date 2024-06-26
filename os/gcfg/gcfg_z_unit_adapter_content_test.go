@@ -5,9 +5,9 @@ package gcfg_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestAdapterContent_Available_Get_Data(t *testing.T) {

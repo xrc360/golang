@@ -11,11 +11,11 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.4.0"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/net/gtrace"
+	"github.com/xrcn/cg/net/gtrace"
 )
 
 const (
-	traceInstrumentName       = "github.com/xrc360/golang/database/gdb"
+	traceInstrumentName       = "github.com/xrcn/cg/database/gdb"
 	traceAttrDbType           = "db.type"
 	traceAttrDbHost           = "db.host"
 	traceAttrDbPort           = "db.port"

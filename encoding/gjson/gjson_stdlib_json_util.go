@@ -3,9 +3,9 @@ package gjson
 import (
 	"bytes"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Valid checks whether `data` is a valid JSON data type.

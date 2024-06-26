@@ -1,19 +1,20 @@
-// Package gbuild manages the build-in variables from "gf build".
+// Package gbuild manages the build-in variables from "cg build".
 package gbuild
 
 import (
 	"context"
+	"github.com/xrcn/cg"
 	"runtime"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gbase64"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gbase64"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // BuildInfo maintains the built info of current binary.
 type BuildInfo struct {
-	GoFrame string                 // Built used GoFrame version.
+	GoXrc   string                 // Built used GoXrc version.
 	Golang  string                 // Built used Golang version.
 	Git     string                 // Built used git repo. commit id and datetime.
 	Time    string                 // Built datetime.
@@ -22,7 +23,7 @@ type BuildInfo struct {
 }
 
 const (
-	gfVersion    = `gfVersion`
+	cgVersion    = `cgVersion`
 	goVersion    = `goVersion`
 	BuiltGit     = `builtGit`
 	BuiltTime    = `builtTime`
@@ -41,7 +42,7 @@ func init() {
 		if err != nil {
 			intlog.Errorf(context.TODO(), `%+v`, err)
 		}
-		builtInVarMap[gfVersion] = xrc_golang.VERSION
+		builtInVarMap[cgVersion] = cg.VERSION
 		builtInVarMap[goVersion] = runtime.Version()
 		intlog.Printf(context.TODO(), "build variables: %+v", builtInVarMap)
 	} else {
@@ -50,11 +51,11 @@ func init() {
 }
 
 // Info returns the basic built information of the binary as map.
-// Note that it should be used with gf-cli tool "gf build",
+// Note that it should be used with cg-cli tool "cg build",
 // which automatically injects necessary information into the binary.
 func Info() BuildInfo {
 	return BuildInfo{
-		GoFrame: Get(gfVersion).String(),
+		GoXrc:   Get(cgVersion).String(),
 		Golang:  Get(goVersion).String(),
 		Git:     Get(BuiltGit).String(),
 		Time:    Get(BuiltTime).String(),

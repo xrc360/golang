@@ -5,9 +5,9 @@ package gproc_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gproc"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gproc"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_ShellExec(t *testing.T) {

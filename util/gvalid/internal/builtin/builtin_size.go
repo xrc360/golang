@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // RuleSize implements `size` rule:

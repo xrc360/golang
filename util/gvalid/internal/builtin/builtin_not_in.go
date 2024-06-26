@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // RuleNotIn implements `not-in` rule:

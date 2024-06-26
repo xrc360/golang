@@ -5,7 +5,7 @@ import (
 	"math"
 	"sync"
 
-	"github.com/xrc360/golang/container/gtype"
+	"github.com/xrcn/cg/container/gtype"
 )
 
 // priorityQueue is an abstract data type similar to a regular queue or stack data structure in which

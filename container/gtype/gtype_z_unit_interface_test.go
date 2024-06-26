@@ -3,16 +3,16 @@ package gtype_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func Test_Interface(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		t1 := Temp{Name: "gf", Age: 18}
-		t2 := Temp{Name: "gf", Age: 19}
+		t1 := Temp{Name: "cg", Age: 18}
+		t2 := Temp{Name: "cg", Age: 19}
 		i := gtype.New(t1)
 		iClone := i.Clone()
 		t.AssertEQ(iClone.Set(t2), t1)
@@ -22,10 +22,10 @@ func Test_Interface(t *testing.T) {
 		i1 := gtype.New()
 		t.AssertEQ(i1.Val(), nil)
 
-		i2 := gtype.New("gf")
-		t.AssertEQ(i2.String(), "gf")
+		i2 := gtype.New("cg")
+		t.AssertEQ(i2.String(), "cg")
 		copyVal := i2.DeepCopy()
-		i2.Set("goframe")
+		i2.Set("goxrc")
 		t.AssertNE(copyVal, iClone.Val())
 		i2 = nil
 		copyVal = i2.DeepCopy()
@@ -35,7 +35,7 @@ func Test_Interface(t *testing.T) {
 
 func Test_Interface_JSON(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		s := "i love gf"
+		s := "i love cg"
 		i := gtype.New(s)
 		b1, err1 := json.Marshal(i)
 		b2, err2 := json.Marshal(i.Val())

@@ -1,6 +1,6 @@
 package ghttp
 
-import "github.com/xrc360/golang/container/gvar"
+import "github.com/xrcn/cg/container/gvar"
 
 // SetParam sets custom parameter with key-value pairs.
 func (r *Request) SetParam(key string, value interface{}) {

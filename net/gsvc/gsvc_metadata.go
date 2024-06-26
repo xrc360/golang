@@ -1,7 +1,7 @@
 package gsvc
 
 import (
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 // Set sets key-value pair into metadata.

@@ -3,10 +3,10 @@ package gvalid
 import (
 	"strings"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // Error is the validation error for validation result.

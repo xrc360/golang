@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 // RuleEnums implements `enums` rule:
@@ -55,7 +55,7 @@ func (r RuleEnums) Run(in RunInput) error {
 	if tagEnums == "" {
 		return gerror.NewCodef(
 			gcode.CodeInvalidOperation,
-			`no enums found for type "%s", missing using command "gf gen enums"?`,
+			`no enums found for type "%s", missing using command "cg gen enums"?`,
 			typeId,
 		)
 	}

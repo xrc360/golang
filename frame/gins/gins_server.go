@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Server returns an instance of http server with specified name.

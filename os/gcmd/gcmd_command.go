@@ -5,15 +5,15 @@ package gcmd
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // Command holds the info about an argument that can handle custom logic.
 type Command struct {
 	Name          string        // Command name(case-sensitive).
-	Usage         string        // A brief line description about its usage, eg: gf build main.go [OPTION]
+	Usage         string        // A brief line description about its usage, eg: cg build main.go [OPTION]
 	Brief         string        // A brief info that describes what this command will do.
 	Description   string        // A detailed description.
 	Arguments     []Argument    // Argument array, configuring how this command act.

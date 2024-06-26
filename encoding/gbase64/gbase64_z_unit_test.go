@@ -3,8 +3,8 @@ package gbase64_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gbase64"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gbase64"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 type testPair struct {

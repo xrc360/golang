@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func TestConverter_ConvertWithRefer(t *testing.T) {
@@ -230,7 +230,7 @@ func TestConverter_Struct(t *testing.T) {
 		t.Assert(dd.ValTa.Val2, "abc")
 	})
 
-	// fix: https://github.com/gogf/gf/issues/2665
+	// fix: 2665
 	gtest.C(t, func(t *gtest.T) {
 		aa := &tEE{}
 
@@ -247,7 +247,7 @@ func TestConverter_Struct(t *testing.T) {
 		t.Assert(aa.Val3.Local(), gtime.New("2006-01-02T15:04:05Z07:00").Local().Time)
 	})
 
-	// fix: https://github.com/gogf/gf/issues/3006
+	// fix: 3006
 	gtest.C(t, func(t *gtest.T) {
 		ff := &tFF{}
 		var tmp = map[string]any{
@@ -313,7 +313,7 @@ func TestConverter_CustomBasicType_ToStruct(t *testing.T) {
 	})
 }
 
-// fix: https://github.com/gogf/gf/issues/3099
+// fix: 3099
 func TestConverter_CustomTimeType_ToStruct(t *testing.T) {
 	type timestamppb struct {
 		S string

@@ -3,7 +3,7 @@ package gutil
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // MapCopy does a shallow copy from map `data` to `copy` for most commonly used map type

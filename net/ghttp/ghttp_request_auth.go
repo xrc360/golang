@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/xrc360/golang/encoding/gbase64"
+	"github.com/xrcn/cg/encoding/gbase64"
 )
 
 // BasicAuth enables the http basic authentication feature with a given passport and password

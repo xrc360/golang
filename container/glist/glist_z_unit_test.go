@@ -4,9 +4,9 @@ import (
 	"container/list"
 	"testing"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func checkListLen(t *gtest.T, l *List, len int) bool {

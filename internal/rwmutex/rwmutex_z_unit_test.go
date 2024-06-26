@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestRWMutexIsSafe(t *testing.T) {

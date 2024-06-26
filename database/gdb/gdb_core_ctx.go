@@ -3,7 +3,7 @@ package gdb
 import (
 	"context"
 
-	"github.com/xrc360/golang/os/gctx"
+	"github.com/xrcn/cg/os/gctx"
 )
 
 // internalCtxData stores data in ctx for internal usage purpose.

@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"math"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // IsEmpty checks and returns whether `r` is empty.

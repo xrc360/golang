@@ -1,7 +1,7 @@
 package gvar
 
 import (
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // IsNil checks whether `v` is nil.

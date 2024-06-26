@@ -3,16 +3,16 @@ package gbuild_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gbuild"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gbuild"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func Test_Info(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		t.Assert(gconv.Map(gbuild.Info()), g.Map{
-			"GoFrame": "",
+			"GoXrc":   "",
 			"Golang":  "",
 			"Git":     "",
 			"Time":    "",

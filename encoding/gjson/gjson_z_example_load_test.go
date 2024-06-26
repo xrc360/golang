@@ -3,8 +3,8 @@ package gjson_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func ExampleLoad() {

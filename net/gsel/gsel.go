@@ -4,7 +4,7 @@ package gsel
 import (
 	"context"
 
-	"github.com/xrc360/golang/net/gsvc"
+	"github.com/xrcn/cg/net/gsvc"
 )
 
 // Builder creates and returns selector in runtime.

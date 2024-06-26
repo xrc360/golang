@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/xrc360/golang/debug/gdebug"
+	"github.com/xrcn/cg/debug/gdebug"
 )
 
 // BindHookHandler registers handler for specified hook.

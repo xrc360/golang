@@ -3,7 +3,7 @@ package gcache
 import (
 	"sync"
 
-	"github.com/xrc360/golang/container/gset"
+	"github.com/xrcn/cg/container/gset"
 )
 
 type adapterMemoryExpireSets struct {

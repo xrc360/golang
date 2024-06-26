@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 func Test_Params_Parse(t *testing.T) {
@@ -508,7 +508,7 @@ func Test_Params_Struct_Validation(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/1488
+// 1488
 func Test_Params_Parse_Issue1488(t *testing.T) {
 	s := g.Server(guid.S())
 	s.Group("/", func(group *ghttp.RouterGroup) {

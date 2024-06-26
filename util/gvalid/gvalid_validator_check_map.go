@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func (v *Validator) doCheckMap(ctx context.Context, params interface{}) Error {

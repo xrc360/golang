@@ -4,16 +4,16 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 // Path is specified by OpenAPI/Swagger standard version 3.0.

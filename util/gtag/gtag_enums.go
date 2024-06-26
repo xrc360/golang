@@ -1,7 +1,7 @@
 package gtag
 
 import (
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/internal/json"
 )
 
 var (
@@ -25,7 +25,7 @@ func GetGlobalEnums() (string, error) {
 }
 
 // GetEnumsByType retrieves and returns the stored enums json by type name.
-// The type name is like: github.com/xrc360/golang/encoding/gjson.ContentType
+// The type name is like: github.com/xrcn/cg/encoding/gjson.ContentType
 func GetEnumsByType(typeName string) string {
 	return string(enumsMap[typeName])
 }

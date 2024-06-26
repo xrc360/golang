@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/net/gtcp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/net/gtcp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func Test_Pool_Basic1(t *testing.T) {

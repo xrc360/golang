@@ -3,7 +3,7 @@ package gfile_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleCopy() {
@@ -22,7 +22,7 @@ func ExampleCopy() {
 	)
 
 	// write contents
-	gfile.PutContents(srcTempFile, "goframe example copy")
+	gfile.PutContents(srcTempFile, "goxrc example copy")
 
 	// copy file
 	gfile.Copy(srcTempFile, dstTempFile)
@@ -40,7 +40,7 @@ func ExampleCopy() {
 	}
 
 	// Output:
-	// goframe example copy
+	// goxrc example copy
 	// gfile_example.txt
 	// gfile_example_copy.txt
 }

@@ -3,7 +3,7 @@ package gstr
 import (
 	"bytes"
 
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // AddSlashes quotes with slashes `\` for chars: '"\.

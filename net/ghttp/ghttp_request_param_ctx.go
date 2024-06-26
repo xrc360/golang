@@ -3,8 +3,8 @@ package ghttp
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/os/gctx"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/os/gctx"
 )
 
 // RequestFromCtx retrieves and returns the Request object from context.

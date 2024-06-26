@@ -5,11 +5,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 func Test_CustomRule1(t *testing.T) {
@@ -110,7 +110,7 @@ func Test_CustomRule_AllowEmpty(t *testing.T) {
 	rule := "allow-empty-str"
 	gvalid.RegisterRule(rule, func(ctx context.Context, in gvalid.RuleFuncInput) error {
 		s := in.Value.String()
-		if len(s) == 0 || s == "gf" {
+		if len(s) == 0 || s == "cg" {
 			return nil
 		}
 		return errors.New(in.Message)
@@ -119,7 +119,7 @@ func Test_CustomRule_AllowEmpty(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		errStr := "error"
 		t.Assert(g.Validator().Data("").Rules(rule).Messages(errStr).Run(ctx), "")
-		t.Assert(g.Validator().Data("gf").Rules(rule).Messages(errStr).Run(ctx), "")
+		t.Assert(g.Validator().Data("cg").Rules(rule).Messages(errStr).Run(ctx), "")
 		t.Assert(g.Validator().Data("gf2").Rules(rule).Messages(errStr).Run(ctx), errStr)
 	})
 	// Error with struct validation.

@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/os/grpool"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/os/grpool"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Basic(t *testing.T) {

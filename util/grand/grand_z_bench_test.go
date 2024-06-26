@@ -8,14 +8,14 @@ import (
 	mathRand "math/rand"
 	"testing"
 
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/util/grand"
 )
 
 var (
 	buffer         = make([]byte, 8)
 	randBuffer4    = make([]byte, 4)
 	randBuffer1024 = make([]byte, 1024)
-	strForStr      = "我爱GoFrame"
+	strForStr      = "我爱GoXrc"
 )
 
 func Benchmark_Math_Rand_Int(b *testing.B) {

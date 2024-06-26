@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_Router_Group_Hook1(t *testing.T) {

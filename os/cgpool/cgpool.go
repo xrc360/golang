@@ -1,13 +1,13 @@
-// Package gfpool provides io-reusable pool for file pointer.
-package gfpool
+// Package cgpool provides io-reusable pool for file pointer.
+package cgpool
 
 import (
 	"os"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gpool"
-	"github.com/xrc360/golang/container/gtype"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gpool"
+	"github.com/xrcn/cg/container/gtype"
 )
 
 // Pool pointer pool.

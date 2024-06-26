@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 type color bool

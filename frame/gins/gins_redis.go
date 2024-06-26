@@ -4,14 +4,14 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/xrc360/golang/database/gredis"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/database/gredis"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Redis returns an instance of redis client with specified configuration group name.

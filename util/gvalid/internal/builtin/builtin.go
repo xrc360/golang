@@ -7,7 +7,7 @@ package builtin
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 type Rule interface {

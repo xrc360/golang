@@ -4,9 +4,9 @@ import (
 	"container/ring"
 	"testing"
 
-	"github.com/xrc360/golang/container/gring"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gring"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 type Student struct {
@@ -46,7 +46,7 @@ func TestRing_CapLen(t *testing.T) {
 	})
 	gtest.C(t, func(t *gtest.T) {
 		r := gring.New(10)
-		r.Put("goframe")
+		r.Put("goxrc")
 		//cap长度 10
 		t.Assert(r.Cap(), 10)
 		//已有数据项 1
@@ -134,7 +134,7 @@ func TestRing_Slice(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/1394
+// 1394
 func Test_Issue1394(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		// gring.

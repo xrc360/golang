@@ -4,7 +4,7 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/xrc360/golang/encoding/gbinary"
+	"github.com/xrcn/cg/encoding/gbinary"
 )
 
 // Uint converts `any` to uint.

@@ -3,7 +3,7 @@ package gclient
 import (
 	"net/http"
 
-	"github.com/xrc360/golang/os/gctx"
+	"github.com/xrcn/cg/os/gctx"
 )
 
 // HandlerFunc middleware handler func

@@ -3,7 +3,7 @@ package glog
 import (
 	"io"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 // To is a chaining function,

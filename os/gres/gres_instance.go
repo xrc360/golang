@@ -1,6 +1,6 @@
 package gres
 
-import "github.com/xrc360/golang/container/gmap"
+import "github.com/xrcn/cg/container/gmap"
 
 const (
 	// DefaultName default group name for instance usage.

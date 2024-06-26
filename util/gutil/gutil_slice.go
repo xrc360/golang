@@ -3,7 +3,7 @@ package gutil
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // SliceCopy does a shallow copy of slice `data` for most commonly used slice type

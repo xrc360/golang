@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Float64 is a struct for concurrent-safe operation for type float64.

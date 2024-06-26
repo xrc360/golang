@@ -7,11 +7,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 type commandBuild struct {
@@ -23,13 +23,13 @@ type commandBuild struct {
 const (
 	commandBuildBrief = `cross-building go project for lots of platforms`
 	commandBuildEg    = `
-gf build main.go
-gf build main.go --pack public,template
-gf build main.go --cgo
-gf build main.go -m none 
-gf build main.go -n my-app -a all -s all
-gf build main.go -n my-app -a amd64,386 -s linux -p .
-gf build main.go -n my-app -v 1.0 -a amd64,386 -s linux,windows,darwin -p ./docker/bin
+cg build main.go
+cg build main.go --pack public,template
+cg build main.go --cgo
+cg build main.go -m none 
+cg build main.go -n my-app -a all -s all
+cg build main.go -n my-app -a amd64,386 -s linux -p .
+cg build main.go -n my-app -v 1.0 -a amd64,386 -s linux,windows,darwin -p ./docker/bin
 `
 	commandBuildDc = `
 The "build" command is most commonly used command, which is designed as a powerful wrapper for 
@@ -112,7 +112,7 @@ func init() {
 }
 
 type commandBuildInput struct {
-	g.Meta   `name:"build" config:"gfcli.build"`
+	g.Meta   `name:"build" config:"cgcli.build"`
 	Name     string `short:"n" name:"name"     brief:"output binary name"`
 	Version  string `short:"v" name:"version"  brief:"output binary version"`
 	Arch     string `short:"a" name:"arch"     brief:"output binary architecture, multiple arch separated with ','"`
@@ -138,7 +138,7 @@ func TestNewFromObject(t *testing.T) {
 			ctx = gctx.New()
 		)
 		cmd, err := gcmd.NewFromObject(commandBuild{
-			nodeNameInConfigFile: "gfcli.build",
+			nodeNameInConfigFile: "cgcli.build",
 			packedGoFileName:     "build_pack_data.go",
 		})
 		t.AssertNil(err)

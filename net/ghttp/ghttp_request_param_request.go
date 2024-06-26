@@ -1,12 +1,12 @@
 package ghttp
 
 import (
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/net/goai"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/net/goai"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // GetRequest retrieves and returns the parameter named `key` passed from the client and

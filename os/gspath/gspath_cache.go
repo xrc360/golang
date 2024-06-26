@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gfsnotify"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gfsnotify"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // updateCacheByPath adds all files under `path` recursively.

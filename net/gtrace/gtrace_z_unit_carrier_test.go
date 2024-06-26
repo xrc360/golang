@@ -7,8 +7,8 @@ import (
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 const (

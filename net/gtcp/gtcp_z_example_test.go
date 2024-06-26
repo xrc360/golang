@@ -3,7 +3,7 @@ package gtcp_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/net/gtcp"
+	"github.com/xrcn/cg/net/gtcp"
 )
 
 func ExampleGetFreePort() {

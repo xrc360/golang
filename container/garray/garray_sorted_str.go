@@ -6,11 +6,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/grand"
 )
 
 // SortedStrArray is a golang sorted string array with rich features.

@@ -6,13 +6,13 @@ import (
 	"os"
 	"testing"
 
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Parse(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		os.Args = []string{"gf", "--force", "remove", "-fq", "-p=www", "path", "-n", "root"}
+		os.Args = []string{"cg", "--force", "remove", "-fq", "-p=www", "path", "-n", "root"}
 		p, err := gcmd.Parse(map[string]bool{
 			"n, name":   true,
 			"p, prefix": true,
@@ -21,7 +21,7 @@ func Test_Parse(t *testing.T) {
 		})
 		t.AssertNil(err)
 		t.Assert(len(p.GetArgAll()), 3)
-		t.Assert(p.GetArg(0), "gf")
+		t.Assert(p.GetArg(0), "cg")
 		t.Assert(p.GetArg(1), "remove")
 		t.Assert(p.GetArg(2), "path")
 		t.Assert(p.GetArg(2).String(), "path")
@@ -51,7 +51,7 @@ func Test_Parse(t *testing.T) {
 func Test_ParseArgs(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		p, err := gcmd.ParseArgs(
-			[]string{"gf", "--force", "remove", "-fq", "-p=www", "path", "-n", "root"},
+			[]string{"cg", "--force", "remove", "-fq", "-p=www", "path", "-n", "root"},
 			map[string]bool{
 				"n, name":   true,
 				"p, prefix": true,
@@ -60,7 +60,7 @@ func Test_ParseArgs(t *testing.T) {
 			})
 		t.AssertNil(err)
 		t.Assert(len(p.GetArgAll()), 3)
-		t.Assert(p.GetArg(0), "gf")
+		t.Assert(p.GetArg(0), "cg")
 		t.Assert(p.GetArg(1), "remove")
 		t.Assert(p.GetArg(2), "path")
 		t.Assert(p.GetArg(2).String(), "path")

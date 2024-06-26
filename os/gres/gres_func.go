@@ -6,18 +6,18 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/xrc360/golang/encoding/gbase64"
-	"github.com/xrc360/golang/encoding/gcompress"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/encoding/gbase64"
+	"github.com/xrcn/cg/encoding/gcompress"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 const (
 	packedGoSourceTemplate = `
 package %s
 
-import "github.com/xrc360/golang/os/gres"
+import "github.com/xrcn/cg/os/gres"
 
 func init() {
 	if err := gres.Add("%s"); err != nil {

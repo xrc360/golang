@@ -9,17 +9,17 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/net/goai"
-	"github.com/xrc360/golang/net/gsvc"
-	"github.com/xrc360/golang/os/gcache"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gsession"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/net/goai"
+	"github.com/xrcn/cg/net/gsvc"
+	"github.com/xrcn/cg/os/gcache"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gsession"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 type (
@@ -148,7 +148,7 @@ const (
 	contentTypeXml                          = "text/xml"
 	contentTypeHtml                         = "text/html"
 	contentTypeJson                         = "application/json"
-	swaggerUIPackedPath                     = "/goframe/swaggerui"
+	swaggerUIPackedPath                     = "/goxrc/swaggerui"
 	responseHeaderTraceID                   = "Trace-ID"
 	responseHeaderContentLength             = "Content-Length"
 	specialMethodNameInit                   = "Init"

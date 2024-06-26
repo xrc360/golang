@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/os/gcache"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/os/gcache"
 )
 
 // StorageMemory implements the Session Storage interface with memory.

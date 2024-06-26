@@ -1,18 +1,12 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with gm file,
-// You can obtain one at https://github.com/gogf/gf.
-
 package gmap_test
 
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func ExampleStrAnyMap_Iterator() {
@@ -649,14 +643,14 @@ func ExampleStrAnyMap_UnmarshalValue() {
 	var m gmap.StrAnyMap
 
 	goWeb := map[string]interface{}{
-		"goframe": "https://goframe.org",
-		"gin":     "https://gin-gonic.com/",
-		"echo":    "https://echo.labstack.com/",
+		"goxrc": "https://goxrc.org",
+		"gin":   "https://gin-gonic.com/",
+		"echo":  "https://echo.labstack.com/",
 	}
 
 	if err := gconv.Scan(goWeb, &m); err == nil {
 		fmt.Printf("%#v", m.Map())
 	}
 	// Output:
-	// map[string]interface {}{"echo":"https://echo.labstack.com/", "gin":"https://gin-gonic.com/", "goframe":"https://goframe.org"}
+	// map[string]interface {}{"echo":"https://echo.labstack.com/", "gin":"https://gin-gonic.com/", "goxrc":"https://goxrc.org"}
 }

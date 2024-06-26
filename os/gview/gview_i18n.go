@@ -3,8 +3,8 @@ package gview
 import (
 	"context"
 
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (

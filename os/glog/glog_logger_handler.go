@@ -5,7 +5,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Handler is function handler for custom logging content outputs.

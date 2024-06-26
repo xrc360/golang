@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // Response is the struct for client request response.

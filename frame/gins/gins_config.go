@@ -1,7 +1,7 @@
 package gins
 
 import (
-	"github.com/xrc360/golang/os/gcfg"
+	"github.com/xrcn/cg/os/gcfg"
 )
 
 // Config returns an instance of View with default settings.

@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/encoding/ghash"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/net/gipv4"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/encoding/ghash"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/net/gipv4"
+	"github.com/xrcn/cg/util/grand"
 )
 
 const (

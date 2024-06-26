@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/os/gmlock"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/os/gmlock"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Locker_Lock(t *testing.T) {

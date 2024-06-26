@@ -7,7 +7,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/xrc360/golang/os/gproc"
+	"github.com/xrcn/cg/os/gproc"
 )
 
 // handleProcessSignal handles all signals from system in blocking way.

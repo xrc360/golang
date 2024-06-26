@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/net/gtcp"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/net/gtcp"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 var (

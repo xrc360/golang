@@ -4,17 +4,17 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gcache"
-	"github.com/xrc360/golang/os/gfsnotify"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gcache"
+	"github.com/xrcn/cg/os/gfsnotify"
 )
 
 const (
 	defaultCacheDuration  = "1m"             // defaultCacheExpire is the expire time for file content caching in seconds.
-	commandEnvKeyForCache = "gf.gfile.cache" // commandEnvKeyForCache is the configuration key for command argument or environment configuring cache expire duration.
+	commandEnvKeyForCache = "cg.gfile.cache" // commandEnvKeyForCache is the configuration key for command argument or environment configuring cache expire duration.
 )
 
 var (

@@ -3,29 +3,29 @@ package gspath_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gspath"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gspath"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestSPath_Api(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		pwd := gfile.Pwd()
 		root := pwd
-		gfile.Create(gfile.Join(root, "gf_tmp", "gf.txt"))
-		defer gfile.Remove(gfile.Join(root, "gf_tmp"))
-		fp, isDir := gspath.Search(root, "gf_tmp")
-		t.Assert(fp, gfile.Join(root, "gf_tmp"))
+		gfile.Create(gfile.Join(root, "cg_tmp", "cg.txt"))
+		defer gfile.Remove(gfile.Join(root, "cg_tmp"))
+		fp, isDir := gspath.Search(root, "cg_tmp")
+		t.Assert(fp, gfile.Join(root, "cg_tmp"))
 		t.Assert(isDir, true)
-		fp, isDir = gspath.Search(root, "gf_tmp", "gf.txt")
-		t.Assert(fp, gfile.Join(root, "gf_tmp", "gf.txt"))
+		fp, isDir = gspath.Search(root, "cg_tmp", "cg.txt")
+		t.Assert(fp, gfile.Join(root, "cg_tmp", "cg.txt"))
 		t.Assert(isDir, false)
 
-		fp, isDir = gspath.SearchWithCache(root, "gf_tmp")
-		t.Assert(fp, gfile.Join(root, "gf_tmp"))
+		fp, isDir = gspath.SearchWithCache(root, "cg_tmp")
+		t.Assert(fp, gfile.Join(root, "cg_tmp"))
 		t.Assert(isDir, true)
-		fp, isDir = gspath.SearchWithCache(root, "gf_tmp", "gf.txt")
-		t.Assert(fp, gfile.Join(root, "gf_tmp", "gf.txt"))
+		fp, isDir = gspath.SearchWithCache(root, "cg_tmp", "cg.txt")
+		t.Assert(fp, gfile.Join(root, "cg_tmp", "cg.txt"))
 		t.Assert(isDir, false)
 	})
 }
@@ -35,7 +35,7 @@ func TestSPath_Basic(t *testing.T) {
 		pwd := gfile.Pwd()
 		root := pwd
 
-		gfile.Create(gfile.Join(root, "gf_tmp", "gf.txt"))
+		gfile.Create(gfile.Join(root, "gf_tmp", "cg.txt"))
 		defer gfile.Remove(gfile.Join(root, "gf_tmp"))
 		gsp := gspath.New(root, false)
 		realPath, err := gsp.Add(gfile.Join(root, "gf_tmp"))
@@ -44,7 +44,7 @@ func TestSPath_Basic(t *testing.T) {
 		realPath, err = gsp.Add("gf_tmp1")
 		t.Assert(err != nil, true)
 		t.Assert(realPath, "")
-		realPath, err = gsp.Add(gfile.Join(root, "gf_tmp", "gf.txt"))
+		realPath, err = gsp.Add(gfile.Join(root, "gf_tmp", "cg.txt"))
 		t.Assert(err != nil, true)
 		t.Assert(realPath, "")
 
@@ -56,7 +56,7 @@ func TestSPath_Basic(t *testing.T) {
 		realPath, err = gsp.Set(gfile.Join(root, "gf_tmp1"))
 		t.Assert(err != nil, true)
 		t.Assert(realPath, "")
-		realPath, err = gsp.Set(gfile.Join(root, "gf_tmp", "gf.txt"))
+		realPath, err = gsp.Set(gfile.Join(root, "gf_tmp", "cg.txt"))
 		t.AssertNE(err, nil)
 		t.Assert(realPath, "")
 
@@ -67,10 +67,10 @@ func TestSPath_Basic(t *testing.T) {
 		fp, isDir := gsp.Search("gf_tmp")
 		t.Assert(fp, gfile.Join(root, "gf_tmp"))
 		t.Assert(isDir, true)
-		fp, isDir = gsp.Search("gf_tmp", "gf.txt")
-		t.Assert(fp, gfile.Join(root, "gf_tmp", "gf.txt"))
+		fp, isDir = gsp.Search("gf_tmp", "cg.txt")
+		t.Assert(fp, gfile.Join(root, "gf_tmp", "cg.txt"))
 		t.Assert(isDir, false)
-		fp, isDir = gsp.Search("/", "gf.txt")
+		fp, isDir = gsp.Search("/", "cg.txt")
 		t.Assert(fp, root)
 		t.Assert(isDir, true)
 
@@ -103,8 +103,8 @@ func TestSPath_Basic(t *testing.T) {
 		t.Assert(fp, gfile.Join(root, "gf_tmp"))
 		t.Assert(isDir, true)
 
-		fp, isDir = gsp.Search("gf_tmp", "gf.txt")
-		t.Assert(fp, gfile.Join(root, "gf_tmp", "gf.txt"))
+		fp, isDir = gsp.Search("gf_tmp", "cg.txt")
+		t.Assert(fp, gfile.Join(root, "gf_tmp", "cg.txt"))
 		t.Assert(isDir, false)
 	})
 }

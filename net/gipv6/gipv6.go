@@ -1,7 +1,7 @@
 // Package gipv6 provides useful API for IPv6 address handling.
 package gipv6
 
-import "github.com/xrc360/golang/text/gregex"
+import "github.com/xrcn/cg/text/gregex"
 
 // Validate checks whether given `ip` a valid IPv6 address.
 func Validate(ip string) bool {

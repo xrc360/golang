@@ -5,15 +5,15 @@ import (
 	"crypto/rand"
 	"crypto/tls"
 	"fmt"
-	xrc_golang "github.com/xrc360/golang"
+	"github.com/xrcn/cg"
 	"net/http"
 	"os"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/net/gsel"
-	"github.com/xrc360/golang/net/gsvc"
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/net/gsel"
+	"github.com/xrcn/cg/net/gsvc"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 // Client is the HTTP client for HTTP request management.
@@ -48,7 +48,7 @@ const (
 
 var (
 	hostname, _        = os.Hostname()
-	defaultClientAgent = fmt.Sprintf(`GClient %s at %s`, xrc_golang.VERSION, hostname)
+	defaultClientAgent = fmt.Sprintf(`GClient %s at %s`, cg.VERSION, hostname)
 )
 
 // New creates and returns a new HTTP client object.

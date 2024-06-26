@@ -6,17 +6,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/encoding/gurl"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gtag"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gurl"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gtag"
+	"github.com/xrcn/cg/util/guid"
 )
 
-// https://github.com/gogf/gf/issues/1609
+// 1609
 func Test_Issue1609(t *testing.T) {
 	s := g.Server(guid.S())
 	group := s.Group("/api/get")
@@ -61,7 +61,7 @@ func Test_Issue1611(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/1626
+// 1626
 func Test_Issue1626(t *testing.T) {
 	type TestReq struct {
 		Name string `v:"required"`
@@ -195,7 +195,7 @@ func (r cFoo1) PostTest1(ctx context.Context, req *TemplateCreateReq) (res *Temp
 	return
 }
 
-// https://github.com/gogf/gf/issues/1662
+// 1662
 func Test_Issue662(t *testing.T) {
 	s := g.Server(guid.S())
 	s.Use(ghttp.MiddlewareHandlerResponse)
@@ -238,7 +238,7 @@ func (a *Api) Demo(ctx context.Context, req *DemoReq) (res *DemoRes, err error) 
 
 var api = Api{}
 
-// https://github.com/gogf/gf/issues/2172
+// 2172
 func Test_Issue2172(t *testing.T) {
 	s := g.Server(guid.S())
 	s.Use(ghttp.MiddlewareHandlerResponse)
@@ -258,7 +258,7 @@ func Test_Issue2172(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2334
+// 2334
 func Test_Issue2334(t *testing.T) {
 	s := g.Server(guid.S())
 	s.SetServerRoot(gtest.DataPath("static1"))
@@ -298,7 +298,7 @@ func (c *OrderController) CreateOrder(ctx context.Context, req *CreateOrderReq) 
 	return
 }
 
-// https://github.com/gogf/gf/issues/2482
+// 2482
 func Test_Issue2482(t *testing.T) {
 	s := g.Server(guid.S())
 	s.Group("/api/v2", func(group *ghttp.RouterGroup) {
@@ -383,14 +383,14 @@ func (c *Issue2890Controller) Post(ctx context.Context, req *Issue2890Req) (res 
 	return
 }
 
-// https://github.com/gogf/gf/issues/2890
+// 2890
 func Test_Issue2890(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		oldEnumsJson, err := gtag.GetGlobalEnums()
 		t.AssertNil(err)
 		defer t.AssertNil(gtag.SetGlobalEnums(oldEnumsJson))
 
-		err = gtag.SetGlobalEnums(`{"github.com/xrc360/golang/net/ghttp_test.Issue2890Enum": ["a","b"]}`)
+		err = gtag.SetGlobalEnums(`{"github.com/xrcn/cg/net/ghttp_test.Issue2890Enum": ["a","b"]}`)
 		t.AssertNil(err)
 
 		s := g.Server(guid.S())
@@ -416,7 +416,7 @@ func Test_Issue2890(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/2963
+// 2963
 func Test_Issue2963(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		s := g.Server(guid.S())
@@ -450,7 +450,7 @@ func (c *Issue3077V1) Hello(ctx context.Context, req *Issue3077Req) (res *Issue3
 	return
 }
 
-// https://github.com/gogf/gf/issues/3077
+// 3077
 func Test_Issue3077(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		s := g.Server(guid.S())

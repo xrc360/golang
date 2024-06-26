@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 type selectorLeastConnection struct {

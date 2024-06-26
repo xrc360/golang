@@ -6,15 +6,15 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gfsnotify"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gfsnotify"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // pathType is the type for i18n file path.
@@ -72,7 +72,7 @@ func New(options ...Options) *Manager {
 			}
 		}
 		if opts.Path != "" {
-			// To avoid of the source path of GoFrame: github.com/gogf/i18n/gi18n
+			// To avoid of the source path of GoXrc: github.com/gogf/i18n/gi18n
 			if gfile.Exists(opts.Path + gfile.Separator + "gi18n") {
 				opts.Path = ""
 				pathType = pathTypeNone

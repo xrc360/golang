@@ -8,7 +8,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/xrc360/golang/net/ghttp/internal/response"
+	"github.com/xrcn/cg/net/ghttp/internal/response"
 )
 
 // ResponseWriter is the custom writer for http response.

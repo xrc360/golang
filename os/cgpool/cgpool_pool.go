@@ -1,13 +1,13 @@
-package gfpool
+package cgpool
 
 import (
 	"os"
 	"time"
 
-	"github.com/xrc360/golang/container/gpool"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gfsnotify"
+	"github.com/xrcn/cg/container/gpool"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gfsnotify"
 )
 
 // New creates and returns a file pointer pool with given file path, flag and opening permission.

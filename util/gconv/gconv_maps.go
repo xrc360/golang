@@ -1,6 +1,6 @@
 package gconv
 
-import "github.com/xrc360/golang/internal/json"
+import "github.com/xrcn/cg/internal/json"
 
 // SliceMap is alias of Maps.
 func SliceMap(any interface{}, option ...MapOption) []map[string]interface{} {

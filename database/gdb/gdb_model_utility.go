@@ -3,12 +3,12 @@ package gdb
 import (
 	"time"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // QuoteWord checks given string `s` a word,

@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // GetBytes sends a GET request, retrieves and returns the result content as bytes.

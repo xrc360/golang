@@ -3,8 +3,8 @@ package gdb
 import (
 	"strings"
 
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Order sets the "ORDER BY" statement for the model.

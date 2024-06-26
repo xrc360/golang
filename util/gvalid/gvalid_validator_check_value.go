@@ -6,14 +6,14 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gvalid/internal/builtin"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gvalid/internal/builtin"
 )
 
 type doCheckValueInput struct {

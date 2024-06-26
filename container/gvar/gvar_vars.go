@@ -1,7 +1,7 @@
 package gvar
 
 import (
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Vars is a slice of *Var.

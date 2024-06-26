@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 func ExampleNewCode() {

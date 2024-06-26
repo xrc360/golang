@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 // Cookie for HTTP COOKIE management.

@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_Static_ServerRoot(t *testing.T) {

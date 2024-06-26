@@ -1,16 +1,16 @@
 package gres_test
 
 import (
-	_ "github.com/xrc360/golang/os/gres/testdata/data"
+	_ "github.com/xrcn/cg/os/gres/testdata/data"
 
 	"strings"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_PackFolderToGoFile(t *testing.T) {
@@ -83,7 +83,7 @@ func Test_PackWithPrefix1(t *testing.T) {
 			srcPath    = gtest.DataPath("files")
 			goFilePath = gfile.Temp(gtime.TimestampNanoStr(), "testdata.go")
 			pkgName    = "testdata"
-			err        = gres.PackToGoFile(srcPath, goFilePath, pkgName, "www/gf-site/test")
+			err        = gres.PackToGoFile(srcPath, goFilePath, pkgName, "www/cg-site/test")
 		)
 		t.AssertNil(err)
 		_ = gfile.Remove(goFilePath)
@@ -96,7 +96,7 @@ func Test_PackWithPrefix2(t *testing.T) {
 			srcPath    = gtest.DataPath("files")
 			goFilePath = gfile.Temp(gtime.TimestampNanoStr(), "testdata.go")
 			pkgName    = "testdata"
-			err        = gres.PackToGoFile(srcPath, goFilePath, pkgName, "/var/www/gf-site/test")
+			err        = gres.PackToGoFile(srcPath, goFilePath, pkgName, "/var/www/cg-site/test")
 		)
 		t.AssertNil(err)
 		_ = gfile.Remove(goFilePath)

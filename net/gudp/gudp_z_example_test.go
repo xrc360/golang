@@ -3,7 +3,7 @@ package gudp_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/net/gudp"
+	"github.com/xrcn/cg/net/gudp"
 )
 
 func ExampleGetFreePort() {

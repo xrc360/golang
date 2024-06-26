@@ -5,9 +5,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func Test_Go(t *testing.T) {

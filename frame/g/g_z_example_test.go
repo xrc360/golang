@@ -1,8 +1,8 @@
 package g_test
 
 import (
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
 )
 
 func ExampleServer() {

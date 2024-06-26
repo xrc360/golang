@@ -3,10 +3,10 @@ package gjson_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Load_JSON1(t *testing.T) {
@@ -105,14 +105,14 @@ func Test_Load_XML(t *testing.T) {
 	<itotalSize>0</itotalSize>
 	<ipageSize>1</ipageSize>
 	<ipageIndex>2</ipageIndex>
-	<itotalRecords>GF框架</itotalRecords>
+	<itotalRecords>CG框架</itotalRecords>
 	<nworkOrderDtos/>
 	<nworkOrderFrontXML/>
 	</Output>`
 		j, err := gjson.LoadContent(xml)
 		t.AssertNil(err)
 		t.Assert(j.Get("Output.ipageIndex"), "2")
-		t.Assert(j.Get("Output.itotalRecords"), "GF框架")
+		t.Assert(j.Get("Output.itotalRecords"), "CG框架")
 	})
 }
 
@@ -244,14 +244,14 @@ func Test_Load_Basic(t *testing.T) {
 		t.AssertNil(err)
 		t.Assert(j.Interface(), nil)
 
-		j, err = gjson.LoadContent(`{"name": "gf"}`)
+		j, err = gjson.LoadContent(`{"name": "cg"}`)
 		t.AssertNil(err)
 
-		j, err = gjson.LoadContent(`{"name": "gf"""}`)
+		j, err = gjson.LoadContent(`{"name": "cg"""}`)
 		t.AssertNE(err, nil)
 
-		j = gjson.New(&g.Map{"name": "gf"})
-		t.Assert(j.Get("name").String(), "gf")
+		j = gjson.New(&g.Map{"name": "cg"})
+		t.Assert(j.Get("name").String(), "cg")
 
 	})
 }
@@ -316,7 +316,7 @@ enable=true
 func Test_Load_YamlWithV3(t *testing.T) {
 	content := `
 # CLI tool, only in development environment.
-# https://goframe.org/pages/viewpage.action?pageId=3673173
+# https://goxrc.org/pages/viewpage.action?pageId=3673173
 gfcli:
   gen:
     dao:

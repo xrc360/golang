@@ -3,7 +3,7 @@ package gerror
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/errors/gcode"
+	"github.com/xrcn/cg/errors/gcode"
 )
 
 // New creates and returns an error which is formatted from given text.

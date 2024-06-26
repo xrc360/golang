@@ -1,7 +1,7 @@
 package gcache
 
 import (
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 // IsExpired checks whether `item` is expired.

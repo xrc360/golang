@@ -3,7 +3,7 @@ package gfile_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleScanDir() {
@@ -18,8 +18,8 @@ func ExampleScanDir() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
-	gfile.PutContents(tempSubFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
+	gfile.PutContents(tempSubFile, "goxrc example content")
 
 	// scans directory recursively
 	list, _ := gfile.ScanDir(tempDir, "*", true)
@@ -45,8 +45,8 @@ func ExampleScanDirFile() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
-	gfile.PutContents(tempSubFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
+	gfile.PutContents(tempSubFile, "goxrc example content")
 
 	// scans directory recursively exclusive of directories
 	list, _ := gfile.ScanDirFile(tempDir, "*.txt", true)
@@ -71,8 +71,8 @@ func ExampleScanDirFunc() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
-	gfile.PutContents(tempSubFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
+	gfile.PutContents(tempSubFile, "goxrc example content")
 
 	// scans directory recursively
 	list, _ := gfile.ScanDirFunc(tempDir, "*", true, func(path string) string {
@@ -105,9 +105,9 @@ func ExampleScanDirFileFunc() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
-	gfile.PutContents(tempFile1, "goframe example content")
-	gfile.PutContents(tempSubFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
+	gfile.PutContents(tempFile1, "goxrc example content")
+	gfile.PutContents(tempSubFile, "goxrc example content")
 
 	// scans directory recursively exclusive of directories
 	list, _ := gfile.ScanDirFileFunc(tempDir, "*.txt", true, func(path string) string {

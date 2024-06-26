@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
+	"github.com/xrcn/cg/errors/gcode"
 )
 
 // NewCode creates and returns an error that has error code and given text.

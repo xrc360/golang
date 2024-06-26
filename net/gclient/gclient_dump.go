@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // dumpTextFormat is the format of the dumped raw string

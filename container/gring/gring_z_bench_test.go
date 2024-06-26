@@ -5,7 +5,7 @@ package gring_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gring"
+	"github.com/xrcn/cg/container/gring"
 )
 
 var length = 10000

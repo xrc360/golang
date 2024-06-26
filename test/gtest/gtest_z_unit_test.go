@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (

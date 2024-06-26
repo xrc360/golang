@@ -6,8 +6,8 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_ReadCloser(t *testing.T) {
@@ -71,7 +71,7 @@ func Test_RemoveSymbols(t *testing.T) {
 func Test_CanCallIsNil(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		var (
-			iValue         = "gf"
+			iValue         = "cg"
 			iChan          = make(chan struct{})
 			iFunc          = func() {}
 			iMap           = map[string]struct{}{}

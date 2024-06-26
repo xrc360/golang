@@ -13,17 +13,17 @@ import (
 	"github.com/fatih/color"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/internal/errors"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gfpool"
-	"github.com/xrc360/golang/os/gmlock"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/internal/errors"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/cgpool"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gmlock"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Logger is the struct for logging management.
@@ -155,7 +155,7 @@ func (l *Logger) print(ctx context.Context, level int, stack string, values ...a
 	// Caller path and Fn name.
 	if l.config.Flags&(F_FILE_LONG|F_FILE_SHORT|F_CALLER_FN) > 0 {
 		callerFnName, path, line := gdebug.CallerWithFilter(
-			[]string{consts.StackFilterKeyForGoFrame},
+			[]string{consts.StackFilterKeyForGoXrc},
 			l.config.StSkip,
 		)
 		if l.config.Flags&F_CALLER_FN > 0 {
@@ -319,8 +319,8 @@ func (l *Logger) printToFile(ctx context.Context, t time.Time, in *HandlerInput)
 }
 
 // createFpInPool retrieves and returns a file pointer from file pool.
-func (l *Logger) createFpInPool(ctx context.Context, path string) *gfpool.File {
-	file, err := gfpool.Open(
+func (l *Logger) createFpInPool(ctx context.Context, path string) *cgpool.File {
+	file, err := cgpool.Open(
 		path,
 		defaultFileFlags,
 		defaultFilePerm,
@@ -334,8 +334,8 @@ func (l *Logger) createFpInPool(ctx context.Context, path string) *gfpool.File {
 }
 
 // getFpFromPool retrieves and returns a file pointer from file pool.
-func (l *Logger) getFpFromPool(ctx context.Context, path string) *gfpool.File {
-	file := gfpool.Get(
+func (l *Logger) getFpFromPool(ctx context.Context, path string) *cgpool.File {
+	file := cgpool.Get(
 		path,
 		defaultFileFlags,
 		defaultFilePerm,
@@ -390,7 +390,7 @@ func (l *Logger) GetStack(skip ...int) string {
 	}
 	// Whether filter framework error stacks.
 	if errors.IsStackModeBrief() {
-		filters = append(filters, consts.StackFilterKeyForGoFrame)
+		filters = append(filters, consts.StackFilterKeyForGoXrc)
 	}
 	return gdebug.StackWithFilters(filters, stackSkip)
 }

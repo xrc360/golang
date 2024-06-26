@@ -1,4 +1,4 @@
-package xrc_golang
+package cg
 
 const (
 	// VERSION is the current version.

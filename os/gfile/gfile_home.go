@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Home returns absolute path of current user's home directory.

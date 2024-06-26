@@ -3,7 +3,7 @@ package gstr
 import (
 	"strings"
 
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // Trim strips whitespace (or other characters) from the beginning and end of a string.

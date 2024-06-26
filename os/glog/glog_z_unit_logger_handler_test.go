@@ -5,10 +5,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 var arrayForHandlerTest1 = garray.NewStrArray()

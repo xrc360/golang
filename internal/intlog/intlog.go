@@ -1,4 +1,4 @@
-// Package intlog provides internal logging for GoFrame development usage only.
+// Package intlog provides internal logging for GoXrc development usage only.
 package intlog
 
 import (
@@ -10,8 +10,8 @@ import (
 
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 const (

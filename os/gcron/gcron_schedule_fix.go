@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // getAndUpdateLastTimestamp checks fixes and returns the last timestamp that have delay fix in some seconds.

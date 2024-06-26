@@ -6,7 +6,7 @@ import (
 	"compress/zlib"
 	"io"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Zlib compresses `data` with zlib algorithm.

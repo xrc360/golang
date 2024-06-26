@@ -1,7 +1,7 @@
 package gutil
 
 import (
-	"github.com/xrc360/golang/internal/deepcopy"
+	"github.com/xrcn/cg/internal/deepcopy"
 )
 
 // Copy returns a deep copy of v.

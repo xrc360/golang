@@ -3,7 +3,7 @@ package gudp
 import (
 	"net"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // NewNetConn creates and returns a *net.UDPConn with given addresses.

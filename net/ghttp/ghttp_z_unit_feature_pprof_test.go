@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func TestServer_EnablePProf(t *testing.T) {

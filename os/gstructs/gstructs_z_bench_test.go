@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/xrc360/golang/os/gstructs"
+	"github.com/xrcn/cg/os/gstructs"
 )
 
 type User struct {

@@ -9,18 +9,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // iString is the type assert api for String.
@@ -734,7 +734,7 @@ func formatWhereKeyValue(in formatWhereKeyValueInput) (newArgs []interface{}) {
 				} else {
 					// The key is not a regular field name.
 					// Eg: Where(g.Map{"age > 16": nil})
-					// Issue: https://github.com/gogf/gf/issues/765
+					// Issue: 765
 					if empty.IsEmpty(in.Value) {
 						in.Buffer.WriteString(quotedKey)
 						break

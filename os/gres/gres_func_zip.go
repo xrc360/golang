@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/fileinfo"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/fileinfo"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 // ZipPathWriter compresses `paths` to `writer` using zip compressing algorithm.

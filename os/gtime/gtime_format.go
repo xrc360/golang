@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 var (

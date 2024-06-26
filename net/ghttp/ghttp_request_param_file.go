@@ -7,13 +7,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/util/grand"
 )
 
 // UploadFile wraps the multipart uploading file with more and convenient features.

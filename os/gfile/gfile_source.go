@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 var (

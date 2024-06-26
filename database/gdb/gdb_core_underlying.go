@@ -5,20 +5,20 @@ package gdb
 import (
 	"context"
 	"database/sql"
-	xrc_golang "github.com/xrc360/golang"
+	"github.com/xrcn/cg"
 	"reflect"
 
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/util/guid"
 )
 
 // Query commits one query SQL to underlying driver and returns the execution result.
@@ -167,7 +167,7 @@ func (c *Core) DoCommit(ctx context.Context, in DoCommitInput) (out DoCommitOutp
 	)
 
 	// Trace span start.
-	tr := otel.GetTracerProvider().Tracer(traceInstrumentName, trace.WithInstrumentationVersion(xrc_golang.VERSION))
+	tr := otel.GetTracerProvider().Tracer(traceInstrumentName, trace.WithInstrumentationVersion(cg.VERSION))
 	ctx, span := tr.Start(ctx, in.Type, trace.WithSpanKind(trace.SpanKindInternal))
 	defer span.End()
 

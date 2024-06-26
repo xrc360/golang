@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/database/gredis"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/database/gredis"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 // StorageRedis implements the Session Storage interface with redis.

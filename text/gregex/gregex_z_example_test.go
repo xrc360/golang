@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 func ExampleIsMatch() {
 	patternStr := `\d+`
-	g.Dump(gregex.IsMatch(patternStr, []byte("hello 2022! hello gf!")))
+	g.Dump(gregex.IsMatch(patternStr, []byte("hello 2022! hello cg!")))
 	g.Dump(gregex.IsMatch(patternStr, nil))
-	g.Dump(gregex.IsMatch(patternStr, []byte("hello gf!")))
+	g.Dump(gregex.IsMatch(patternStr, []byte("hello cg!")))
 
 	// Output:
 	// true
@@ -23,8 +23,8 @@ func ExampleIsMatch() {
 
 func ExampleIsMatchString() {
 	patternStr := `\d+`
-	g.Dump(gregex.IsMatchString(patternStr, "hello 2022! hello gf!"))
-	g.Dump(gregex.IsMatchString(patternStr, "hello gf!"))
+	g.Dump(gregex.IsMatchString(patternStr, "hello 2022! hello cg!"))
+	g.Dump(gregex.IsMatchString(patternStr, "hello cg!"))
 	g.Dump(gregex.IsMatchString(patternStr, ""))
 
 	// Output:
@@ -35,7 +35,7 @@ func ExampleIsMatchString() {
 
 func ExampleMatch() {
 	patternStr := `(\w+)=(\w+)`
-	matchStr := "https://goframe.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
+	matchStr := "https://goxrc.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
 	// This method looks for the first match index
 	result, err := gregex.Match(patternStr, []byte(matchStr))
 	g.Dump(result)
@@ -52,7 +52,7 @@ func ExampleMatch() {
 
 func ExampleMatchString() {
 	patternStr := `(\w+)=(\w+)`
-	matchStr := "https://goframe.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
+	matchStr := "https://goxrc.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
 	// This method looks for the first match index
 	result, err := gregex.MatchString(patternStr, matchStr)
 	g.Dump(result)
@@ -69,7 +69,7 @@ func ExampleMatchString() {
 
 func ExampleMatchAll() {
 	patternStr := `(\w+)=(\w+)`
-	matchStr := "https://goframe.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
+	matchStr := "https://goxrc.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
 	result, err := gregex.MatchAll(patternStr, []byte(matchStr))
 	g.Dump(result)
 	g.Dump(err)
@@ -92,7 +92,7 @@ func ExampleMatchAll() {
 
 func ExampleMatchAllString() {
 	patternStr := `(\w+)=(\w+)`
-	matchStr := "https://goframe.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
+	matchStr := "https://goxrc.org/pages/viewpage.action?pageId=1114219&searchId=8QC5D1D2E!"
 	result, err := gregex.MatchAllString(patternStr, matchStr)
 	g.Dump(result)
 	g.Dump(err)
@@ -124,7 +124,7 @@ func ExampleQuote() {
 func ExampleReplace() {
 	var (
 		patternStr  = `\d+`
-		str         = "hello gf 2020!"
+		str         = "hello cg 2020!"
 		repStr      = "2021"
 		result, err = gregex.Replace(patternStr, []byte(repStr), []byte(str))
 	)
@@ -133,13 +133,13 @@ func ExampleReplace() {
 
 	// Output:
 	// <nil>
-	// "hello gf 2021!"
+	// "hello cg 2021!"
 }
 
 func ExampleReplaceFunc() {
 	// In contrast to [ExampleReplaceFunc]
 	// the result contains the `pattern' of all subpattern that use the matching function
-	result, err := gregex.ReplaceFuncMatch(`(\d+)~(\d+)`, []byte("hello gf 2018~2020!"), func(match [][]byte) []byte {
+	result, err := gregex.ReplaceFuncMatch(`(\d+)~(\d+)`, []byte("hello cg 2018~2020!"), func(match [][]byte) []byte {
 		g.Dump(match)
 		match[2] = []byte("2021")
 		return bytes.Join(match[1:], []byte("~"))
@@ -153,14 +153,14 @@ func ExampleReplaceFunc() {
 	//     "2018",
 	//     "2020",
 	// ]
-	// "hello gf 2018~2021!"
+	// "hello cg 2018~2021!"
 	// <nil>
 }
 
 func ExampleReplaceFuncMatch() {
 	var (
 		patternStr = `(\d+)~(\d+)`
-		str        = "hello gf 2018~2020!"
+		str        = "hello cg 2018~2020!"
 	)
 	// In contrast to [ExampleReplaceFunc]
 	// the result contains the `pattern' of all subpatterns that use the matching function
@@ -178,13 +178,13 @@ func ExampleReplaceFuncMatch() {
 	//     "2018",
 	//     "2020",
 	// ]
-	// "hello gf 2018-2021!"
+	// "hello cg 2018-2021!"
 	// <nil>
 }
 
 func ExampleReplaceString() {
 	patternStr := `\d+`
-	str := "hello gf 2020!"
+	str := "hello cg 2020!"
 	replaceStr := "2021"
 	result, err := gregex.ReplaceString(patternStr, replaceStr, str)
 
@@ -192,7 +192,7 @@ func ExampleReplaceString() {
 	g.Dump(err)
 
 	// Output:
-	// "hello gf 2021!"
+	// "hello cg 2021!"
 	// <nil>
 }
 
@@ -202,7 +202,7 @@ func ExampleReplaceStringFunc() {
 	}
 	// When the regular statement can match multiple results
 	// func can be used to further control the value that needs to be modified
-	result, err := gregex.ReplaceStringFunc(`\d+`, `hello gf 2018~2020!`, func(b string) string {
+	result, err := gregex.ReplaceStringFunc(`\d+`, `hello cg 2018~2020!`, func(b string) string {
 		g.Dump(b)
 		if replaceStr, ok := replaceStrMap[b]; ok {
 			return replaceStr
@@ -212,16 +212,16 @@ func ExampleReplaceStringFunc() {
 	g.Dump(result)
 	g.Dump(err)
 
-	result, err = gregex.ReplaceStringFunc(`[a-z]*`, "gf@goframe.org", strings.ToUpper)
+	result, err = gregex.ReplaceStringFunc(`[a-z]*`, "cg@goxrc.org", strings.ToUpper)
 	g.Dump(result)
 	g.Dump(err)
 
 	// Output:
 	// "2018"
 	// "2020"
-	// "hello gf 2018~2021!"
+	// "hello cg 2018~2021!"
 	// <nil>
-	// "GF@GOFRAME.ORG"
+	// "CG@goxrc.ORG"
 	// <nil>
 }
 
@@ -234,7 +234,7 @@ func ExampleReplaceStringFuncMatch() {
 	// the result contains the `pattern' of all subpatterns that use the matching function
 	result, err := gregex.ReplaceStringFuncMatch(patternStr, str, func(match []string) string {
 		g.Dump(match)
-		match[0] = "Gf"
+		match[0] = "CG"
 		return match[0]
 	})
 	g.Dump(result)
@@ -251,14 +251,14 @@ func ExampleReplaceStringFuncMatch() {
 
 func ExampleSplit() {
 	patternStr := `\d+`
-	str := "hello2020gf"
+	str := "hello2020cg"
 	result := gregex.Split(patternStr, str)
 	g.Dump(result)
 
 	// Output:
 	// [
 	//     "hello",
-	//     "gf",
+	//     "cg",
 	// ]
 }
 

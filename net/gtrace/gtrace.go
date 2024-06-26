@@ -12,22 +12,22 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.4.0"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/net/gipv4"
-	"github.com/xrc360/golang/net/gtrace/internal/provider"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/net/gipv4"
+	"github.com/xrcn/cg/net/gtrace/internal/provider"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (
 	tracingCommonKeyIpIntranet        = `ip.intranet`
 	tracingCommonKeyIpHostname        = `hostname`
-	commandEnvKeyForMaxContentLogSize = "gf.gtrace.max.content.log.size" // To avoid too big tracing content.
-	commandEnvKeyForTracingInternal   = "gf.gtrace.tracing.internal"     // For detailed controlling for tracing content.
+	commandEnvKeyForMaxContentLogSize = "cg.gtrace.max.content.log.size" // To avoid too big tracing content.
+	commandEnvKeyForTracingInternal   = "cg.gtrace.tracing.internal"     // For detailed controlling for tracing content.
 )
 
 var (

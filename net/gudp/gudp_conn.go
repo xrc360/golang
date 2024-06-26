@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Conn handles the UDP connection.

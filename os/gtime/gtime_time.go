@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Time is a wrapper for time.Time for additional features.

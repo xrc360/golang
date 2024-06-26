@@ -18,10 +18,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
 )
 
 // Timer is the timer manager, which uses ticks to calculate the timing interval.
@@ -50,7 +50,7 @@ const (
 	panicExit            internalPanic = "exit" // panicExit is used for custom job exit with panic.
 	defaultTimerInterval               = "100"  // defaultTimerInterval is the default timer interval in milliseconds.
 	// commandEnvKeyForInterval is the key for command argument or environment configuring default interval duration for timer.
-	commandEnvKeyForInterval = "gf.gtimer.interval"
+	commandEnvKeyForInterval = "cg.gtimer.interval"
 )
 
 var (

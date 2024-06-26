@@ -3,18 +3,18 @@ package garray_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/internal/empty"
+	"github.com/xrcn/cg/internal/empty"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func ExampleSortedStrArray_Walk() {
 	var array garray.SortedStrArray
 	tables := g.SliceStr{"user", "user_detail"}
-	prefix := "gf_"
+	prefix := "cg_"
 	array.Append(tables...)
 	// Add prefix for given table names.
 	array.Walk(func(value string) string {
@@ -23,7 +23,7 @@ func ExampleSortedStrArray_Walk() {
 	fmt.Println(array.Slice())
 
 	// Output:
-	// [gf_user gf_user_detail]
+	// [cg_user cg_user_detail]
 }
 
 func ExampleNewSortedStrArray() {
@@ -371,25 +371,25 @@ func ExampleSortedStrArray_Unique() {
 func ExampleSortedStrArray_LockFunc() {
 	s := garray.NewSortedStrArrayFrom(g.SliceStr{"b", "c", "a"})
 	s.LockFunc(func(array []string) {
-		array[len(array)-1] = "GF fans"
+		array[len(array)-1] = "CG fans"
 	})
 	fmt.Println(s)
 
 	// Output:
-	// ["a","b","GF fans"]
+	// ["a","b","CG fans"]
 }
 
 func ExampleSortedStrArray_RLockFunc() {
 	s := garray.NewSortedStrArrayFrom(g.SliceStr{"b", "c", "a"})
 	s.RLockFunc(func(array []string) {
-		array[len(array)-1] = "GF fans"
+		array[len(array)-1] = "CG fans"
 		fmt.Println(array[len(array)-1])
 	})
 	fmt.Println(s)
 
 	// Output:
-	// GF fans
-	// ["a","b","GF fans"]
+	// CG fans
+	// ["a","b","CG fans"]
 }
 
 func ExampleSortedStrArray_Merge() {

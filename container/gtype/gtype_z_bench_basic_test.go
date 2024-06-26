@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/encoding/gbinary"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/encoding/gbinary"
 )
 
 var (

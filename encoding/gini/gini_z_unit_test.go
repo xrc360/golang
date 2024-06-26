@@ -3,9 +3,9 @@ package gini_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gini"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gini"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var iniContent = `
@@ -17,7 +17,7 @@ aa=bb
 ip = 127.0.0.1
 port=9001
 enable=true
-command=/bin/echo "gf=GoFrame"
+command=/bin/echo "cg=GoXrc"
 
 	[DBINFO]
 	type=mysql
@@ -36,7 +36,7 @@ func TestDecode(t *testing.T) {
 		}
 		t.Assert(res["addr"].(map[string]interface{})["ip"], "127.0.0.1")
 		t.Assert(res["addr"].(map[string]interface{})["port"], "9001")
-		t.Assert(res["addr"].(map[string]interface{})["command"], `/bin/echo "gf=GoFrame"`)
+		t.Assert(res["addr"].(map[string]interface{})["command"], `/bin/echo "cg=GoXrc"`)
 		t.Assert(res["DBINFO"].(map[string]interface{})["user"], "root")
 		t.Assert(res["DBINFO"].(map[string]interface{})["type"], "mysql")
 		t.Assert(res["键"].(map[string]interface{})["呵呵"], "值")

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (

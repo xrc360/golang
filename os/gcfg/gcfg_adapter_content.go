@@ -3,9 +3,9 @@ package gcfg
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // AdapterContent implements interface Adapter using content.

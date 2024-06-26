@@ -9,7 +9,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/util/grand"
 )
 
 var (

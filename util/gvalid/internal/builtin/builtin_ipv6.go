@@ -3,7 +3,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/xrc360/golang/net/gipv6"
+	"github.com/xrcn/cg/net/gipv6"
 )
 
 // RuleIpv6 implements `ipv6` rule:

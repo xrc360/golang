@@ -7,8 +7,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // SigHandler defines a function type for signal handling.

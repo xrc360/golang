@@ -9,7 +9,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 // Ip2long converts ip address to an uint32 integer.

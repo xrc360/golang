@@ -7,8 +7,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/xrc360/golang/encoding/ghash"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/encoding/ghash"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // BinVersion returns the version of current running binary.

@@ -3,12 +3,12 @@ package gsvc
 import (
 	"context"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // LocalService provides a default implements for interface Service.

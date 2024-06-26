@@ -3,8 +3,8 @@ package gconv
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/reflection"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/reflection"
 )
 
 // SliceStr is alias of Strings.

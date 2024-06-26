@@ -4,12 +4,12 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gstructs"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gstructs"
 )
 
 // Struct maps the params key-value pairs to the corresponding struct object's attributes.
@@ -495,7 +495,7 @@ func bindVarToStructAttr(
 		structFieldValue.Set(reflect.Zero(structFieldValue.Type()))
 	} else {
 		// Try to call custom converter.
-		// Issue: https://github.com/gogf/gf/issues/3099
+		// Issue: 3099
 		var (
 			customConverterInput reflect.Value
 			ok                   bool
@@ -520,7 +520,7 @@ func bindVarToStructAttr(
 			})
 			return
 		// Hold the time zone consistent in recursive
-		// Issue: https://github.com/gogf/gf/issues/2980
+		// Issue: 2980
 		case "*gtime.Time", "gtime.Time":
 			doConvertWithReflectValueSet(structFieldValue, doConvertInput{
 				FromValue:  value,

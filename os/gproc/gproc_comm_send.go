@@ -3,9 +3,9 @@ package gproc
 import (
 	"io"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/net/gtcp"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/net/gtcp"
 )
 
 // Send sends data to specified process of given pid.

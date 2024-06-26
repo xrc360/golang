@@ -6,14 +6,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gsession"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gsession"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/guid"
 )
 
 // Request is the context object for a request.

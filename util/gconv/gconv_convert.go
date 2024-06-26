@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 // Convert converts the variable `fromValue` to the type `toTypeName`, the type `toTypeName` is specified by string.

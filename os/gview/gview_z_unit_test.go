@@ -8,22 +8,22 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/encoding/ghtml"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmode"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/encoding/ghtml"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmode"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func init() {
-	os.Setenv("GF_GVIEW_ERRORPRINT", "false")
+	os.Setenv("CG_GVIEW_ERRORPRINT", "false")
 }
 
 func Test_Basic(t *testing.T) {
@@ -34,24 +34,24 @@ func Test_Basic(t *testing.T) {
 		view.SetDelimiters("{{", "}}")
 		view.AddPath(pwd)
 		view.SetPath(pwd)
-		view.Assign("name", "gf")
+		view.Assign("name", "cg")
 		view.Assigns(g.Map{"version": "1.7.0"})
-		view.BindFunc("GetName", func() string { return "gf" })
+		view.BindFunc("GetName", func() string { return "cg" })
 		view.BindFuncMap(gview.FuncMap{"GetVersion": func() string { return "1.7.0" }})
 		result, err := view.ParseContent(context.TODO(), str, g.Map{"other": "that's all"})
 		t.Assert(err != nil, false)
-		t.Assert(result, "hello gf,version:1.7.0;hello gf,version:1.7.0;that's all")
+		t.Assert(result, "hello cg,version:1.7.0;hello cg,version:1.7.0;that's all")
 
 		// 测试api方法
 		str = `hello {{.name}}`
-		result, err = gview.ParseContent(context.TODO(), str, g.Map{"name": "gf"})
+		result, err = gview.ParseContent(context.TODO(), str, g.Map{"name": "cg"})
 		t.Assert(err != nil, false)
-		t.Assert(result, "hello gf")
+		t.Assert(result, "hello cg")
 
 		// 测试instance方法
-		result, err = gview.Instance().ParseContent(context.TODO(), str, g.Map{"name": "gf"})
+		result, err = gview.Instance().ParseContent(context.TODO(), str, g.Map{"name": "cg"})
 		t.Assert(err != nil, false)
-		t.Assert(result, "hello gf")
+		t.Assert(result, "hello cg")
 	})
 }
 
@@ -107,21 +107,21 @@ func Test_Func(t *testing.T) {
 		t.Assert(err != nil, false)
 		t.Assert(result, `<div>测试</div>`)
 
-		str = `{{"https://goframe.org"|url}}`
+		str = `{{"https://goxrc.org"|url}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
-		t.Assert(result, `https%3A%2F%2Fgoframe.org`)
+		t.Assert(result, `https%3A%2F%2Fgoxrc.org`)
 
-		str = `{{"https://goframe.org"|urlencode}}`
+		str = `{{"https://goxrc.org"|urlencode}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
-		t.Assert(result, `https%3A%2F%2Fgoframe.org`)
+		t.Assert(result, `https%3A%2F%2Fgoxrc.org`)
 
-		str = `{{"https%3A%2F%2Fgoframe.org"|urldecode}}`
+		str = `{{"https%3A%2F%2Fgoxrc.org"|urldecode}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
-		t.Assert(result, `https://goframe.org`)
-		str = `{{"https%3NA%2F%2Fgoframe.org"|urldecode}}`
+		t.Assert(result, `https://goxrc.org`)
+		str = `{{"https%3NA%2F%2Fgoxrc.org"|urldecode}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
 		t.Assert(gstr.Contains(result, "invalid URL escape"), true)
@@ -154,25 +154,25 @@ func Test_Func(t *testing.T) {
 		t.Assert(err != nil, false)
 		t.Assert(result, `-1;-1;1;0`)
 
-		str = `{{"热爱GF热爱生活" | hidestr 20  "*"}};{{"热爱GF热爱生活" | hidestr 50  "*"}}`
+		str = `{{"热爱CG热爱生活" | hidestr 20  "*"}};{{"热爱CG热爱生活" | hidestr 50  "*"}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
-		t.Assert(result, `热爱GF*爱生活;热爱****生活`)
+		t.Assert(result, `热爱CG*爱生活;热爱****生活`)
 
-		str = `{{"热爱GF热爱生活" | highlight "GF" "red"}}`
+		str = `{{"热爱CG热爱生活" | highlight "CG" "red"}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
-		t.Assert(result, `热爱<span style="color:red;">GF</span>热爱生活`)
+		t.Assert(result, `热爱<span style="color:red;">CG</span>热爱生活`)
 
-		str = `{{"gf" | toupper}};{{"GF" | tolower}}`
+		str = `{{"cg" | toupper}};{{"CG" | tolower}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.Assert(err != nil, false)
-		t.Assert(result, `GF;gf`)
+		t.Assert(result, `CG;cg`)
 
-		str = `{{concat "I" "Love" "GoFrame"}}`
+		str = `{{concat "I" "Love" "GoXrc"}}`
 		result, err = gview.ParseContent(context.TODO(), str, nil)
 		t.AssertNil(err)
-		t.Assert(result, `ILoveGoFrame`)
+		t.Assert(result, `ILoveGoXrc`)
 	})
 	// eq: multiple values.
 	gtest.C(t, func(t *gtest.T) {
@@ -214,7 +214,7 @@ func Test_FuncInclude(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		var (
 			header = `<h1>HEADER</h1>`
-			main   = `<h1>hello gf</h1>`
+			main   = `<h1>hello cg</h1>`
 			footer = `<h1>FOOTER</h1>`
 			layout = `{{include "header.html" .}}
 {{include "main.html" .}}
@@ -240,7 +240,7 @@ func Test_FuncInclude(t *testing.T) {
 		result, err = view.Parse(context.TODO(), "layout.html")
 		t.AssertNil(err)
 		t.Assert(result, `<h1>HEADER</h1>
-<h1>hello gf</h1>
+<h1>hello cg</h1>
 <h1>FOOTER</h1>
 template file "footer_not_exist.html" not found
 `)
@@ -261,7 +261,7 @@ func Test_SetPath(t *testing.T) {
 		err = view.AddPath("gview.go")
 		t.AssertNE(err, nil)
 
-		os.Setenv("GF_GVIEW_PATH", "tmp")
+		os.Setenv("CG_GVIEW_PATH", "tmp")
 		view = gview.Instance("setpath")
 		err = view.SetPath("tmp")
 		t.AssertNE(err, nil)
@@ -276,7 +276,7 @@ func Test_SetPath(t *testing.T) {
 		err = view.SetPath("gview.go")
 		t.AssertNE(err, nil)
 
-		os.Setenv("GF_GVIEW_PATH", "template")
+		os.Setenv("CG_GVIEW_PATH", "template")
 		gfile.Mkdir(gfile.Pwd() + gfile.Separator + "template")
 		view = gview.New()
 	})

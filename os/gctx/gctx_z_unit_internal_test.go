@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_NeverDone(t *testing.T) {

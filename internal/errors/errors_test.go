@@ -3,8 +3,8 @@ package errors_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/internal/errors"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/internal/errors"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_IsStackModeBrief(t *testing.T) {

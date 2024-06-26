@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 // SliceUint is alias of Uints.

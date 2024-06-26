@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // Scan prints `info` to stdout, reads and returns user input, which stops by '\n'.

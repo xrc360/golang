@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // LeEncode encodes one or multiple `values` into bytes using LittleEndian.

@@ -3,7 +3,7 @@ package gfile
 import (
 	"strings"
 
-	"github.com/xrc360/golang/container/garray"
+	"github.com/xrcn/cg/container/garray"
 )
 
 // fileSortFunc is the comparison function for files.

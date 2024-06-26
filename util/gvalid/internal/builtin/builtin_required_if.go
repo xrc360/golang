@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // RuleRequiredIf implements `required-if` rule:

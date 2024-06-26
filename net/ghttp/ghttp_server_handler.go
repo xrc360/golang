@@ -6,15 +6,15 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/xrc360/golang/encoding/ghtml"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gspath"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/encoding/ghtml"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gspath"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // ServeHTTP is the default handler for http request.

@@ -2,8 +2,8 @@
 package gmeta
 
 import (
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/os/gstructs"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/os/gstructs"
 )
 
 // Meta is used as an embedded attribute for struct to enabled metadata feature.

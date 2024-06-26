@@ -3,7 +3,7 @@ package gproc
 import (
 	"context"
 	"fmt"
-	xrc_golang "github.com/xrc360/golang"
+	"github.com/xrcn/cg"
 	"os"
 	"os/exec"
 	"runtime"
@@ -13,12 +13,12 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/os/genv"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/os/genv"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // Process is the struct for a single process.
@@ -75,7 +75,7 @@ func (p *Process) Start(ctx context.Context) (int, error) {
 		span trace.Span
 		tr   = otel.GetTracerProvider().Tracer(
 			tracingInstrumentName,
-			trace.WithInstrumentationVersion(xrc_golang.VERSION),
+			trace.WithInstrumentationVersion(cg.VERSION),
 		)
 	)
 	ctx, span = tr.Start(

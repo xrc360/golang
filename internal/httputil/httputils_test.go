@@ -3,10 +3,10 @@ package httputil_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/httputil"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/httputil"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func TestBuildParams(t *testing.T) {

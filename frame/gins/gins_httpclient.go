@@ -3,8 +3,8 @@ package gins
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/net/gclient"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/net/gclient"
 )
 
 // HttpClient returns an instance of http client with specified name.

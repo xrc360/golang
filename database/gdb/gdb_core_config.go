@@ -4,11 +4,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xrc360/golang/os/gcache"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/os/gcache"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Config is the configuration management object.

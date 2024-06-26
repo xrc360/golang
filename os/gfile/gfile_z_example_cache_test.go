@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleGetContentsWithCache() {
@@ -16,14 +16,14 @@ func ExampleGetContentsWithCache() {
 	)
 
 	// write contents
-	gfile.PutContents(tempFile, "goframe example content")
+	gfile.PutContents(tempFile, "goxrc example content")
 
 	// It reads the file content with cache duration of one minute,
 	// which means it reads from cache after then without any IO operations within on minute.
 	fmt.Println(gfile.GetContentsWithCache(tempFile, time.Minute))
 
 	// write new contents will clear its cache
-	gfile.PutContents(tempFile, "new goframe example content")
+	gfile.PutContents(tempFile, "new goxrc example content")
 
 	// There's some delay for cache clearing after file content change.
 	time.Sleep(time.Second * 1)
@@ -32,6 +32,6 @@ func ExampleGetContentsWithCache() {
 	fmt.Println(gfile.GetContentsWithCache(tempFile))
 
 	// May Output:
-	// goframe example content
-	// new goframe example content
+	// goxrc example content
+	// new goxrc example content
 }

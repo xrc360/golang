@@ -5,12 +5,12 @@ import (
 	"math"
 	"time"
 
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 // AdapterMemory is an adapter implements using memory.

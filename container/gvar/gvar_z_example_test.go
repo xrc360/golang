@@ -3,9 +3,9 @@ package gvar_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // New
@@ -60,20 +60,20 @@ func ExampleVar_Interface() {
 
 // Bytes
 func ExampleVar_Bytes() {
-	var v = gvar.New("GoFrame")
+	var v = gvar.New("GoXrc")
 	g.DumpWithType(v.Bytes())
 
 	// Output:
-	// []byte(7) "GoFrame"
+	// []byte(7) "GoXrc"
 }
 
 // String
 func ExampleVar_String() {
-	var v = gvar.New("GoFrame")
+	var v = gvar.New("GoXrc")
 	g.DumpWithType(v.String())
 
 	// Output:
-	// string(7) "GoFrame"
+	// string(7) "GoXrc"
 }
 
 // Bool
@@ -182,7 +182,7 @@ func ExampleVar_UnmarshalJSON() {
 func ExampleVar_UnmarshalValue() {
 	tmp := g.Map{
 		"code":  "00002",
-		"name":  "GoFrame",
+		"name":  "GoXrc",
 		"price": 100,
 		"sale":  true,
 	}
@@ -194,7 +194,7 @@ func ExampleVar_UnmarshalValue() {
 	g.Dump(v)
 
 	// Output:
-	// "{\"code\":\"00002\",\"name\":\"GoFrame\",\"price\":100,\"sale\":true}"
+	// "{\"code\":\"00002\",\"name\":\"GoXrc\",\"price\":100,\"sale\":true}"
 }
 
 // IsNil
@@ -489,64 +489,64 @@ func ExampleVar_Float64s() {
 // Strings
 func ExampleVar_Strings() {
 	var (
-		arr = []string{"GoFrame", "Golang"}
+		arr = []string{"GoXrc", "Golang"}
 		obj = gvar.New(arr)
 	)
 	fmt.Println(obj.Strings())
 
 	// Output:
-	// [GoFrame Golang]
+	// [GoXrc Golang]
 }
 
 // Interfaces
 func ExampleVar_Interfaces() {
 	var (
-		arr = []string{"GoFrame", "Golang"}
+		arr = []string{"GoXrc", "Golang"}
 		obj = gvar.New(arr)
 	)
 
 	fmt.Println(obj.Interfaces())
 
 	// Output:
-	// [GoFrame Golang]
+	// [GoXrc Golang]
 }
 
 // Slice
 func ExampleVar_Slice() {
 	var (
-		arr = []string{"GoFrame", "Golang"}
+		arr = []string{"GoXrc", "Golang"}
 		obj = gvar.New(arr)
 	)
 
 	fmt.Println(obj.Slice())
 
 	// Output:
-	// [GoFrame Golang]
+	// [GoXrc Golang]
 }
 
 // Array
 func ExampleVar_Array() {
 	var (
-		arr = []string{"GoFrame", "Golang"}
+		arr = []string{"GoXrc", "Golang"}
 		obj = gvar.New(arr)
 	)
 	fmt.Println(obj.Array())
 
 	// Output:
-	// [GoFrame Golang]
+	// [GoXrc Golang]
 }
 
 // Vars
 func ExampleVar_Vars() {
 	var (
-		arr = []string{"GoFrame", "Golang"}
+		arr = []string{"GoXrc", "Golang"}
 		obj = gvar.New(arr)
 	)
 
 	fmt.Println(obj.Vars())
 
 	// Output:
-	// [GoFrame Golang]
+	// [GoXrc Golang]
 }
 
 // Map

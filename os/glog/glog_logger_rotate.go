@@ -6,14 +6,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/encoding/gcompress"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gmlock"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gtimer"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/encoding/gcompress"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gmlock"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gtimer"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 const (

@@ -1,12 +1,12 @@
 package gjson
 
 import (
-	"github.com/xrc360/golang/encoding/gini"
-	"github.com/xrc360/golang/encoding/gproperties"
-	"github.com/xrc360/golang/encoding/gtoml"
-	"github.com/xrc360/golang/encoding/gxml"
-	"github.com/xrc360/golang/encoding/gyaml"
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/encoding/gini"
+	"github.com/xrcn/cg/encoding/gproperties"
+	"github.com/xrcn/cg/encoding/gtoml"
+	"github.com/xrcn/cg/encoding/gxml"
+	"github.com/xrcn/cg/encoding/gyaml"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // ========================================================================

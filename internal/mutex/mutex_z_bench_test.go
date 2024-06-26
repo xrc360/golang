@@ -3,7 +3,7 @@ package mutex_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/internal/mutex"
+	"github.com/xrcn/cg/internal/mutex"
 )
 
 var (

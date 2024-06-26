@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/xrc360/golang/encoding/gurl"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/encoding/gurl"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (

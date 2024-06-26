@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Encrypt encrypts any type of variable using MD5 algorithms.

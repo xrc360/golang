@@ -6,10 +6,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // BindHandler registers a handler function to server with a given pattern.
@@ -43,7 +43,7 @@ type doBindHandlerInput struct {
 // doBindHandler registers a handler function to server with given pattern.
 //
 // The parameter `pattern` is like:
-// /user/list, put:/user, delete:/user, post:/user@goframe.org
+// /user/list, put:/user, delete:/user, post:/user@goxrc.org
 func (s *Server) doBindHandler(ctx context.Context, in doBindHandlerInput) {
 	s.setHandler(ctx, setHandlerInput{
 		Prefix:  in.Prefix,

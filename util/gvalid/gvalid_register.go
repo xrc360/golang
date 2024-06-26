@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"runtime"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // RuleFunc is the custom function for data validation.

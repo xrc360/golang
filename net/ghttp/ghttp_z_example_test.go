@@ -1,9 +1,9 @@
 package ghttp_test
 
 import (
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleServer_Run() {

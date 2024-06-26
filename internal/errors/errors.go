@@ -1,14 +1,8 @@
-// Copyright GoFrame gf Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/gf.
-
 // Package errors provides functionalities to manipulate errors for internal usage purpose.
 package errors
 
 import (
-	"github.com/xrc360/golang/internal/command"
+	"github.com/xrcn/cg/internal/command"
 )
 
 // StackMode is the mode that printing stack information in StackModeBrief or StackModeDetail mode.
@@ -17,10 +11,10 @@ type StackMode string
 const (
 	// commandEnvKeyForBrief is the command environment name for switch key for brief error stack.
 	// Deprecated: use commandEnvKeyForStackMode instead.
-	commandEnvKeyForBrief = "gf.gerror.brief"
+	commandEnvKeyForBrief = "cg.gerror.brief"
 
 	// commandEnvKeyForStackMode is the command environment name for switch key for brief error stack.
-	commandEnvKeyForStackMode = "gf.gerror.stack.mode"
+	commandEnvKeyForStackMode = "cg.gerror.stack.mode"
 )
 
 const (

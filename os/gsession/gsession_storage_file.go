@@ -6,17 +6,17 @@ import (
 	"os"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/crypto/gaes"
-	"github.com/xrc360/golang/encoding/gbinary"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/crypto/gaes"
+	"github.com/xrcn/cg/encoding/gbinary"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 // StorageFile implements the Session Storage interface with file system.

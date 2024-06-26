@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"os"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Encode encodes bytes with BASE64 algorithm.

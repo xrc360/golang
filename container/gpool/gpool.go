@@ -5,12 +5,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 // Pool is an Object-Reusable Pool.

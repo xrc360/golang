@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Search searches file by name `name` in following paths with priority:

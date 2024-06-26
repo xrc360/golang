@@ -3,7 +3,7 @@ package gfile_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 func ExampleHome() {

@@ -6,10 +6,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 var (
@@ -25,32 +25,32 @@ func Test_NewVar(t *testing.T) {
 
 func Test_Dump(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		g.Dump("GoFrame")
+		g.Dump("GoXrc")
 	})
 }
 
 func Test_DumpTo(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		g.DumpTo(os.Stdout, "GoFrame", gutil.DumpOption{})
+		g.DumpTo(os.Stdout, "GoXrc", gutil.DumpOption{})
 	})
 }
 
 func Test_DumpWithType(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		g.DumpWithType("GoFrame", 123)
+		g.DumpWithType("GoXrc", 123)
 	})
 }
 
 func Test_DumpWithOption(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		g.DumpWithOption("GoFrame", gutil.DumpOption{})
+		g.DumpWithOption("GoXrc", gutil.DumpOption{})
 	})
 }
 
 func Test_Try(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		g.Try(ctx, func(ctx context.Context) {
-			g.Dump("GoFrame")
+			g.Dump("GoXrc")
 		})
 	})
 }
@@ -58,16 +58,16 @@ func Test_Try(t *testing.T) {
 func Test_TryCatch(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		g.TryCatch(ctx, func(ctx context.Context) {
-			g.Dump("GoFrame")
+			g.Dump("GoXrc")
 		}, func(ctx context.Context, exception error) {
 			g.Dump(exception)
 		})
 	})
 	gtest.C(t, func(t *gtest.T) {
 		g.TryCatch(ctx, func(ctx context.Context) {
-			g.Throw("GoFrame")
+			g.Throw("GoXrc")
 		}, func(ctx context.Context, exception error) {
-			t.Assert(exception.Error(), "GoFrame")
+			t.Assert(exception.Error(), "GoXrc")
 		})
 	})
 }
@@ -76,7 +76,7 @@ func Test_IsNil(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		t.Assert(g.IsNil(nil), true)
 		t.Assert(g.IsNil(0), false)
-		t.Assert(g.IsNil("GoFrame"), false)
+		t.Assert(g.IsNil("GoXrc"), false)
 	})
 }
 
@@ -84,7 +84,7 @@ func Test_IsEmpty(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		t.Assert(g.IsEmpty(nil), true)
 		t.Assert(g.IsEmpty(0), true)
-		t.Assert(g.IsEmpty("GoFrame"), false)
+		t.Assert(g.IsEmpty("GoXrc"), false)
 	})
 }
 

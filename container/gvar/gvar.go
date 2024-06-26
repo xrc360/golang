@@ -4,12 +4,12 @@ package gvar
 import (
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/internal/deepcopy"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/internal/deepcopy"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Var is an universal variable type implementer.

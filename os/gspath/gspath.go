@@ -11,13 +11,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // SPath manages the path searching feature.

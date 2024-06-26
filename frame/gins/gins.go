@@ -2,10 +2,10 @@
 package gins
 
 const (
-	frameCoreComponentNameViewer     = "gf.core.component.viewer"
-	frameCoreComponentNameDatabase   = "gf.core.component.database"
-	frameCoreComponentNameHttpClient = "gf.core.component.httpclient"
-	frameCoreComponentNameLogger     = "gf.core.component.logger"
-	frameCoreComponentNameRedis      = "gf.core.component.redis"
-	frameCoreComponentNameServer     = "gf.core.component.server"
+	frameCoreComponentNameViewer     = "cg.core.component.viewer"
+	frameCoreComponentNameDatabase   = "cg.core.component.database"
+	frameCoreComponentNameHttpClient = "cg.core.component.httpclient"
+	frameCoreComponentNameLogger     = "cg.core.component.logger"
+	frameCoreComponentNameRedis      = "cg.core.component.redis"
+	frameCoreComponentNameServer     = "cg.core.component.server"
 )

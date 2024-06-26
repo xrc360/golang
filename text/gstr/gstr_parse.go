@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Parse parses the string into map[string]interface{}.

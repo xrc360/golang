@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/encoding/ghtml"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/encoding/ghtml"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_Template_Basic(t *testing.T) {

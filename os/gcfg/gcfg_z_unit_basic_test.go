@@ -5,12 +5,12 @@ package gcfg_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/genv"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/genv"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Basic1(t *testing.T) {
@@ -216,7 +216,7 @@ array = [1,2,3]
 		t.Assert(c.MustGet(ctx, "v1"), 1)
 		t.Assert(c.MustGetWithCmd(ctx, `redis.user`), nil)
 
-		gcmd.Init([]string{"gf", "--redis.user=2"}...)
+		gcmd.Init([]string{"cg", "--redis.user=2"}...)
 		t.Assert(c.MustGetWithCmd(ctx, `redis.user`), `2`)
 	})
 }

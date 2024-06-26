@@ -3,9 +3,9 @@ package goai
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // RequestBody is specified by OpenAPI/Swagger 3.0 standard.

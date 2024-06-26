@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/encoding/gproperties"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gproperties"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var pStr string = `

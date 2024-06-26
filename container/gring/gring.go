@@ -4,8 +4,8 @@ package gring
 import (
 	"container/ring"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/internal/rwmutex"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/internal/rwmutex"
 )
 
 // Ring is a struct of ring structure.

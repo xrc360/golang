@@ -1,4 +1,4 @@
-module github.com/xrc360/golang
+module github.com/xrcn/cg
 
 go 1.18
 

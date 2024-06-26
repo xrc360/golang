@@ -3,7 +3,7 @@ package gtime_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 // New creates and returns a Time object with given parameter.

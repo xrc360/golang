@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/gins"
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/gins"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Server(t *testing.T) {

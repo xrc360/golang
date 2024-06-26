@@ -3,8 +3,8 @@ package gvar_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func TestVar_Ints(t *testing.T) {

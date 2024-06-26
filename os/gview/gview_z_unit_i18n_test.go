@@ -4,13 +4,13 @@ import (
 	"context"
 	"testing"
 
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_I18n(t *testing.T) {

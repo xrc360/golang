@@ -1,7 +1,7 @@
 package gins
 
 import (
-	"github.com/xrc360/golang/i18n/gi18n"
+	"github.com/xrcn/cg/i18n/gi18n"
 )
 
 // I18n returns an instance of gi18n.Manager.

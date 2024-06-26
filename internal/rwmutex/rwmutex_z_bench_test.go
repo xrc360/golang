@@ -3,7 +3,7 @@ package rwmutex_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/internal/rwmutex"
+	"github.com/xrcn/cg/internal/rwmutex"
 )
 
 var (

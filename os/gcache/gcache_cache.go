@@ -3,7 +3,7 @@ package gcache
 import (
 	"context"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Cache struct.

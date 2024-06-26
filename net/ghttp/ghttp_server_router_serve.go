@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/encoding/gurl"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/encoding/gurl"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 // handlerCacheItem is an item just for internal router searching cache.

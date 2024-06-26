@@ -5,7 +5,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Registry interface for service.
@@ -113,11 +113,11 @@ const (
 	DefaultDeployment         = `default`            // DefaultDeployment is the default deployment of service.
 	DefaultNamespace          = `default`            // DefaultNamespace is the default namespace of service.
 	DefaultVersion            = `latest`             // DefaultVersion is the default version of service.
-	EnvPrefix                 = `GF_GSVC_PREFIX`     // EnvPrefix is the environment variable prefix.
-	EnvDeployment             = `GF_GSVC_DEPLOYMENT` // EnvDeployment is the environment variable deployment.
-	EnvNamespace              = `GF_GSVC_NAMESPACE`  // EnvNamespace is the environment variable namespace.
-	EnvName                   = `GF_GSVC_Name`       // EnvName is the environment variable name.
-	EnvVersion                = `GF_GSVC_VERSION`    // EnvVersion is the environment variable version.
+	EnvPrefix                 = `CG_GSVC_PREFIX`     // EnvPrefix is the environment variable prefix.
+	EnvDeployment             = `CG_GSVC_DEPLOYMENT` // EnvDeployment is the environment variable deployment.
+	EnvNamespace              = `CG_GSVC_NAMESPACE`  // EnvNamespace is the environment variable namespace.
+	EnvName                   = `CG_GSVC_Name`       // EnvName is the environment variable name.
+	EnvVersion                = `CG_GSVC_VERSION`    // EnvVersion is the environment variable version.
 	MDProtocol                = `protocol`           // MDProtocol is the metadata key for protocol.
 	MDInsecure                = `insecure`           // MDInsecure is the metadata key for insecure.
 	MDWeight                  = `weight`             // MDWeight is the metadata key for weight.

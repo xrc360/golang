@@ -7,12 +7,12 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gtimer"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gtimer"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // JobFunc is the timing called job function in cron.

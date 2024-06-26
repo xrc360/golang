@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // CacheOption is options for model cache control in query.

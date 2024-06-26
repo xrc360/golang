@@ -3,8 +3,8 @@ package gconv
 import (
 	"time"
 
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gtime"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gtime"
 )
 
 // Time converts `any` to time.Time.

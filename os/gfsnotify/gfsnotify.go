@@ -8,15 +8,15 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gqueue"
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gcache"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gqueue"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gcache"
 )
 
 // Watcher is the monitor for file changes.

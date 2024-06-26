@@ -4,8 +4,8 @@ package g
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/util/gmeta"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/util/gmeta"
 )
 
 type (

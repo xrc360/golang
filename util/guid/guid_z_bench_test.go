@@ -5,7 +5,7 @@ package guid_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Benchmark_S(b *testing.B) {

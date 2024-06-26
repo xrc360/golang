@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"os"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Close implements interface of http.File.

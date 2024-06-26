@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func Test_Parse(t *testing.T) {
@@ -82,7 +82,7 @@ func Test_Parse(t *testing.T) {
 
 	// url
 	gtest.C(t, func(t *gtest.T) {
-		s := "goframe.org/index?name=john&score=100"
+		s := "goxrc.org/index?name=john&score=100"
 		u, err := url.Parse(s)
 		t.AssertNil(err)
 		m, err := gstr.Parse(u.RawQuery)

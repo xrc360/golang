@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
+	"github.com/xrcn/cg/container/gmap"
 )
 
 // Storage is the interface definition for session storage.

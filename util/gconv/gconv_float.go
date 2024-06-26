@@ -1,7 +1,7 @@
 package gconv
 
 import (
-	"github.com/xrc360/golang/encoding/gbinary"
+	"github.com/xrcn/cg/encoding/gbinary"
 	"strconv"
 )
 

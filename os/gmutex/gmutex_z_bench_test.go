@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/xrc360/golang/os/gmutex"
+	"github.com/xrcn/cg/os/gmutex"
 )
 
 var (

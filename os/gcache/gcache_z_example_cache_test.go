@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xrc360/golang/database/gredis"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gcache"
-	"github.com/xrc360/golang/os/gctx"
+	"github.com/xrcn/cg/database/gredis"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gcache"
+	"github.com/xrcn/cg/os/gctx"
 )
 
 func ExampleNew() {

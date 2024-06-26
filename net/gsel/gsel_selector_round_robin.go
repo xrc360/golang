@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 type selectorRoundRobin struct {

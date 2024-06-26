@@ -5,8 +5,8 @@ package gpage_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gpage"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gpage"
 )
 
 func Test_New(t *testing.T) {

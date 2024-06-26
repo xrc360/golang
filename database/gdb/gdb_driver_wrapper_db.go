@@ -5,12 +5,12 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // DriverWrapperDB is a DB wrapper for extending features with embedded DB.

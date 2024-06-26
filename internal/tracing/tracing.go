@@ -7,9 +7,9 @@ import (
 
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/encoding/gbinary"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/encoding/gbinary"
+	"github.com/xrcn/cg/util/grand"
 )
 
 var (

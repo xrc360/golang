@@ -10,18 +10,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/gsvc"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/os/gsession"
-	"github.com/xrc360/golang/os/gview"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/gsvc"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/os/gsession"
+	"github.com/xrcn/cg/os/gview"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 const (
@@ -272,7 +272,7 @@ func NewConfig() ServerConfig {
 		KeepAlive:               true,
 		IndexFiles:              []string{"index.html", "index.htm"},
 		IndexFolder:             false,
-		ServerAgent:             "GoFrame HTTP Server",
+		ServerAgent:             "GoXrc HTTP Server",
 		ServerRoot:              "",
 		StaticPaths:             make([]staticPathItem, 0),
 		FileServerEnabled:       false,

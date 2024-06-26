@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 // RuleDate implements `date` rule:

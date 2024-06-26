@@ -4,7 +4,7 @@ package gcrc32
 import (
 	"hash/crc32"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Encrypt encrypts any type of variable using CRC32 algorithms.

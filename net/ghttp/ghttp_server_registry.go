@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/xrc360/golang/net/gipv4"
-	"github.com/xrc360/golang/net/gsvc"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/net/gipv4"
+	"github.com/xrcn/cg/net/gsvc"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // doServiceRegister registers current service to Registry.

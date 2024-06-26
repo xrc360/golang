@@ -1,16 +1,16 @@
 package utils
 
 import (
-	"github.com/xrc360/golang/internal/command"
+	"github.com/xrcn/cg/internal/command"
 )
 
 const (
 	// Debug key for checking if in debug mode.
-	commandEnvKeyForDebugKey = "gf.debug"
+	commandEnvKeyForDebugKey = "cg.debug"
 )
 
 var (
-	// isDebugEnabled marks whether GoFrame debug mode is enabled.
+	// isDebugEnabled marks whether GoXrc debug mode is enabled.
 	isDebugEnabled = false
 )
 
@@ -25,7 +25,7 @@ func init() {
 }
 
 // IsDebugEnabled checks and returns whether debug mode is enabled.
-// The debug mode is enabled when command argument "gf.debug" or environment "GF_DEBUG" is passed.
+// The debug mode is enabled when command argument "cg.debug" or environment "CG_DEBUG" is passed.
 func IsDebugEnabled() bool {
 	return isDebugEnabled
 }

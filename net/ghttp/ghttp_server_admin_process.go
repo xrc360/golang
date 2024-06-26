@@ -10,17 +10,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gproc"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/os/gtimer"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gproc"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/os/gtimer"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (
@@ -29,9 +29,9 @@ const (
 	adminActionNone          = 0
 	adminActionRestarting    = 1
 	adminActionShuttingDown  = 2
-	adminActionReloadEnvKey  = "GF_SERVER_RELOAD"
-	adminActionRestartEnvKey = "GF_SERVER_RESTART"
-	adminGProcCommGroup      = "GF_GPROC_HTTP_SERVER"
+	adminActionReloadEnvKey  = "CG_SERVER_RELOAD"
+	adminActionRestartEnvKey = "CG_SERVER_RESTART"
+	adminGProcCommGroup      = "CG_GPROC_HTTP_SERVER"
 )
 
 var (

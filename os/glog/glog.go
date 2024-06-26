@@ -4,9 +4,9 @@ package glog
 import (
 	"context"
 
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/os/grpool"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/os/grpool"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // ILogger is the API interface for logger.
@@ -32,7 +32,7 @@ type ILogger interface {
 }
 
 const (
-	commandEnvKeyForDebug = "gf.glog.debug"
+	commandEnvKeyForDebug = "cg.glog.debug"
 )
 
 var (

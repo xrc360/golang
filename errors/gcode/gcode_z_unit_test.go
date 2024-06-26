@@ -3,8 +3,8 @@ package gcode_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Case(t *testing.T) {

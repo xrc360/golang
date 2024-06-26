@@ -3,7 +3,7 @@ package gdb
 import (
 	"database/sql"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // SqlResult is execution result for sql operations.

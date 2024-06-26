@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gtag"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gtag"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_Set_Get(t *testing.T) {

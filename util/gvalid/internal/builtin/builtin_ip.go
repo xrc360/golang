@@ -3,8 +3,8 @@ package builtin
 import (
 	"errors"
 
-	"github.com/xrc360/golang/net/gipv4"
-	"github.com/xrc360/golang/net/gipv6"
+	"github.com/xrcn/cg/net/gipv4"
+	"github.com/xrcn/cg/net/gipv6"
 )
 
 // RuleIp implements `ip` rule:

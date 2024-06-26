@@ -3,8 +3,8 @@ package gcompress_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gcompress"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gcompress"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Zlib_UnZlib(t *testing.T) {

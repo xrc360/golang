@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/xrc360/golang/container/gset"
+	"github.com/xrcn/cg/container/gset"
 )
 
 var intSet = gset.NewIntSet(true)

@@ -4,11 +4,11 @@ import (
 	"context"
 	"io"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gproc"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gproc"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // Go creates a new asynchronous goroutine function with specified recover function.

@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
+	"github.com/xrcn/cg/errors/gcode"
 )
 
 // Error is custom error for additional features.

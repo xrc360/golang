@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 
-	"github.com/xrc360/golang/os/glog"
+	"github.com/xrcn/cg/os/glog"
 )
 
 // errorLogger is the error logging logger for underlying net/http.Server.

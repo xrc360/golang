@@ -4,8 +4,8 @@ package gutil
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (

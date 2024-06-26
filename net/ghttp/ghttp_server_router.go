@@ -7,16 +7,16 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/consts"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/consts"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 var (
@@ -77,7 +77,7 @@ func (s *Server) setHandler(ctx context.Context, in setHandlerInput) {
 		handler.Name = runtime.FuncForPC(handler.Info.Value.Pointer()).Name()
 	}
 	if handler.Source == "" {
-		_, file, line := gdebug.CallerWithFilter([]string{consts.StackFilterKeyForGoFrame})
+		_, file, line := gdebug.CallerWithFilter([]string{consts.StackFilterKeyForGoXrc})
 		handler.Source = fmt.Sprintf(`%s:%d`, file, line)
 	}
 	domain, method, uri, err := s.parsePattern(pattern)

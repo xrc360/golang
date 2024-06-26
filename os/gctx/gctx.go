@@ -9,7 +9,7 @@ import (
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 
-	"github.com/xrc360/golang/net/gtrace"
+	"github.com/xrcn/cg/net/gtrace"
 )
 
 type (

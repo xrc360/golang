@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gproc"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gproc"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // gracefulServer wraps the net/http.Server with graceful reload/restart feature.

@@ -3,9 +3,9 @@ package gstructs_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Basic(t *testing.T) {
@@ -267,7 +267,7 @@ func Test_StructType(t *testing.T) {
 		}
 		r, err := gstructs.StructType(new(A))
 		t.AssertNil(err)
-		t.Assert(r.Signature(), `github.com/xrc360/golang/os/gstructs_test/gstructs_test.A`)
+		t.Assert(r.Signature(), `github.com/xrcn/cg/os/gstructs_test/gstructs_test.A`)
 	})
 	gtest.C(t, func(t *gtest.T) {
 		type B struct {
@@ -278,7 +278,7 @@ func Test_StructType(t *testing.T) {
 		}
 		r, err := gstructs.StructType(new(A).B)
 		t.AssertNil(err)
-		t.Assert(r.Signature(), `github.com/xrc360/golang/os/gstructs_test/gstructs_test.B`)
+		t.Assert(r.Signature(), `github.com/xrcn/cg/os/gstructs_test/gstructs_test.B`)
 	})
 	gtest.C(t, func(t *gtest.T) {
 		type B struct {
@@ -315,7 +315,7 @@ func Test_StructTypeBySlice(t *testing.T) {
 		}
 		r, err := gstructs.StructType(new(A).Array)
 		t.AssertNil(err)
-		t.Assert(r.Signature(), `github.com/xrc360/golang/os/gstructs_test/gstructs_test.B`)
+		t.Assert(r.Signature(), `github.com/xrcn/cg/os/gstructs_test/gstructs_test.B`)
 	})
 	gtest.C(t, func(t *gtest.T) {
 		type B struct {
@@ -326,7 +326,7 @@ func Test_StructTypeBySlice(t *testing.T) {
 		}
 		r, err := gstructs.StructType(new(A).Array)
 		t.AssertNil(err)
-		t.Assert(r.Signature(), `github.com/xrc360/golang/os/gstructs_test/gstructs_test.B`)
+		t.Assert(r.Signature(), `github.com/xrcn/cg/os/gstructs_test/gstructs_test.B`)
 	})
 	gtest.C(t, func(t *gtest.T) {
 		type B struct {
@@ -337,7 +337,7 @@ func Test_StructTypeBySlice(t *testing.T) {
 		}
 		r, err := gstructs.StructType(new(A).Array)
 		t.AssertNil(err)
-		t.Assert(r.Signature(), `github.com/xrc360/golang/os/gstructs_test/gstructs_test.B`)
+		t.Assert(r.Signature(), `github.com/xrcn/cg/os/gstructs_test/gstructs_test.B`)
 	})
 }
 
@@ -359,7 +359,7 @@ func TestType_FieldKeys(t *testing.T) {
 func TestType_TagMap(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		type A struct {
-			Id   int    `d:"123" description:"I love gf"`
+			Id   int    `d:"123" description:"I love cg"`
 			Name string `v:"required" description:"应用Id"`
 		}
 		r, err := gstructs.Fields(gstructs.FieldsInput{
@@ -370,7 +370,7 @@ func TestType_TagMap(t *testing.T) {
 
 		t.Assert(len(r), 2)
 		t.Assert(r[0].TagMap()["d"], `123`)
-		t.Assert(r[0].TagMap()["description"], `I love gf`)
+		t.Assert(r[0].TagMap()["description"], `I love cg`)
 		t.Assert(r[1].TagMap()["v"], `required`)
 		t.Assert(r[1].TagMap()["description"], `应用Id`)
 	})

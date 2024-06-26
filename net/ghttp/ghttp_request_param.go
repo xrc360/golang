@@ -9,18 +9,18 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/encoding/gurl"
-	"github.com/xrc360/golang/encoding/gxml"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gurl"
+	"github.com/xrcn/cg/encoding/gxml"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 const (
@@ -101,7 +101,7 @@ func (r *Request) doParse(pointer interface{}, requestType int) error {
 				return err
 			}
 		}
-		// TODO: https://github.com/gogf/gf/pull/2450
+
 		// Validation.
 		if err = gvalid.New().
 			Bail().

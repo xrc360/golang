@@ -3,7 +3,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // RuleJson implements `json` rule:

@@ -3,8 +3,8 @@ package gutil
 import (
 	"context"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Throw throws out an exception, which can be caught be TryCatch or recover.

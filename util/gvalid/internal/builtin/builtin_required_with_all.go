@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // RuleRequiredWithAll implements `required-with-all` rule:

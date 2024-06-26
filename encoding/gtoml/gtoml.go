@@ -6,8 +6,8 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
 )
 
 func Encode(v interface{}) ([]byte, error) {

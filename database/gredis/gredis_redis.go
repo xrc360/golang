@@ -3,10 +3,10 @@ package gredis
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // Redis client.
@@ -45,7 +45,7 @@ const (
 var (
 	errorNilAdapter = gstr.Trim(gstr.Replace(`
 redis adapter is not set, missing configuration or adapter register? 
-possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 `, "\n", ""))
 )
 

@@ -3,9 +3,9 @@ package gtag_test
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 func ExampleSet() {

@@ -3,7 +3,7 @@ package gmeta_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/util/gmeta"
+	"github.com/xrcn/cg/util/gmeta"
 )
 
 type A struct {

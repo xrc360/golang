@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/xrc360/golang/container/gtree"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/gtree"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 type Resource struct {

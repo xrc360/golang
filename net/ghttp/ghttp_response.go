@@ -10,10 +10,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/xrc360/golang/net/ghttp/internal/response"
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
+	"github.com/xrcn/cg/net/ghttp/internal/response"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
 )
 
 // Response is the http response manager.

@@ -4,14 +4,14 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func Test_Dump(t *testing.T) {
@@ -163,7 +163,7 @@ func Test_Dump_Slashes(t *testing.T) {
 	})
 }
 
-// https://github.com/gogf/gf/issues/1661
+// 1661
 func Test_Dump_Issue1661(t *testing.T) {
 	type B struct {
 		ba int

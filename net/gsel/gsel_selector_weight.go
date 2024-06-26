@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/net/gsvc"
-	"github.com/xrc360/golang/util/grand"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/net/gsvc"
+	"github.com/xrcn/cg/util/grand"
 )
 
 type selectorWeight struct {

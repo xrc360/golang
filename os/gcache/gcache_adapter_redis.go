@@ -1,18 +1,12 @@
-// Copyright 2020 gf Author(https://github.com/gogf/gf). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/gf.
-
 package gcache
 
 import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/database/gredis"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/database/gredis"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // AdapterRedis is the gcache adapter implements using Redis server.

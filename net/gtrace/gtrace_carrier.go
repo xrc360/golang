@@ -1,8 +1,8 @@
 package gtrace
 
 import (
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Carrier is the storage medium used by a TextMapPropagator.

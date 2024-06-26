@@ -10,16 +10,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/httputil"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/httputil"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Get send GET request and returns the response object.

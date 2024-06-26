@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
+	"github.com/xrcn/cg/container/gmap"
 )
 
 // StorageBase is a base implement for Session Storage.

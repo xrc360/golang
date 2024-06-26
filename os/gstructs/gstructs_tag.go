@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/util/gtag"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/util/gtag"
 )
 
 // ParseTag parses tag string into map.

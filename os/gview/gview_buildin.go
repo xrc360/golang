@@ -7,14 +7,14 @@ import (
 	htmltpl "html/template"
 	"strings"
 
-	"github.com/xrc360/golang/encoding/ghtml"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/encoding/gurl"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmode"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/encoding/ghtml"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gurl"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmode"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 // buildInFuncDump implements build-in template function: dump

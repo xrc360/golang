@@ -6,14 +6,14 @@ package gview
 
 import (
 	"context"
-	xrc_golang "github.com/xrc360/golang"
+	xrc_go "github.com/xrcn/cg"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/os/gcmd"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/glog"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/os/gcmd"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/glog"
 )
 
 // View object for template engine.
@@ -31,7 +31,7 @@ type (
 )
 
 const (
-	commandEnvKeyForPath = "gf.gview.path"
+	commandEnvKeyForPath = "cg.gview.path"
 )
 
 var (
@@ -104,8 +104,8 @@ func New(path ...string) *View {
 	}
 	view.SetDelimiters("{{", "}}")
 	// default build-in variables.
-	view.data["GF"] = map[string]interface{}{
-		"version": xrc_golang.VERSION,
+	view.data["CG"] = map[string]interface{}{
+		"version": xrc_go.VERSION,
 	}
 	// default build-in functions.
 	view.BindFuncMap(FuncMap{

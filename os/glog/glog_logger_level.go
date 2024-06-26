@@ -3,8 +3,8 @@ package glog
 import (
 	"strings"
 
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // Note that the LEVEL_PANI and LEVEL_FATA levels are not used for logging output,

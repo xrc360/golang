@@ -3,8 +3,8 @@ package ghttp
 import (
 	"net/http"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // SetQuery sets custom query value with key-value pairs.

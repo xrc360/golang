@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/xrc360/golang/errors/gerror"
+	"github.com/xrcn/cg/errors/gerror"
 )
 
 // fileDir returns all but the last element of path, typically the path's directory.

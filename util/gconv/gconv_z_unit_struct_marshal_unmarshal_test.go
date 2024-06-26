@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/crypto/gcrc32"
-	"github.com/xrc360/golang/encoding/gbinary"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/crypto/gcrc32"
+	"github.com/xrcn/cg/encoding/gbinary"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 type MyTime struct {

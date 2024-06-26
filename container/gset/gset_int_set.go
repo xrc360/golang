@@ -5,9 +5,9 @@ package gset
 import (
 	"bytes"
 
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/rwmutex"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/rwmutex"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 type IntSet struct {

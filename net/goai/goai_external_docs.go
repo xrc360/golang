@@ -1,9 +1,9 @@
 package goai
 
 import (
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // ExternalDocs is specified by OpenAPI/Swagger standard version 3.0.

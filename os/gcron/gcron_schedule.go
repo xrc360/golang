@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/text/gregex"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/text/gregex"
 )
 
 // cronSchedule is the schedule for cron job.

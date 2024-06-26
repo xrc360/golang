@@ -5,11 +5,11 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/xrc360/golang/i18n/gi18n"
-	"github.com/xrc360/golang/internal/reflection"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/i18n/gi18n"
+	"github.com/xrcn/cg/internal/reflection"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Validator is the validation manager for chaining operations.

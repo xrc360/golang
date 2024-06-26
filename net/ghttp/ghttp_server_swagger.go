@@ -1,7 +1,7 @@
 package ghttp
 
 import (
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 const (

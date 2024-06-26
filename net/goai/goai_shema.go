@@ -3,16 +3,16 @@ package goai
 import (
 	"reflect"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/gstructs"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gmeta"
-	"github.com/xrc360/golang/util/gvalid"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/gstructs"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gmeta"
+	"github.com/xrcn/cg/util/gvalid"
 )
 
 // Schema is specified by OpenAPI/Swagger 3.0 standard.

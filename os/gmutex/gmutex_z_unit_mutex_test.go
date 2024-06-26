@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/os/gmutex"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/os/gmutex"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_Mutex_Unlock(t *testing.T) {

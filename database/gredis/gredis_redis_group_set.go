@@ -3,7 +3,7 @@ package gredis
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
+	"github.com/xrcn/cg/container/gvar"
 )
 
 // IGroupSet manages redis set operations.

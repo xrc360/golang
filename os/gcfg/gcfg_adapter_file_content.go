@@ -3,7 +3,7 @@ package gcfg
 import (
 	"context"
 
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // SetContent sets customized configuration content for specified `file`.

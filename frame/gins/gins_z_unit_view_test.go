@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xrc360/golang/internal/instance"
-	"github.com/xrc360/golang/os/gcfg"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/internal/instance"
+	"github.com/xrcn/cg/os/gcfg"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 func Test_View(t *testing.T) {

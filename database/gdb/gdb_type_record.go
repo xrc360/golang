@@ -3,10 +3,10 @@ package gdb
 import (
 	"database/sql"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Json converts `r` to JSON format content.

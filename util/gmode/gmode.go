@@ -4,9 +4,9 @@
 package gmode
 
 import (
-	"github.com/xrc360/golang/debug/gdebug"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/os/gfile"
+	"github.com/xrcn/cg/debug/gdebug"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/os/gfile"
 )
 
 const (
@@ -15,7 +15,7 @@ const (
 	TESTING       = "testing"
 	STAGING       = "staging"
 	PRODUCT       = "product"
-	commandEnvKey = "gf.gmode"
+	commandEnvKey = "cg.gmode"
 )
 
 var (

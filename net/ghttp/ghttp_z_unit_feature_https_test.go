@@ -1,20 +1,20 @@
 package ghttp_test
 
 import (
-	_ "github.com/xrc360/golang/net/ghttp/testdata/https/packed"
+	_ "github.com/xrcn/cg/net/ghttp/testdata/https/packed"
 
 	"fmt"
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/net/gtcp"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gtime"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/net/gtcp"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gtime"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/guid"
 )
 
 func Test_HTTPS_Basic(t *testing.T) {

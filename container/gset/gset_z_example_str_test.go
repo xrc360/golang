@@ -1,17 +1,11 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with gm file,
-// You can obtain one at https://github.com/gogf/gf.
-
 package gset_test
 
 import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/xrc360/golang/container/gset"
-	"github.com/xrc360/golang/frame/g"
+	"github.com/xrcn/cg/container/gset"
+	"github.com/xrcn/cg/frame/g"
 )
 
 // NewStrSet create and returns a new set, which contains un-repeated items.

@@ -4,9 +4,9 @@ import (
 	"container/list"
 	"fmt"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/glist"
-	"github.com/xrc360/golang/frame/g"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/glist"
+	"github.com/xrcn/cg/frame/g"
 )
 
 func ExampleNew() {

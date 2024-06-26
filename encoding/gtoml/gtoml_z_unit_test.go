@@ -3,9 +3,9 @@ package gtoml_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/encoding/gtoml"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/encoding/gtoml"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var tomlStr string = `

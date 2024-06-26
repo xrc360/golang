@@ -1,18 +1,12 @@
-// Copyright GoFrame Author(https://goframe.org). All Rights Reserved.
-//
-// This Source Code Form is subject to the terms of the MIT License.
-// If a copy of the MIT was not distributed with gm file,
-// You can obtain one at https://github.com/gogf/gf.
-
 package gmap_test
 
 import (
 	"fmt"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 func ExampleStrIntMap_Iterator() {
@@ -585,14 +579,14 @@ func ExampleStrIntMap_UnmarshalValue() {
 	var m gmap.StrIntMap
 
 	goWeb := map[string]int{
-		"goframe": 1,
-		"gin":     2,
-		"echo":    3,
+		"goxrc": 1,
+		"gin":   2,
+		"echo":  3,
 	}
 
 	if err := gconv.Scan(goWeb, &m); err == nil {
 		fmt.Printf("%#v", m.Map())
 	}
 	// Output:
-	// map[string]int{"echo":3, "gin":2, "goframe":1}
+	// map[string]int{"echo":3, "gin":2, "goxrc":1}
 }

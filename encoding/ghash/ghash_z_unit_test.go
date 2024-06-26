@@ -3,8 +3,8 @@ package ghash_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/encoding/ghash"
-	"github.com/xrc360/golang/test/gtest"
+	"github.com/xrcn/cg/encoding/ghash"
+	"github.com/xrcn/cg/test/gtest"
 )
 
 var (

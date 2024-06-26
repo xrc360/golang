@@ -4,7 +4,7 @@ import (
 	"compress/gzip"
 	"context"
 	"fmt"
-	xrc_golang "github.com/xrc360/golang"
+	"github.com/xrcn/cg"
 	"io"
 	"net/http"
 	"strings"
@@ -15,17 +15,17 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/httputil"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/httputil"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 const (
-	tracingInstrumentName                       = "github.com/xrc360/golang/net/ghttp.Server"
+	tracingInstrumentName                       = "github.com/xrcn/cg/net/ghttp.Server"
 	tracingEventHttpRequest                     = "http.request"
 	tracingEventHttpRequestHeaders              = "http.request.headers"
 	tracingEventHttpRequestBaggage              = "http.request.baggage"
@@ -54,7 +54,7 @@ func internalMiddlewareServerTracing(r *Request) {
 		span trace.Span
 		tr   = otel.GetTracerProvider().Tracer(
 			tracingInstrumentName,
-			trace.WithInstrumentationVersion(xrc_golang.VERSION),
+			trace.WithInstrumentationVersion(cg.VERSION),
 		)
 	)
 	ctx, span = tr.Start(

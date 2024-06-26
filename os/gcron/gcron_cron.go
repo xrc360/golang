@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/container/gtype"
-	"github.com/xrc360/golang/os/glog"
-	"github.com/xrc360/golang/os/gtimer"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/container/gtype"
+	"github.com/xrcn/cg/os/glog"
+	"github.com/xrcn/cg/os/gtimer"
 )
 
 type Cron struct {

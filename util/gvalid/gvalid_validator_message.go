@@ -3,7 +3,7 @@ package gvalid
 import (
 	"context"
 
-	"github.com/xrc360/golang/util/gvalid/internal/builtin"
+	"github.com/xrcn/cg/util/gvalid/internal/builtin"
 )
 
 // getErrorMessageByRule retrieves and returns the error message for specified rule.

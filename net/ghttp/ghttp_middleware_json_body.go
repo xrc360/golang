@@ -1,7 +1,7 @@
 package ghttp
 
 import (
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // MiddlewareJsonBody validates and returns request body whether JSON format.

@@ -3,7 +3,7 @@ package gstr
 import (
 	"strings"
 
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // IsGNUVersion checks and returns whether given `version` is valid GNU version string.

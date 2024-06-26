@@ -6,10 +6,10 @@ import (
 	"context"
 	"strings"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/os/gres"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/os/gres"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // staticPathItem is the item struct for static path configuration.

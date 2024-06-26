@@ -3,7 +3,7 @@ package ghttp
 import (
 	"time"
 
-	"github.com/xrc360/golang/os/gsession"
+	"github.com/xrcn/cg/os/gsession"
 )
 
 // SetSessionMaxAge sets the SessionMaxAge for server.

@@ -3,7 +3,7 @@ package garray_test
 import (
 	"testing"
 
-	"github.com/xrc360/golang/container/garray"
+	"github.com/xrcn/cg/container/garray"
 )
 
 type anySortedArrayItem struct {

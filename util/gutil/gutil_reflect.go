@@ -1,7 +1,7 @@
 package gutil
 
 import (
-	"github.com/xrc360/golang/internal/reflection"
+	"github.com/xrcn/cg/internal/reflection"
 )
 
 type (

@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/internal/empty"
-	"github.com/xrc360/golang/internal/json"
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/empty"
+	"github.com/xrcn/cg/internal/json"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 type recursiveType string

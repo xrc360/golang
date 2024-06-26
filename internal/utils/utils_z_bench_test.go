@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/xrc360/golang/internal/utils"
+	"github.com/xrcn/cg/internal/utils"
 )
 
 var (

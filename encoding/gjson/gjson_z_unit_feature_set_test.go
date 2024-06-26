@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/encoding/gjson"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/encoding/gjson"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 func Test_Set1(t *testing.T) {

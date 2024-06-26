@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/net/ghttp"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/guid"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/net/ghttp"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/guid"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/trace"
 )
@@ -591,8 +591,8 @@ func Test_Middleware_CORSAndAuth(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		client := g.Client()
 		client.SetPrefix(fmt.Sprintf("http://127.0.0.1:%d", s.GetListenedPort()))
-		t.Assert(client.SetHeader("Access-Control-Request-Headers", "GF,GoFrame").GetContent(ctx, "/"), "Not Found")
-		t.Assert(client.SetHeader("Origin", "GoFrame").GetContent(ctx, "/"), "Not Found")
+		t.Assert(client.SetHeader("Access-Control-Request-Headers", "CG,GoXrc").GetContent(ctx, "/"), "Not Found")
+		t.Assert(client.SetHeader("Origin", "GoXrc").GetContent(ctx, "/"), "Not Found")
 	})
 	gtest.C(t, func(t *gtest.T) {
 		client := g.Client()

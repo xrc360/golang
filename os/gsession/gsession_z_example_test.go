@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/frame/g"
-	"github.com/xrc360/golang/os/gctx"
-	"github.com/xrc360/golang/os/gsession"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/frame/g"
+	"github.com/xrcn/cg/os/gctx"
+	"github.com/xrcn/cg/os/gsession"
 )
 
 func ExampleNew() {
@@ -291,7 +291,7 @@ func ExampleStorageRedisHashTable_Get() {
 
 	// May Output:
 	// <nil>
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_Data() {
@@ -304,7 +304,7 @@ func ExampleStorageRedisHashTable_Data() {
 
 	// May Output:
 	// map[]
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_GetSize() {
@@ -317,7 +317,7 @@ func ExampleStorageRedisHashTable_GetSize() {
 
 	// May Output:
 	// 0
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_Remove() {
@@ -328,7 +328,7 @@ func ExampleStorageRedisHashTable_Remove() {
 	fmt.Println(err)
 
 	// May Output:
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_RemoveAll() {
@@ -339,7 +339,7 @@ func ExampleStorageRedisHashTable_RemoveAll() {
 	fmt.Println(err)
 
 	// May Output:
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_GetSession() {
@@ -351,7 +351,7 @@ func ExampleStorageRedisHashTable_GetSession() {
 
 	// May Output:
 	//
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_SetSession() {
@@ -364,7 +364,7 @@ func ExampleStorageRedisHashTable_SetSession() {
 	fmt.Println(err)
 
 	// May Output:
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }
 
 func ExampleStorageRedisHashTable_UpdateTTL() {
@@ -375,5 +375,5 @@ func ExampleStorageRedisHashTable_UpdateTTL() {
 	fmt.Println(err)
 
 	// May Output:
-	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/gogf/gf/tree/master/contrib/nosql/redis
+	// redis adapter is not set, missing configuration or adapter register? possible reference: https://github.com/xrcn/cg/tree/master/contrib/nosql/redis
 }

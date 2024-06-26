@@ -3,8 +3,8 @@ package gstr
 import (
 	"strings"
 
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // Split splits string `str` by a string `delimiter`, to an array.

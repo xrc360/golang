@@ -4,13 +4,13 @@ package gcfg
 import (
 	"context"
 
-	"github.com/xrc360/golang/container/gvar"
-	"github.com/xrc360/golang/errors/gcode"
-	"github.com/xrc360/golang/errors/gerror"
-	"github.com/xrc360/golang/internal/command"
-	"github.com/xrc360/golang/internal/intlog"
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/os/genv"
+	"github.com/xrcn/cg/container/gvar"
+	"github.com/xrcn/cg/errors/gcode"
+	"github.com/xrcn/cg/errors/gerror"
+	"github.com/xrcn/cg/internal/command"
+	"github.com/xrcn/cg/internal/intlog"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/os/genv"
 )
 
 // Config is the configuration management object.
@@ -109,7 +109,7 @@ func (c *Config) Get(ctx context.Context, pattern string, def ...interface{}) (*
 // If the configuration value does not exist, then it retrieves and returns the environment value specified by `key`.
 // It returns the default value `def` if none of them exists.
 //
-// Fetching Rules: Environment arguments are in uppercase format, eg: GF_PACKAGE_VARIABLE.
+// Fetching Rules: Environment arguments are in uppercase format, eg: CG_PACKAGE_VARIABLE.
 func (c *Config) GetWithEnv(ctx context.Context, pattern string, def ...interface{}) (*gvar.Var, error) {
 	value, err := c.Get(ctx, pattern)
 	if err != nil && gerror.Code(err) != gcode.CodeNotFound {
@@ -131,7 +131,7 @@ func (c *Config) GetWithEnv(ctx context.Context, pattern string, def ...interfac
 // If the configuration value does not exist, then it retrieves and returns the command line option specified by `key`.
 // It returns the default value `def` if none of them exists.
 //
-// Fetching Rules: Command line arguments are in lowercase format, eg: gf.package.variable.
+// Fetching Rules: Command line arguments are in lowercase format, eg: cg.package.variable.
 func (c *Config) GetWithCmd(ctx context.Context, pattern string, def ...interface{}) (*gvar.Var, error) {
 	value, err := c.Get(ctx, pattern)
 	if err != nil && gerror.Code(err) != gcode.CodeNotFound {

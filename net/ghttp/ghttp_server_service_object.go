@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/xrc360/golang/os/gfile"
-	"github.com/xrc360/golang/text/gregex"
-	"github.com/xrc360/golang/text/gstr"
+	"github.com/xrcn/cg/os/gfile"
+	"github.com/xrcn/cg/text/gregex"
+	"github.com/xrcn/cg/text/gstr"
 )
 
 // BindObject registers object to server routes with a given pattern.

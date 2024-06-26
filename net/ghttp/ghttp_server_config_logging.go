@@ -1,6 +1,6 @@
 package ghttp
 
-import "github.com/xrc360/golang/os/glog"
+import "github.com/xrcn/cg/os/glog"
 
 // SetLogPath sets the log path for server.
 // It logs content to file only if the log path is set.

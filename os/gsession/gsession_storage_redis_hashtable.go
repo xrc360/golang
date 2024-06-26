@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/xrc360/golang/container/gmap"
-	"github.com/xrc360/golang/database/gredis"
-	"github.com/xrc360/golang/internal/intlog"
+	"github.com/xrcn/cg/container/gmap"
+	"github.com/xrcn/cg/database/gredis"
+	"github.com/xrcn/cg/internal/intlog"
 )
 
 // StorageRedisHashTable implements the Session Storage interface with redis hash table.

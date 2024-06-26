@@ -1,7 +1,7 @@
 package goai
 
 import (
-	"github.com/xrc360/golang/internal/json"
+	"github.com/xrcn/cg/internal/json"
 )
 
 // Example is specified by OpenAPI/Swagger 3.0 standard.

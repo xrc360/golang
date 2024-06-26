@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/xrc360/golang/container/garray"
-	"github.com/xrc360/golang/test/gtest"
-	"github.com/xrc360/golang/util/gconv"
-	"github.com/xrc360/golang/util/gutil"
+	"github.com/xrcn/cg/container/garray"
+	"github.com/xrcn/cg/test/gtest"
+	"github.com/xrcn/cg/util/gconv"
+	"github.com/xrcn/cg/util/gutil"
 )
 
 func Test_Array_Var(t *testing.T) {

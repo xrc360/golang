@@ -15,10 +15,10 @@ import (
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/xrc360/golang/internal/utils"
-	"github.com/xrc360/golang/net/gtrace"
-	"github.com/xrc360/golang/text/gstr"
-	"github.com/xrc360/golang/util/gconv"
+	"github.com/xrcn/cg/internal/utils"
+	"github.com/xrcn/cg/net/gtrace"
+	"github.com/xrcn/cg/text/gstr"
+	"github.com/xrcn/cg/util/gconv"
 )
 
 // clientTracer is used for implementing httptrace.ClientTrace.
